@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CO–PSO Mapping | AI Mapping System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+.pso-wrap{max-width:1500px;margin:30px auto;padding:0 22px}.pso-table-wrap{overflow:auto}
+.pso-table{border-collapse:collapse;width:100%;font-size:14px}.pso-table th,.pso-table td{border:1px solid #D3E8E5;padding:10px;text-align:left;vertical-align:top}.pso-table th{background:#1A6B69;color:white}.pso-table td{background:white}
+.pso-actions{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}.pso-actions a,.pso-actions button{display:inline-block;padding:10px 15px;border-radius:7px;background:#1A6B69;color:#fff;text-decoration:none;border:0;cursor:pointer}
+.notice{padding:12px 15px;background:#FDF0DA;border-radius:7px;margin:12px 0}.muted{color:#65748b}.chart-wrap{height:320px;max-width:850px}
+</style>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo"><div class="logo-text"><h2>AI CO–PO–PEO</h2><p>Mapping System</p></div></div>
+  <div class="nav-title">CO–PSO Mapping</div>
+  <div class="nav-right"><a href="/dashboard"><i class="fa fa-house"></i> Dashboard</a><a href="/logout"><i class="fa fa-right-from-bracket"></i> Logout</a></div>
+</header>
+<main class="pso-wrap">
+  <section class="box">
+    <h1>Course Outcome – Programme Specific Outcome Mapping</h1>
+    <p>PSO definitions are maintained manually in <strong>Dataset/PSO_Dataset.xlsx</strong>. Edit that workbook and reload this page to regenerate mappings, justifications, graph and Excel report. No website upload is needed.</p>
+    <div class="pso-actions">
+      <a href="/download-pso-report">Download Final Excel Report</a>
+      <a href="{{ url_for('static', filename='../Dataset/PSO_Dataset.xlsx') }}" onclick="return false;" title="Edit the local file in your project folder">PSO dataset location: Dataset/PSO_Dataset.xlsx</a>
+    </div>
+    {% if error %}<div class="notice"><strong>Could not generate mapping:</strong> {{ error }}<br>Check that the CO and PSO Excel datasets have the expected columns and non-empty outcome text.</div>{% endif %}
+    <p class="muted">Mapping engine: {{ model_name }}. Levels are relative rankings per CO: 3 = High, 2 = Moderate, 1 = Low, 0 = Outside the top three. Review AI-generated results before accreditation use.</p>
+  </section>
+  {% if mapping %}
+  <section class="box">
+    <h2>CO–PSO Mapping Graph</h2>
+    <p class="muted">Count of course outcomes mapped to each PSO (mapping level greater than zero).</p>
+    <div class="chart-wrap"><canvas id="psoChart"></canvas></div>
+  </section>
+  <section class="box">
+    <h2>CO–PSO Mapping Table</h2>
+    <div class="pso-table-wrap"><table class="pso-table">
+      <thead><tr>{% for key in mapping[0].keys() %}<th>{{ key }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for row in mapping %}<tr>{% for key,value in row.items() %}<td>{{ value }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table></div>
+  </section>
+  <section class="box">
+    <h2>CO–PSO Justifications</h2>
+    <div class="pso-table-wrap"><table class="pso-table">
+      <thead><tr>{% for key in justifications[0].keys() %}<th>{{ key }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for row in justifications %}<tr>{% for key,value in row.items() %}<td>{{ value }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table></div>
+  </section>
+  {% endif %}
+  <section class="box">
+    <h2>Manual PSO Dataset</h2>
+    <p>Edit <code>Dataset/PSO_Dataset.xlsx</code> directly in Excel. Keep the columns <strong>PSO ID</strong> and <strong>Programme Specific Outcomes</strong>. The project also includes a copy on the <code>PSO Dataset</code> sheet in <code>Dataset/CO_Dataset-1.xlsx</code>.</p>
+    <div class="pso-table-wrap"><table class="pso-table"><thead><tr><th>PSO ID</th><th>Programme Specific Outcomes</th></tr></thead>
+    <tbody>{% for pso in pso_records %}<tr><td>{{ pso.get('PSO ID','') }}</td><td>{{ pso.get('Programme Specific Outcomes', pso.get('Programme Specific Outcomes ','') ) }}</td></tr>{% endfor %}</tbody></table></div>
+  </section>
+</main>
+{% if mapping %}
+<script>
+new Chart(document.getElementById('psoChart'), {
+  type:'bar',
+  data:{labels:{{ graph_labels|tojson }},datasets:[{label:'Mapped CO count',data:{{ graph_values|tojson }},borderWidth:1}]},
+  options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,ticks:{precision:0}}}}
+});
+</script>
+{% endif %}
+</body></html>

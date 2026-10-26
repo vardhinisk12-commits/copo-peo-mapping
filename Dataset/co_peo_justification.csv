@@ -1,0 +1,825 @@
+CO ID,PEO ID,Mapping Value,Justification
+BCS301_CO1,PEO 1,2,Medium semantic similarity between BCS301_CO1 and PEO 1
+BCS301_CO1,PEO 2,3,High semantic similarity between BCS301_CO1 and PEO 2
+BCS301_CO1,PEO 3,0,No significant relationship
+BCS301_CO1,PEO 4,1,Low semantic similarity between BCS301_CO1 and PEO 4
+BCS301_CO2,PEO 1,3,High semantic similarity between BCS301_CO2 and PEO 1
+BCS301_CO2,PEO 2,2,Medium semantic similarity between BCS301_CO2 and PEO 2
+BCS301_CO2,PEO 3,0,No significant relationship
+BCS301_CO2,PEO 4,1,Low semantic similarity between BCS301_CO2 and PEO 4
+BCS301_CO3,PEO 1,1,Low semantic similarity between BCS301_CO3 and PEO 1
+BCS301_CO3,PEO 2,2,Medium semantic similarity between BCS301_CO3 and PEO 2
+BCS301_CO3,PEO 3,0,No significant relationship
+BCS301_CO3,PEO 4,3,High semantic similarity between BCS301_CO3 and PEO 4
+BCS302_CO1,PEO 1,3,High semantic similarity between BCS302_CO1 and PEO 1
+BCS302_CO1,PEO 2,2,Medium semantic similarity between BCS302_CO1 and PEO 2
+BCS302_CO1,PEO 3,0,No significant relationship
+BCS302_CO1,PEO 4,1,Low semantic similarity between BCS302_CO1 and PEO 4
+BCS302_CO2,PEO 1,2,Medium semantic similarity between BCS302_CO2 and PEO 1
+BCS302_CO2,PEO 2,3,High semantic similarity between BCS302_CO2 and PEO 2
+BCS302_CO2,PEO 3,0,No significant relationship
+BCS302_CO2,PEO 4,1,Low semantic similarity between BCS302_CO2 and PEO 4
+BCS302_CO3,PEO 1,1,Low semantic similarity between BCS302_CO3 and PEO 1
+BCS302_CO3,PEO 2,3,High semantic similarity between BCS302_CO3 and PEO 2
+BCS302_CO3,PEO 3,0,No significant relationship
+BCS302_CO3,PEO 4,2,Medium semantic similarity between BCS302_CO3 and PEO 4
+BCS302_CO4,PEO 1,3,High semantic similarity between BCS302_CO4 and PEO 1
+BCS302_CO4,PEO 2,1,Low semantic similarity between BCS302_CO4 and PEO 2
+BCS302_CO4,PEO 3,0,No significant relationship
+BCS302_CO4,PEO 4,2,Medium semantic similarity between BCS302_CO4 and PEO 4
+BCS303_CO1,PEO 1,1,Low semantic similarity between BCS303_CO1 and PEO 1
+BCS303_CO1,PEO 2,3,High semantic similarity between BCS303_CO1 and PEO 2
+BCS303_CO1,PEO 3,0,No significant relationship
+BCS303_CO1,PEO 4,2,Medium semantic similarity between BCS303_CO1 and PEO 4
+BCS303_CO2,PEO 1,0,No significant relationship
+BCS303_CO2,PEO 2,1,Low semantic similarity between BCS303_CO2 and PEO 2
+BCS303_CO2,PEO 3,2,Medium semantic similarity between BCS303_CO2 and PEO 3
+BCS303_CO2,PEO 4,3,High semantic similarity between BCS303_CO2 and PEO 4
+BCS303_CO3,PEO 1,1,Low semantic similarity between BCS303_CO3 and PEO 1
+BCS303_CO3,PEO 2,3,High semantic similarity between BCS303_CO3 and PEO 2
+BCS303_CO3,PEO 3,0,No significant relationship
+BCS303_CO3,PEO 4,2,Medium semantic similarity between BCS303_CO3 and PEO 4
+BCS304_CO1,PEO 1,3,High semantic similarity between BCS304_CO1 and PEO 1
+BCS304_CO1,PEO 2,2,Medium semantic similarity between BCS304_CO1 and PEO 2
+BCS304_CO1,PEO 3,0,No significant relationship
+BCS304_CO1,PEO 4,1,Low semantic similarity between BCS304_CO1 and PEO 4
+BCS304_CO2,PEO 1,3,High semantic similarity between BCS304_CO2 and PEO 1
+BCS304_CO2,PEO 2,2,Medium semantic similarity between BCS304_CO2 and PEO 2
+BCS304_CO2,PEO 3,0,No significant relationship
+BCS304_CO2,PEO 4,1,Low semantic similarity between BCS304_CO2 and PEO 4
+BCS304_CO3,PEO 1,3,High semantic similarity between BCS304_CO3 and PEO 1
+BCS304_CO3,PEO 2,2,Medium semantic similarity between BCS304_CO3 and PEO 2
+BCS304_CO3,PEO 3,0,No significant relationship
+BCS304_CO3,PEO 4,1,Low semantic similarity between BCS304_CO3 and PEO 4
+BCS304_CO4,PEO 1,3,High semantic similarity between BCS304_CO4 and PEO 1
+BCS304_CO4,PEO 2,2,Medium semantic similarity between BCS304_CO4 and PEO 2
+BCS304_CO4,PEO 3,1,Low semantic similarity between BCS304_CO4 and PEO 3
+BCS304_CO4,PEO 4,0,No significant relationship
+BCS304_CO5,PEO 1,3,High semantic similarity between BCS304_CO5 and PEO 1
+BCS304_CO5,PEO 2,1,Low semantic similarity between BCS304_CO5 and PEO 2
+BCS304_CO5,PEO 3,0,No significant relationship
+BCS304_CO5,PEO 4,2,Medium semantic similarity between BCS304_CO5 and PEO 4
+BCSL305_CO1,PEO 1,2,Medium semantic similarity between BCSL305_CO1 and PEO 1
+BCSL305_CO1,PEO 2,1,Low semantic similarity between BCSL305_CO1 and PEO 2
+BCSL305_CO1,PEO 3,0,No significant relationship
+BCSL305_CO1,PEO 4,3,High semantic similarity between BCSL305_CO1 and PEO 4
+BCSL305_CO2,PEO 1,3,High semantic similarity between BCSL305_CO2 and PEO 1
+BCSL305_CO2,PEO 2,2,Medium semantic similarity between BCSL305_CO2 and PEO 2
+BCSL305_CO2,PEO 3,0,No significant relationship
+BCSL305_CO2,PEO 4,1,Low semantic similarity between BCSL305_CO2 and PEO 4
+BCSL305_CO3,PEO 1,3,High semantic similarity between BCSL305_CO3 and PEO 1
+BCSL305_CO3,PEO 2,2,Medium semantic similarity between BCSL305_CO3 and PEO 2
+BCSL305_CO3,PEO 3,0,No significant relationship
+BCSL305_CO3,PEO 4,1,Low semantic similarity between BCSL305_CO3 and PEO 4
+BCS306A_CO1,PEO 1,3,High semantic similarity between BCS306A_CO1 and PEO 1
+BCS306A_CO1,PEO 2,2,Medium semantic similarity between BCS306A_CO1 and PEO 2
+BCS306A_CO1,PEO 3,0,No significant relationship
+BCS306A_CO1,PEO 4,1,Low semantic similarity between BCS306A_CO1 and PEO 4
+BCS306A_CO2,PEO 1,1,Low semantic similarity between BCS306A_CO2 and PEO 1
+BCS306A_CO2,PEO 2,2,Medium semantic similarity between BCS306A_CO2 and PEO 2
+BCS306A_CO2,PEO 3,0,No significant relationship
+BCS306A_CO2,PEO 4,3,High semantic similarity between BCS306A_CO2 and PEO 4
+BCS306A_CO3,PEO 1,2,Medium semantic similarity between BCS306A_CO3 and PEO 1
+BCS306A_CO3,PEO 2,3,High semantic similarity between BCS306A_CO3 and PEO 2
+BCS306A_CO3,PEO 3,0,No significant relationship
+BCS306A_CO3,PEO 4,1,Low semantic similarity between BCS306A_CO3 and PEO 4
+BCS306B_CO1,PEO 1,2,Medium semantic similarity between BCS306B_CO1 and PEO 1
+BCS306B_CO1,PEO 2,3,High semantic similarity between BCS306B_CO1 and PEO 2
+BCS306B_CO1,PEO 3,0,No significant relationship
+BCS306B_CO1,PEO 4,1,Low semantic similarity between BCS306B_CO1 and PEO 4
+BCS306B_CO2,PEO 1,3,High semantic similarity between BCS306B_CO2 and PEO 1
+BCS306B_CO2,PEO 2,1,Low semantic similarity between BCS306B_CO2 and PEO 2
+BCS306B_CO2,PEO 3,0,No significant relationship
+BCS306B_CO2,PEO 4,2,Medium semantic similarity between BCS306B_CO2 and PEO 4
+BCS306B_CO3,PEO 1,3,High semantic similarity between BCS306B_CO3 and PEO 1
+BCS306B_CO3,PEO 2,2,Medium semantic similarity between BCS306B_CO3 and PEO 2
+BCS306B_CO3,PEO 3,0,No significant relationship
+BCS306B_CO3,PEO 4,1,Low semantic similarity between BCS306B_CO3 and PEO 4
+BCS306B_CO4,PEO 1,3,High semantic similarity between BCS306B_CO4 and PEO 1
+BCS306B_CO4,PEO 2,2,Medium semantic similarity between BCS306B_CO4 and PEO 2
+BCS306B_CO4,PEO 3,0,No significant relationship
+BCS306B_CO4,PEO 4,1,Low semantic similarity between BCS306B_CO4 and PEO 4
+BSCK307_CO1,PEO 1,3,High semantic similarity between BSCK307_CO1 and PEO 1
+BSCK307_CO1,PEO 2,0,No significant relationship
+BSCK307_CO1,PEO 3,2,Medium semantic similarity between BSCK307_CO1 and PEO 3
+BSCK307_CO1,PEO 4,1,Low semantic similarity between BSCK307_CO1 and PEO 4
+BSCK307_CO2,PEO 1,0,No significant relationship
+BSCK307_CO2,PEO 2,1,Low semantic similarity between BSCK307_CO2 and PEO 2
+BSCK307_CO2,PEO 3,2,Medium semantic similarity between BSCK307_CO2 and PEO 3
+BSCK307_CO2,PEO 4,3,High semantic similarity between BSCK307_CO2 and PEO 4
+BSCK307_CO3,PEO 1,2,Medium semantic similarity between BSCK307_CO3 and PEO 1
+BSCK307_CO3,PEO 2,3,High semantic similarity between BSCK307_CO3 and PEO 2
+BSCK307_CO3,PEO 3,1,Low semantic similarity between BSCK307_CO3 and PEO 3
+BSCK307_CO3,PEO 4,0,No significant relationship
+BSCK307_CO4,PEO 1,2,Medium semantic similarity between BSCK307_CO4 and PEO 1
+BSCK307_CO4,PEO 2,3,High semantic similarity between BSCK307_CO4 and PEO 2
+BSCK307_CO4,PEO 3,1,Low semantic similarity between BSCK307_CO4 and PEO 3
+BSCK307_CO4,PEO 4,0,No significant relationship
+BSCK307_CO5,PEO 1,0,No significant relationship
+BSCK307_CO5,PEO 2,2,Medium semantic similarity between BSCK307_CO5 and PEO 2
+BSCK307_CO5,PEO 3,1,Low semantic similarity between BSCK307_CO5 and PEO 3
+BSCK307_CO5,PEO 4,3,High semantic similarity between BSCK307_CO5 and PEO 4
+BSCK307_CO6,PEO 1,0,No significant relationship
+BSCK307_CO6,PEO 2,1,Low semantic similarity between BSCK307_CO6 and PEO 2
+BSCK307_CO6,PEO 3,3,High semantic similarity between BSCK307_CO6 and PEO 3
+BSCK307_CO6,PEO 4,2,Medium semantic similarity between BSCK307_CO6 and PEO 4
+BCS358A_CO1,PEO 1,3,High semantic similarity between BCS358A_CO1 and PEO 1
+BCS358A_CO1,PEO 2,2,Medium semantic similarity between BCS358A_CO1 and PEO 2
+BCS358A_CO1,PEO 3,0,No significant relationship
+BCS358A_CO1,PEO 4,1,Low semantic similarity between BCS358A_CO1 and PEO 4
+BCS358A_CO2,PEO 1,3,High semantic similarity between BCS358A_CO2 and PEO 1
+BCS358A_CO2,PEO 2,2,Medium semantic similarity between BCS358A_CO2 and PEO 2
+BCS358A_CO2,PEO 3,1,Low semantic similarity between BCS358A_CO2 and PEO 3
+BCS358A_CO2,PEO 4,0,No significant relationship
+BCS358A_CO3,PEO 1,2,Medium semantic similarity between BCS358A_CO3 and PEO 1
+BCS358A_CO3,PEO 2,3,High semantic similarity between BCS358A_CO3 and PEO 2
+BCS358A_CO3,PEO 3,0,No significant relationship
+BCS358A_CO3,PEO 4,1,Low semantic similarity between BCS358A_CO3 and PEO 4
+BCS358A_CO4,PEO 1,3,High semantic similarity between BCS358A_CO4 and PEO 1
+BCS358A_CO4,PEO 2,2,Medium semantic similarity between BCS358A_CO4 and PEO 2
+BCS358A_CO4,PEO 3,0,No significant relationship
+BCS358A_CO4,PEO 4,1,Low semantic similarity between BCS358A_CO4 and PEO 4
+BCS358A_CO5,PEO 1,3,High semantic similarity between BCS358A_CO5 and PEO 1
+BCS358A_CO5,PEO 2,2,Medium semantic similarity between BCS358A_CO5 and PEO 2
+BCS358A_CO5,PEO 3,1,Low semantic similarity between BCS358A_CO5 and PEO 3
+BCS358A_CO5,PEO 4,0,No significant relationship
+BCS358B_CO1,PEO 1,0,No significant relationship
+BCS358B_CO1,PEO 2,2,Medium semantic similarity between BCS358B_CO1 and PEO 2
+BCS358B_CO1,PEO 3,3,High semantic similarity between BCS358B_CO1 and PEO 3
+BCS358B_CO1,PEO 4,1,Low semantic similarity between BCS358B_CO1 and PEO 4
+BCS358B_CO2,PEO 1,3,High semantic similarity between BCS358B_CO2 and PEO 1
+BCS358B_CO2,PEO 2,2,Medium semantic similarity between BCS358B_CO2 and PEO 2
+BCS358B_CO2,PEO 3,0,No significant relationship
+BCS358B_CO2,PEO 4,1,Low semantic similarity between BCS358B_CO2 and PEO 4
+BCS358B_CO3,PEO 1,3,High semantic similarity between BCS358B_CO3 and PEO 1
+BCS358B_CO3,PEO 2,2,Medium semantic similarity between BCS358B_CO3 and PEO 2
+BCS358B_CO3,PEO 3,0,No significant relationship
+BCS358B_CO3,PEO 4,1,Low semantic similarity between BCS358B_CO3 and PEO 4
+BCS358B_CO4,PEO 1,3,High semantic similarity between BCS358B_CO4 and PEO 1
+BCS358B_CO4,PEO 2,2,Medium semantic similarity between BCS358B_CO4 and PEO 2
+BCS358B_CO4,PEO 3,0,No significant relationship
+BCS358B_CO4,PEO 4,1,Low semantic similarity between BCS358B_CO4 and PEO 4
+BCS358B_CO5,PEO 1,0,No significant relationship
+BCS358B_CO5,PEO 2,2,Medium semantic similarity between BCS358B_CO5 and PEO 2
+BCS358B_CO5,PEO 3,3,High semantic similarity between BCS358B_CO5 and PEO 3
+BCS358B_CO5,PEO 4,1,Low semantic similarity between BCS358B_CO5 and PEO 4
+BCS358C_CO1,PEO 1,1,Low semantic similarity between BCS358C_CO1 and PEO 1
+BCS358C_CO1,PEO 2,3,High semantic similarity between BCS358C_CO1 and PEO 2
+BCS358C_CO1,PEO 3,2,Medium semantic similarity between BCS358C_CO1 and PEO 3
+BCS358C_CO1,PEO 4,0,No significant relationship
+BCS358C_CO2,PEO 1,0,No significant relationship
+BCS358C_CO2,PEO 2,2,Medium semantic similarity between BCS358C_CO2 and PEO 2
+BCS358C_CO2,PEO 3,3,High semantic similarity between BCS358C_CO2 and PEO 3
+BCS358C_CO2,PEO 4,1,Low semantic similarity between BCS358C_CO2 and PEO 4
+BCS358C_CO3,PEO 1,0,No significant relationship
+BCS358C_CO3,PEO 2,1,Low semantic similarity between BCS358C_CO3 and PEO 2
+BCS358C_CO3,PEO 3,3,High semantic similarity between BCS358C_CO3 and PEO 3
+BCS358C_CO3,PEO 4,2,Medium semantic similarity between BCS358C_CO3 and PEO 4
+BCS358C_CO4,PEO 1,1,Low semantic similarity between BCS358C_CO4 and PEO 1
+BCS358C_CO4,PEO 2,2,Medium semantic similarity between BCS358C_CO4 and PEO 2
+BCS358C_CO4,PEO 3,0,No significant relationship
+BCS358C_CO4,PEO 4,3,High semantic similarity between BCS358C_CO4 and PEO 4
+BCS358D_CO1,PEO 1,0,No significant relationship
+BCS358D_CO1,PEO 2,2,Medium semantic similarity between BCS358D_CO1 and PEO 2
+BCS358D_CO1,PEO 3,1,Low semantic similarity between BCS358D_CO1 and PEO 3
+BCS358D_CO1,PEO 4,3,High semantic similarity between BCS358D_CO1 and PEO 4
+BCS358D_CO2,PEO 1,3,High semantic similarity between BCS358D_CO2 and PEO 1
+BCS358D_CO2,PEO 2,1,Low semantic similarity between BCS358D_CO2 and PEO 2
+BCS358D_CO2,PEO 3,0,No significant relationship
+BCS358D_CO2,PEO 4,2,Medium semantic similarity between BCS358D_CO2 and PEO 4
+BCS358D_CO3,PEO 1,3,High semantic similarity between BCS358D_CO3 and PEO 1
+BCS358D_CO3,PEO 2,1,Low semantic similarity between BCS358D_CO3 and PEO 2
+BCS358D_CO3,PEO 3,0,No significant relationship
+BCS358D_CO3,PEO 4,2,Medium semantic similarity between BCS358D_CO3 and PEO 4
+BCS358D_CO4,PEO 1,3,High semantic similarity between BCS358D_CO4 and PEO 1
+BCS358D_CO4,PEO 2,0,No significant relationship
+BCS358D_CO4,PEO 3,1,Low semantic similarity between BCS358D_CO4 and PEO 3
+BCS358D_CO4,PEO 4,2,Medium semantic similarity between BCS358D_CO4 and PEO 4
+BCS358D_CO5,PEO 1,3,High semantic similarity between BCS358D_CO5 and PEO 1
+BCS358D_CO5,PEO 2,0,No significant relationship
+BCS358D_CO5,PEO 3,1,Low semantic similarity between BCS358D_CO5 and PEO 3
+BCS358D_CO5,PEO 4,2,Medium semantic similarity between BCS358D_CO5 and PEO 4
+BCS401_CO1,PEO 1,3,High semantic similarity between BCS401_CO1 and PEO 1
+BCS401_CO1,PEO 2,2,Medium semantic similarity between BCS401_CO1 and PEO 2
+BCS401_CO1,PEO 3,0,No significant relationship
+BCS401_CO1,PEO 4,1,Low semantic similarity between BCS401_CO1 and PEO 4
+BCS401_CO2,PEO 1,3,High semantic similarity between BCS401_CO2 and PEO 1
+BCS401_CO2,PEO 2,1,Low semantic similarity between BCS401_CO2 and PEO 2
+BCS401_CO2,PEO 3,0,No significant relationship
+BCS401_CO2,PEO 4,2,Medium semantic similarity between BCS401_CO2 and PEO 4
+BCS401_CO3,PEO 1,3,High semantic similarity between BCS401_CO3 and PEO 1
+BCS401_CO3,PEO 2,2,Medium semantic similarity between BCS401_CO3 and PEO 2
+BCS401_CO3,PEO 3,0,No significant relationship
+BCS401_CO3,PEO 4,1,Low semantic similarity between BCS401_CO3 and PEO 4
+BCS401_CO4,PEO 1,3,High semantic similarity between BCS401_CO4 and PEO 1
+BCS401_CO4,PEO 2,1,Low semantic similarity between BCS401_CO4 and PEO 2
+BCS401_CO4,PEO 3,0,No significant relationship
+BCS401_CO4,PEO 4,2,Medium semantic similarity between BCS401_CO4 and PEO 4
+BCS402_CO1,PEO 1,0,No significant relationship
+BCS402_CO1,PEO 2,3,High semantic similarity between BCS402_CO1 and PEO 2
+BCS402_CO1,PEO 3,2,Medium semantic similarity between BCS402_CO1 and PEO 3
+BCS402_CO1,PEO 4,1,Low semantic similarity between BCS402_CO1 and PEO 4
+BCS402_CO2,PEO 1,1,Low semantic similarity between BCS402_CO2 and PEO 1
+BCS402_CO2,PEO 2,3,High semantic similarity between BCS402_CO2 and PEO 2
+BCS402_CO2,PEO 3,0,No significant relationship
+BCS402_CO2,PEO 4,2,Medium semantic similarity between BCS402_CO2 and PEO 4
+BCS402_CO3,PEO 1,2,Medium semantic similarity between BCS402_CO3 and PEO 1
+BCS402_CO3,PEO 2,3,High semantic similarity between BCS402_CO3 and PEO 2
+BCS402_CO3,PEO 3,0,No significant relationship
+BCS402_CO3,PEO 4,1,Low semantic similarity between BCS402_CO3 and PEO 4
+BCS402_CO4,PEO 1,1,Low semantic similarity between BCS402_CO4 and PEO 1
+BCS402_CO4,PEO 2,3,High semantic similarity between BCS402_CO4 and PEO 2
+BCS402_CO4,PEO 3,0,No significant relationship
+BCS402_CO4,PEO 4,2,Medium semantic similarity between BCS402_CO4 and PEO 4
+BCS402_CO5,PEO 1,0,No significant relationship
+BCS402_CO5,PEO 2,3,High semantic similarity between BCS402_CO5 and PEO 2
+BCS402_CO5,PEO 3,2,Medium semantic similarity between BCS402_CO5 and PEO 3
+BCS402_CO5,PEO 4,1,Low semantic similarity between BCS402_CO5 and PEO 4
+BCS403_CO1,PEO 1,1,Low semantic similarity between BCS403_CO1 and PEO 1
+BCS403_CO1,PEO 2,3,High semantic similarity between BCS403_CO1 and PEO 2
+BCS403_CO1,PEO 3,0,No significant relationship
+BCS403_CO1,PEO 4,2,Medium semantic similarity between BCS403_CO1 and PEO 4
+BCS403_CO2,PEO 1,2,Medium semantic similarity between BCS403_CO2 and PEO 1
+BCS403_CO2,PEO 2,3,High semantic similarity between BCS403_CO2 and PEO 2
+BCS403_CO2,PEO 3,0,No significant relationship
+BCS403_CO2,PEO 4,1,Low semantic similarity between BCS403_CO2 and PEO 4
+BCS403_CO3,PEO 1,1,Low semantic similarity between BCS403_CO3 and PEO 1
+BCS403_CO3,PEO 2,3,High semantic similarity between BCS403_CO3 and PEO 2
+BCS403_CO3,PEO 3,0,No significant relationship
+BCS403_CO3,PEO 4,2,Medium semantic similarity between BCS403_CO3 and PEO 4
+BCS403_CO4,PEO 1,1,Low semantic similarity between BCS403_CO4 and PEO 1
+BCS403_CO4,PEO 2,2,Medium semantic similarity between BCS403_CO4 and PEO 2
+BCS403_CO4,PEO 3,0,No significant relationship
+BCS403_CO4,PEO 4,3,High semantic similarity between BCS403_CO4 and PEO 4
+BCS403_CO5,PEO 1,3,High semantic similarity between BCS403_CO5 and PEO 1
+BCS403_CO5,PEO 2,2,Medium semantic similarity between BCS403_CO5 and PEO 2
+BCS403_CO5,PEO 3,0,No significant relationship
+BCS403_CO5,PEO 4,1,Low semantic similarity between BCS403_CO5 and PEO 4
+BCS403_CO6,PEO 1,1,Low semantic similarity between BCS403_CO6 and PEO 1
+BCS403_CO6,PEO 2,3,High semantic similarity between BCS403_CO6 and PEO 2
+BCS403_CO6,PEO 3,0,No significant relationship
+BCS403_CO6,PEO 4,2,Medium semantic similarity between BCS403_CO6 and PEO 4
+BCSL404_CO1,PEO 1,3,High semantic similarity between BCSL404_CO1 and PEO 1
+BCSL404_CO1,PEO 2,2,Medium semantic similarity between BCSL404_CO1 and PEO 2
+BCSL404_CO1,PEO 3,0,No significant relationship
+BCSL404_CO1,PEO 4,1,Low semantic similarity between BCSL404_CO1 and PEO 4
+BCSL404_CO2,PEO 1,2,Medium semantic similarity between BCSL404_CO2 and PEO 1
+BCSL404_CO2,PEO 2,0,No significant relationship
+BCSL404_CO2,PEO 3,1,Low semantic similarity between BCSL404_CO2 and PEO 3
+BCSL404_CO2,PEO 4,3,High semantic similarity between BCSL404_CO2 and PEO 4
+BCSL404_CO3,PEO 1,3,High semantic similarity between BCSL404_CO3 and PEO 1
+BCSL404_CO3,PEO 2,1,Low semantic similarity between BCSL404_CO3 and PEO 2
+BCSL404_CO3,PEO 3,0,No significant relationship
+BCSL404_CO3,PEO 4,2,Medium semantic similarity between BCSL404_CO3 and PEO 4
+BCS405A_CO1,PEO 1,3,High semantic similarity between BCS405A_CO1 and PEO 1
+BCS405A_CO1,PEO 2,2,Medium semantic similarity between BCS405A_CO1 and PEO 2
+BCS405A_CO1,PEO 3,0,No significant relationship
+BCS405A_CO1,PEO 4,1,Low semantic similarity between BCS405A_CO1 and PEO 4
+BCS405A_CO2,PEO 1,3,High semantic similarity between BCS405A_CO2 and PEO 1
+BCS405A_CO2,PEO 2,1,Low semantic similarity between BCS405A_CO2 and PEO 2
+BCS405A_CO2,PEO 3,0,No significant relationship
+BCS405A_CO2,PEO 4,2,Medium semantic similarity between BCS405A_CO2 and PEO 4
+BCS405A_CO3,PEO 1,3,High semantic similarity between BCS405A_CO3 and PEO 1
+BCS405A_CO3,PEO 2,2,Medium semantic similarity between BCS405A_CO3 and PEO 2
+BCS405A_CO3,PEO 3,0,No significant relationship
+BCS405A_CO3,PEO 4,1,Low semantic similarity between BCS405A_CO3 and PEO 4
+BCS405A_CO4,PEO 1,3,High semantic similarity between BCS405A_CO4 and PEO 1
+BCS405A_CO4,PEO 2,2,Medium semantic similarity between BCS405A_CO4 and PEO 2
+BCS405A_CO4,PEO 3,0,No significant relationship
+BCS405A_CO4,PEO 4,1,Low semantic similarity between BCS405A_CO4 and PEO 4
+BCS405B_CO1,PEO 1,3,High semantic similarity between BCS405B_CO1 and PEO 1
+BCS405B_CO1,PEO 2,2,Medium semantic similarity between BCS405B_CO1 and PEO 2
+BCS405B_CO1,PEO 3,0,No significant relationship
+BCS405B_CO1,PEO 4,1,Low semantic similarity between BCS405B_CO1 and PEO 4
+BCS405B_CO2,PEO 1,3,High semantic similarity between BCS405B_CO2 and PEO 1
+BCS405B_CO2,PEO 2,2,Medium semantic similarity between BCS405B_CO2 and PEO 2
+BCS405B_CO2,PEO 3,0,No significant relationship
+BCS405B_CO2,PEO 4,1,Low semantic similarity between BCS405B_CO2 and PEO 4
+BCS405B_CO3,PEO 1,3,High semantic similarity between BCS405B_CO3 and PEO 1
+BCS405B_CO3,PEO 2,2,Medium semantic similarity between BCS405B_CO3 and PEO 2
+BCS405B_CO3,PEO 3,0,No significant relationship
+BCS405B_CO3,PEO 4,1,Low semantic similarity between BCS405B_CO3 and PEO 4
+BCS405C_CO1,PEO 1,3,High semantic similarity between BCS405C_CO1 and PEO 1
+BCS405C_CO1,PEO 2,2,Medium semantic similarity between BCS405C_CO1 and PEO 2
+BCS405C_CO1,PEO 3,0,No significant relationship
+BCS405C_CO1,PEO 4,1,Low semantic similarity between BCS405C_CO1 and PEO 4
+BCS405C_CO2,PEO 1,3,High semantic similarity between BCS405C_CO2 and PEO 1
+BCS405C_CO2,PEO 2,2,Medium semantic similarity between BCS405C_CO2 and PEO 2
+BCS405C_CO2,PEO 3,0,No significant relationship
+BCS405C_CO2,PEO 4,1,Low semantic similarity between BCS405C_CO2 and PEO 4
+BCS405C_CO3,PEO 1,3,High semantic similarity between BCS405C_CO3 and PEO 1
+BCS405C_CO3,PEO 2,2,Medium semantic similarity between BCS405C_CO3 and PEO 2
+BCS405C_CO3,PEO 3,0,No significant relationship
+BCS405C_CO3,PEO 4,1,Low semantic similarity between BCS405C_CO3 and PEO 4
+BCS405D_CO1,PEO 1,3,High semantic similarity between BCS405D_CO1 and PEO 1
+BCS405D_CO1,PEO 2,2,Medium semantic similarity between BCS405D_CO1 and PEO 2
+BCS405D_CO1,PEO 3,0,No significant relationship
+BCS405D_CO1,PEO 4,1,Low semantic similarity between BCS405D_CO1 and PEO 4
+BCS405D_CO2,PEO 1,3,High semantic similarity between BCS405D_CO2 and PEO 1
+BCS405D_CO2,PEO 2,2,Medium semantic similarity between BCS405D_CO2 and PEO 2
+BCS405D_CO2,PEO 3,0,No significant relationship
+BCS405D_CO2,PEO 4,1,Low semantic similarity between BCS405D_CO2 and PEO 4
+BCS405D_CO3,PEO 1,3,High semantic similarity between BCS405D_CO3 and PEO 1
+BCS405D_CO3,PEO 2,2,Medium semantic similarity between BCS405D_CO3 and PEO 2
+BCS405D_CO3,PEO 3,0,No significant relationship
+BCS405D_CO3,PEO 4,1,Low semantic similarity between BCS405D_CO3 and PEO 4
+BCS456A_CO1,PEO 1,0,No significant relationship
+BCS456A_CO1,PEO 2,1,Low semantic similarity between BCS456A_CO1 and PEO 2
+BCS456A_CO1,PEO 3,3,High semantic similarity between BCS456A_CO1 and PEO 3
+BCS456A_CO1,PEO 4,2,Medium semantic similarity between BCS456A_CO1 and PEO 4
+BCS456A_CO2,PEO 1,0,No significant relationship
+BCS456A_CO2,PEO 2,2,Medium semantic similarity between BCS456A_CO2 and PEO 2
+BCS456A_CO2,PEO 3,1,Low semantic similarity between BCS456A_CO2 and PEO 3
+BCS456A_CO2,PEO 4,3,High semantic similarity between BCS456A_CO2 and PEO 4
+BCS456A_CO3,PEO 1,0,No significant relationship
+BCS456A_CO3,PEO 2,2,Medium semantic similarity between BCS456A_CO3 and PEO 2
+BCS456A_CO3,PEO 3,1,Low semantic similarity between BCS456A_CO3 and PEO 3
+BCS456A_CO3,PEO 4,3,High semantic similarity between BCS456A_CO3 and PEO 4
+BCS456B_CO1,PEO 1,1,Low semantic similarity between BCS456B_CO1 and PEO 1
+BCS456B_CO1,PEO 2,3,High semantic similarity between BCS456B_CO1 and PEO 2
+BCS456B_CO1,PEO 3,2,Medium semantic similarity between BCS456B_CO1 and PEO 3
+BCS456B_CO1,PEO 4,0,No significant relationship
+BCS456B_CO2,PEO 1,0,No significant relationship
+BCS456B_CO2,PEO 2,3,High semantic similarity between BCS456B_CO2 and PEO 2
+BCS456B_CO2,PEO 3,1,Low semantic similarity between BCS456B_CO2 and PEO 3
+BCS456B_CO2,PEO 4,2,Medium semantic similarity between BCS456B_CO2 and PEO 4
+BCS456B_CO3,PEO 1,0,No significant relationship
+BCS456B_CO3,PEO 2,3,High semantic similarity between BCS456B_CO3 and PEO 2
+BCS456B_CO3,PEO 3,2,Medium semantic similarity between BCS456B_CO3 and PEO 3
+BCS456B_CO3,PEO 4,1,Low semantic similarity between BCS456B_CO3 and PEO 4
+BCS456B_CO4,PEO 1,1,Low semantic similarity between BCS456B_CO4 and PEO 1
+BCS456B_CO4,PEO 2,2,Medium semantic similarity between BCS456B_CO4 and PEO 2
+BCS456B_CO4,PEO 3,0,No significant relationship
+BCS456B_CO4,PEO 4,3,High semantic similarity between BCS456B_CO4 and PEO 4
+BCS456C_CO1,PEO 1,1,Low semantic similarity between BCS456C_CO1 and PEO 1
+BCS456C_CO1,PEO 2,3,High semantic similarity between BCS456C_CO1 and PEO 2
+BCS456C_CO1,PEO 3,0,No significant relationship
+BCS456C_CO1,PEO 4,2,Medium semantic similarity between BCS456C_CO1 and PEO 4
+BCS456C_CO2,PEO 1,1,Low semantic similarity between BCS456C_CO2 and PEO 1
+BCS456C_CO2,PEO 2,3,High semantic similarity between BCS456C_CO2 and PEO 2
+BCS456C_CO2,PEO 3,0,No significant relationship
+BCS456C_CO2,PEO 4,2,Medium semantic similarity between BCS456C_CO2 and PEO 4
+BCS456C_CO3,PEO 1,1,Low semantic similarity between BCS456C_CO3 and PEO 1
+BCS456C_CO3,PEO 2,3,High semantic similarity between BCS456C_CO3 and PEO 2
+BCS456C_CO3,PEO 3,0,No significant relationship
+BCS456C_CO3,PEO 4,2,Medium semantic similarity between BCS456C_CO3 and PEO 4
+BCSL456D_CO1,PEO 1,2,Medium semantic similarity between BCSL456D_CO1 and PEO 1
+BCSL456D_CO1,PEO 2,3,High semantic similarity between BCSL456D_CO1 and PEO 2
+BCSL456D_CO1,PEO 3,0,No significant relationship
+BCSL456D_CO1,PEO 4,1,Low semantic similarity between BCSL456D_CO1 and PEO 4
+BCSL456D_CO2,PEO 1,3,High semantic similarity between BCSL456D_CO2 and PEO 1
+BCSL456D_CO2,PEO 2,2,Medium semantic similarity between BCSL456D_CO2 and PEO 2
+BCSL456D_CO2,PEO 3,1,Low semantic similarity between BCSL456D_CO2 and PEO 3
+BCSL456D_CO2,PEO 4,0,No significant relationship
+BCSL456D_CO3,PEO 1,3,High semantic similarity between BCSL456D_CO3 and PEO 1
+BCSL456D_CO3,PEO 2,2,Medium semantic similarity between BCSL456D_CO3 and PEO 2
+BCSL456D_CO3,PEO 3,0,No significant relationship
+BCSL456D_CO3,PEO 4,1,Low semantic similarity between BCSL456D_CO3 and PEO 4
+BCSL456D_CO4,PEO 1,3,High semantic similarity between BCSL456D_CO4 and PEO 1
+BCSL456D_CO4,PEO 2,2,Medium semantic similarity between BCSL456D_CO4 and PEO 2
+BCSL456D_CO4,PEO 3,0,No significant relationship
+BCSL456D_CO4,PEO 4,1,Low semantic similarity between BCSL456D_CO4 and PEO 4
+BCS501_CO1,PEO 1,0,No significant relationship
+BCS501_CO1,PEO 2,2,Medium semantic similarity between BCS501_CO1 and PEO 2
+BCS501_CO1,PEO 3,1,Low semantic similarity between BCS501_CO1 and PEO 3
+BCS501_CO1,PEO 4,3,High semantic similarity between BCS501_CO1 and PEO 4
+BCS501_CO2,PEO 1,2,Medium semantic similarity between BCS501_CO2 and PEO 1
+BCS501_CO2,PEO 2,3,High semantic similarity between BCS501_CO2 and PEO 2
+BCS501_CO2,PEO 3,0,No significant relationship
+BCS501_CO2,PEO 4,1,Low semantic similarity between BCS501_CO2 and PEO 4
+BCS501_CO3,PEO 1,0,No significant relationship
+BCS501_CO3,PEO 2,1,Low semantic similarity between BCS501_CO3 and PEO 2
+BCS501_CO3,PEO 3,3,High semantic similarity between BCS501_CO3 and PEO 3
+BCS501_CO3,PEO 4,2,Medium semantic similarity between BCS501_CO3 and PEO 4
+BCS501_CO4,PEO 1,0,No significant relationship
+BCS501_CO4,PEO 2,3,High semantic similarity between BCS501_CO4 and PEO 2
+BCS501_CO4,PEO 3,1,Low semantic similarity between BCS501_CO4 and PEO 3
+BCS501_CO4,PEO 4,2,Medium semantic similarity between BCS501_CO4 and PEO 4
+BCS502_CO1,PEO 1,0,No significant relationship
+BCS502_CO1,PEO 2,2,Medium semantic similarity between BCS502_CO1 and PEO 2
+BCS502_CO1,PEO 3,3,High semantic similarity between BCS502_CO1 and PEO 3
+BCS502_CO1,PEO 4,1,Low semantic similarity between BCS502_CO1 and PEO 4
+BCS502_CO2,PEO 1,2,Medium semantic similarity between BCS502_CO2 and PEO 1
+BCS502_CO2,PEO 2,3,High semantic similarity between BCS502_CO2 and PEO 2
+BCS502_CO2,PEO 3,0,No significant relationship
+BCS502_CO2,PEO 4,1,Low semantic similarity between BCS502_CO2 and PEO 4
+BCS502_CO3,PEO 1,0,No significant relationship
+BCS502_CO3,PEO 2,3,High semantic similarity between BCS502_CO3 and PEO 2
+BCS502_CO3,PEO 3,2,Medium semantic similarity between BCS502_CO3 and PEO 3
+BCS502_CO3,PEO 4,1,Low semantic similarity between BCS502_CO3 and PEO 4
+BCS502_CO4,PEO 1,0,No significant relationship
+BCS502_CO4,PEO 2,2,Medium semantic similarity between BCS502_CO4 and PEO 2
+BCS502_CO4,PEO 3,1,Low semantic similarity between BCS502_CO4 and PEO 3
+BCS502_CO4,PEO 4,3,High semantic similarity between BCS502_CO4 and PEO 4
+BCS503_CO1,PEO 1,3,High semantic similarity between BCS503_CO1 and PEO 1
+BCS503_CO1,PEO 2,2,Medium semantic similarity between BCS503_CO1 and PEO 2
+BCS503_CO1,PEO 3,0,No significant relationship
+BCS503_CO1,PEO 4,1,Low semantic similarity between BCS503_CO1 and PEO 4
+BCS503_CO2,PEO 1,3,High semantic similarity between BCS503_CO2 and PEO 1
+BCS503_CO2,PEO 2,1,Low semantic similarity between BCS503_CO2 and PEO 2
+BCS503_CO2,PEO 3,2,Medium semantic similarity between BCS503_CO2 and PEO 3
+BCS503_CO2,PEO 4,0,No significant relationship
+BCS503_CO3,PEO 1,2,Medium semantic similarity between BCS503_CO3 and PEO 1
+BCS503_CO3,PEO 2,3,High semantic similarity between BCS503_CO3 and PEO 2
+BCS503_CO3,PEO 3,0,No significant relationship
+BCS503_CO3,PEO 4,1,Low semantic similarity between BCS503_CO3 and PEO 4
+BCS503_CO4,PEO 1,3,High semantic similarity between BCS503_CO4 and PEO 1
+BCS503_CO4,PEO 2,1,Low semantic similarity between BCS503_CO4 and PEO 2
+BCS503_CO4,PEO 3,0,No significant relationship
+BCS503_CO4,PEO 4,2,Medium semantic similarity between BCS503_CO4 and PEO 4
+BCS503_CO5,PEO 1,3,High semantic similarity between BCS503_CO5 and PEO 1
+BCS503_CO5,PEO 2,1,Low semantic similarity between BCS503_CO5 and PEO 2
+BCS503_CO5,PEO 3,0,No significant relationship
+BCS503_CO5,PEO 4,2,Medium semantic similarity between BCS503_CO5 and PEO 4
+BCSL504_CO1,PEO 1,3,High semantic similarity between BCSL504_CO1 and PEO 1
+BCSL504_CO1,PEO 2,2,Medium semantic similarity between BCSL504_CO1 and PEO 2
+BCSL504_CO1,PEO 3,0,No significant relationship
+BCSL504_CO1,PEO 4,1,Low semantic similarity between BCSL504_CO1 and PEO 4
+BCSL504_CO2,PEO 1,0,No significant relationship
+BCSL504_CO2,PEO 2,2,Medium semantic similarity between BCSL504_CO2 and PEO 2
+BCSL504_CO2,PEO 3,1,Low semantic similarity between BCSL504_CO2 and PEO 3
+BCSL504_CO2,PEO 4,3,High semantic similarity between BCSL504_CO2 and PEO 4
+BCSL504_CO3,PEO 1,1,Low semantic similarity between BCSL504_CO3 and PEO 1
+BCSL504_CO3,PEO 2,2,Medium semantic similarity between BCSL504_CO3 and PEO 2
+BCSL504_CO3,PEO 3,0,No significant relationship
+BCSL504_CO3,PEO 4,3,High semantic similarity between BCSL504_CO3 and PEO 4
+BCSL504_CO4,PEO 1,2,Medium semantic similarity between BCSL504_CO4 and PEO 1
+BCSL504_CO4,PEO 2,3,High semantic similarity between BCSL504_CO4 and PEO 2
+BCSL504_CO4,PEO 3,0,No significant relationship
+BCSL504_CO4,PEO 4,1,Low semantic similarity between BCSL504_CO4 and PEO 4
+BCSL504_CO5,PEO 1,1,Low semantic similarity between BCSL504_CO5 and PEO 1
+BCSL504_CO5,PEO 2,3,High semantic similarity between BCSL504_CO5 and PEO 2
+BCSL504_CO5,PEO 3,0,No significant relationship
+BCSL504_CO5,PEO 4,2,Medium semantic similarity between BCSL504_CO5 and PEO 4
+BCS515A_CO1,PEO 1,3,High semantic similarity between BCS515A_CO1 and PEO 1
+BCS515A_CO1,PEO 2,2,Medium semantic similarity between BCS515A_CO1 and PEO 2
+BCS515A_CO1,PEO 3,0,No significant relationship
+BCS515A_CO1,PEO 4,1,Low semantic similarity between BCS515A_CO1 and PEO 4
+BCS515A_CO2,PEO 1,3,High semantic similarity between BCS515A_CO2 and PEO 1
+BCS515A_CO2,PEO 2,2,Medium semantic similarity between BCS515A_CO2 and PEO 2
+BCS515A_CO2,PEO 3,0,No significant relationship
+BCS515A_CO2,PEO 4,1,Low semantic similarity between BCS515A_CO2 and PEO 4
+BCS515A_CO3,PEO 1,3,High semantic similarity between BCS515A_CO3 and PEO 1
+BCS515A_CO3,PEO 2,1,Low semantic similarity between BCS515A_CO3 and PEO 2
+BCS515A_CO3,PEO 3,0,No significant relationship
+BCS515A_CO3,PEO 4,2,Medium semantic similarity between BCS515A_CO3 and PEO 4
+BCS515A_CO4,PEO 1,3,High semantic similarity between BCS515A_CO4 and PEO 1
+BCS515A_CO4,PEO 2,1,Low semantic similarity between BCS515A_CO4 and PEO 2
+BCS515A_CO4,PEO 3,0,No significant relationship
+BCS515A_CO4,PEO 4,2,Medium semantic similarity between BCS515A_CO4 and PEO 4
+BCS515A_CO5,PEO 1,3,High semantic similarity between BCS515A_CO5 and PEO 1
+BCS515A_CO5,PEO 2,1,Low semantic similarity between BCS515A_CO5 and PEO 2
+BCS515A_CO5,PEO 3,0,No significant relationship
+BCS515A_CO5,PEO 4,2,Medium semantic similarity between BCS515A_CO5 and PEO 4
+BCS515A_CO6,PEO 1,3,High semantic similarity between BCS515A_CO6 and PEO 1
+BCS515A_CO6,PEO 2,0,No significant relationship
+BCS515A_CO6,PEO 3,1,Low semantic similarity between BCS515A_CO6 and PEO 3
+BCS515A_CO6,PEO 4,2,Medium semantic similarity between BCS515A_CO6 and PEO 4
+BCS515B_CO1,PEO 1,2,Medium semantic similarity between BCS515B_CO1 and PEO 1
+BCS515B_CO1,PEO 2,3,High semantic similarity between BCS515B_CO1 and PEO 2
+BCS515B_CO1,PEO 3,0,No significant relationship
+BCS515B_CO1,PEO 4,1,Low semantic similarity between BCS515B_CO1 and PEO 4
+BCS515B_CO2,PEO 1,3,High semantic similarity between BCS515B_CO2 and PEO 1
+BCS515B_CO2,PEO 2,1,Low semantic similarity between BCS515B_CO2 and PEO 2
+BCS515B_CO2,PEO 3,0,No significant relationship
+BCS515B_CO2,PEO 4,2,Medium semantic similarity between BCS515B_CO2 and PEO 4
+BCS515B_CO3,PEO 1,0,No significant relationship
+BCS515B_CO3,PEO 2,1,Low semantic similarity between BCS515B_CO3 and PEO 2
+BCS515B_CO3,PEO 3,2,Medium semantic similarity between BCS515B_CO3 and PEO 3
+BCS515B_CO3,PEO 4,3,High semantic similarity between BCS515B_CO3 and PEO 4
+BCS515C_CO1,PEO 1,3,High semantic similarity between BCS515C_CO1 and PEO 1
+BCS515C_CO1,PEO 2,2,Medium semantic similarity between BCS515C_CO1 and PEO 2
+BCS515C_CO1,PEO 3,0,No significant relationship
+BCS515C_CO1,PEO 4,1,Low semantic similarity between BCS515C_CO1 and PEO 4
+BCS515C_CO2,PEO 1,1,Low semantic similarity between BCS515C_CO2 and PEO 1
+BCS515C_CO2,PEO 2,3,High semantic similarity between BCS515C_CO2 and PEO 2
+BCS515C_CO2,PEO 3,0,No significant relationship
+BCS515C_CO2,PEO 4,2,Medium semantic similarity between BCS515C_CO2 and PEO 4
+BCS515C_CO3,PEO 1,0,No significant relationship
+BCS515C_CO3,PEO 2,3,High semantic similarity between BCS515C_CO3 and PEO 2
+BCS515C_CO3,PEO 3,1,Low semantic similarity between BCS515C_CO3 and PEO 3
+BCS515C_CO3,PEO 4,2,Medium semantic similarity between BCS515C_CO3 and PEO 4
+BCS515C_CO4,PEO 1,0,No significant relationship
+BCS515C_CO4,PEO 2,3,High semantic similarity between BCS515C_CO4 and PEO 2
+BCS515C_CO4,PEO 3,1,Low semantic similarity between BCS515C_CO4 and PEO 3
+BCS515C_CO4,PEO 4,2,Medium semantic similarity between BCS515C_CO4 and PEO 4
+BCS515D_CO1,PEO 1,0,No significant relationship
+BCS515D_CO1,PEO 2,2,Medium semantic similarity between BCS515D_CO1 and PEO 2
+BCS515D_CO1,PEO 3,3,High semantic similarity between BCS515D_CO1 and PEO 3
+BCS515D_CO1,PEO 4,1,Low semantic similarity between BCS515D_CO1 and PEO 4
+BCS515D_CO2,PEO 1,0,No significant relationship
+BCS515D_CO2,PEO 2,1,Low semantic similarity between BCS515D_CO2 and PEO 2
+BCS515D_CO2,PEO 3,2,Medium semantic similarity between BCS515D_CO2 and PEO 3
+BCS515D_CO2,PEO 4,3,High semantic similarity between BCS515D_CO2 and PEO 4
+BCS515D_CO3,PEO 1,3,High semantic similarity between BCS515D_CO3 and PEO 1
+BCS515D_CO3,PEO 2,2,Medium semantic similarity between BCS515D_CO3 and PEO 2
+BCS515D_CO3,PEO 3,1,Low semantic similarity between BCS515D_CO3 and PEO 3
+BCS515D_CO3,PEO 4,0,No significant relationship
+BCS515D_CO4,PEO 1,2,Medium semantic similarity between BCS515D_CO4 and PEO 1
+BCS515D_CO4,PEO 2,1,Low semantic similarity between BCS515D_CO4 and PEO 2
+BCS515D_CO4,PEO 3,0,No significant relationship
+BCS515D_CO4,PEO 4,3,High semantic similarity between BCS515D_CO4 and PEO 4
+BCS508_CO1,PEO 1,1,Low semantic similarity between BCS508_CO1 and PEO 1
+BCS508_CO1,PEO 2,0,No significant relationship
+BCS508_CO1,PEO 3,3,High semantic similarity between BCS508_CO1 and PEO 3
+BCS508_CO1,PEO 4,2,Medium semantic similarity between BCS508_CO1 and PEO 4
+BCS508_CO2,PEO 1,1,Low semantic similarity between BCS508_CO2 and PEO 1
+BCS508_CO2,PEO 2,2,Medium semantic similarity between BCS508_CO2 and PEO 2
+BCS508_CO2,PEO 3,0,No significant relationship
+BCS508_CO2,PEO 4,3,High semantic similarity between BCS508_CO2 and PEO 4
+BCS508_CO3,PEO 1,1,Low semantic similarity between BCS508_CO3 and PEO 1
+BCS508_CO3,PEO 2,0,No significant relationship
+BCS508_CO3,PEO 3,2,Medium semantic similarity between BCS508_CO3 and PEO 3
+BCS508_CO3,PEO 4,3,High semantic similarity between BCS508_CO3 and PEO 4
+BCS601_CO1,PEO 1,1,Low semantic similarity between BCS601_CO1 and PEO 1
+BCS601_CO1,PEO 2,2,Medium semantic similarity between BCS601_CO1 and PEO 2
+BCS601_CO1,PEO 3,0,No significant relationship
+BCS601_CO1,PEO 4,3,High semantic similarity between BCS601_CO1 and PEO 4
+BCS601_CO2,PEO 1,1,Low semantic similarity between BCS601_CO2 and PEO 1
+BCS601_CO2,PEO 2,2,Medium semantic similarity between BCS601_CO2 and PEO 2
+BCS601_CO2,PEO 3,0,No significant relationship
+BCS601_CO2,PEO 4,3,High semantic similarity between BCS601_CO2 and PEO 4
+BCS601_CO3,PEO 1,0,No significant relationship
+BCS601_CO3,PEO 2,3,High semantic similarity between BCS601_CO3 and PEO 2
+BCS601_CO3,PEO 3,1,Low semantic similarity between BCS601_CO3 and PEO 3
+BCS601_CO3,PEO 4,2,Medium semantic similarity between BCS601_CO3 and PEO 4
+BCS601_CO4,PEO 1,1,Low semantic similarity between BCS601_CO4 and PEO 1
+BCS601_CO4,PEO 2,3,High semantic similarity between BCS601_CO4 and PEO 2
+BCS601_CO4,PEO 3,0,No significant relationship
+BCS601_CO4,PEO 4,2,Medium semantic similarity between BCS601_CO4 and PEO 4
+BCS602_CO1,PEO 1,1,Low semantic similarity between BCS602_CO1 and PEO 1
+BCS602_CO1,PEO 2,3,High semantic similarity between BCS602_CO1 and PEO 2
+BCS602_CO1,PEO 3,0,No significant relationship
+BCS602_CO1,PEO 4,2,Medium semantic similarity between BCS602_CO1 and PEO 4
+BCS602_CO2,PEO 1,1,Low semantic similarity between BCS602_CO2 and PEO 1
+BCS602_CO2,PEO 2,3,High semantic similarity between BCS602_CO2 and PEO 2
+BCS602_CO2,PEO 3,0,No significant relationship
+BCS602_CO2,PEO 4,2,Medium semantic similarity between BCS602_CO2 and PEO 4
+BCS602_CO3,PEO 1,2,Medium semantic similarity between BCS602_CO3 and PEO 1
+BCS602_CO3,PEO 2,3,High semantic similarity between BCS602_CO3 and PEO 2
+BCS602_CO3,PEO 3,0,No significant relationship
+BCS602_CO3,PEO 4,1,Low semantic similarity between BCS602_CO3 and PEO 4
+BCS602_CO4,PEO 1,3,High semantic similarity between BCS602_CO4 and PEO 1
+BCS602_CO4,PEO 2,2,Medium semantic similarity between BCS602_CO4 and PEO 2
+BCS602_CO4,PEO 3,0,No significant relationship
+BCS602_CO4,PEO 4,1,Low semantic similarity between BCS602_CO4 and PEO 4
+BCS602_CO5,PEO 1,3,High semantic similarity between BCS602_CO5 and PEO 1
+BCS602_CO5,PEO 2,2,Medium semantic similarity between BCS602_CO5 and PEO 2
+BCS602_CO5,PEO 3,0,No significant relationship
+BCS602_CO5,PEO 4,1,Low semantic similarity between BCS602_CO5 and PEO 4
+BCS613A_CO1,PEO 1,1,Low semantic similarity between BCS613A_CO1 and PEO 1
+BCS613A_CO1,PEO 2,2,Medium semantic similarity between BCS613A_CO1 and PEO 2
+BCS613A_CO1,PEO 3,0,No significant relationship
+BCS613A_CO1,PEO 4,3,High semantic similarity between BCS613A_CO1 and PEO 4
+BCS613A_CO2,PEO 1,3,High semantic similarity between BCS613A_CO2 and PEO 1
+BCS613A_CO2,PEO 2,2,Medium semantic similarity between BCS613A_CO2 and PEO 2
+BCS613A_CO2,PEO 3,0,No significant relationship
+BCS613A_CO2,PEO 4,1,Low semantic similarity between BCS613A_CO2 and PEO 4
+BCS613A_CO3,PEO 1,1,Low semantic similarity between BCS613A_CO3 and PEO 1
+BCS613A_CO3,PEO 2,3,High semantic similarity between BCS613A_CO3 and PEO 2
+BCS613A_CO3,PEO 3,0,No significant relationship
+BCS613A_CO3,PEO 4,2,Medium semantic similarity between BCS613A_CO3 and PEO 4
+BCS613A_CO4,PEO 1,1,Low semantic similarity between BCS613A_CO4 and PEO 1
+BCS613A_CO4,PEO 2,3,High semantic similarity between BCS613A_CO4 and PEO 2
+BCS613A_CO4,PEO 3,0,No significant relationship
+BCS613A_CO4,PEO 4,2,Medium semantic similarity between BCS613A_CO4 and PEO 4
+BCS613B_CO1,PEO 1,2,Medium semantic similarity between BCS613B_CO1 and PEO 1
+BCS613B_CO1,PEO 2,3,High semantic similarity between BCS613B_CO1 and PEO 2
+BCS613B_CO1,PEO 3,0,No significant relationship
+BCS613B_CO1,PEO 4,1,Low semantic similarity between BCS613B_CO1 and PEO 4
+BCS613B_CO2,PEO 1,0,No significant relationship
+BCS613B_CO2,PEO 2,3,High semantic similarity between BCS613B_CO2 and PEO 2
+BCS613B_CO2,PEO 3,2,Medium semantic similarity between BCS613B_CO2 and PEO 3
+BCS613B_CO2,PEO 4,1,Low semantic similarity between BCS613B_CO2 and PEO 4
+BCS613B_CO3,PEO 1,3,High semantic similarity between BCS613B_CO3 and PEO 1
+BCS613B_CO3,PEO 2,2,Medium semantic similarity between BCS613B_CO3 and PEO 2
+BCS613B_CO3,PEO 3,0,No significant relationship
+BCS613B_CO3,PEO 4,1,Low semantic similarity between BCS613B_CO3 and PEO 4
+BCS613B_CO4,PEO 1,2,Medium semantic similarity between BCS613B_CO4 and PEO 1
+BCS613B_CO4,PEO 2,3,High semantic similarity between BCS613B_CO4 and PEO 2
+BCS613B_CO4,PEO 3,0,No significant relationship
+BCS613B_CO4,PEO 4,1,Low semantic similarity between BCS613B_CO4 and PEO 4
+BCS613C_CO1,PEO 1,2,Medium semantic similarity between BCS613C_CO1 and PEO 1
+BCS613C_CO1,PEO 2,3,High semantic similarity between BCS613C_CO1 and PEO 2
+BCS613C_CO1,PEO 3,0,No significant relationship
+BCS613C_CO1,PEO 4,1,Low semantic similarity between BCS613C_CO1 and PEO 4
+BCS613C_CO2,PEO 1,2,Medium semantic similarity between BCS613C_CO2 and PEO 1
+BCS613C_CO2,PEO 2,3,High semantic similarity between BCS613C_CO2 and PEO 2
+BCS613C_CO2,PEO 3,1,Low semantic similarity between BCS613C_CO2 and PEO 3
+BCS613C_CO2,PEO 4,0,No significant relationship
+BCS613C_CO3,PEO 1,3,High semantic similarity between BCS613C_CO3 and PEO 1
+BCS613C_CO3,PEO 2,0,No significant relationship
+BCS613C_CO3,PEO 3,1,Low semantic similarity between BCS613C_CO3 and PEO 3
+BCS613C_CO3,PEO 4,2,Medium semantic similarity between BCS613C_CO3 and PEO 4
+BCS613C_CO4,PEO 1,1,Low semantic similarity between BCS613C_CO4 and PEO 1
+BCS613C_CO4,PEO 2,3,High semantic similarity between BCS613C_CO4 and PEO 2
+BCS613C_CO4,PEO 3,0,No significant relationship
+BCS613C_CO4,PEO 4,2,Medium semantic similarity between BCS613C_CO4 and PEO 4
+BCS613D_CO1,PEO 1,3,High semantic similarity between BCS613D_CO1 and PEO 1
+BCS613D_CO1,PEO 2,1,Low semantic similarity between BCS613D_CO1 and PEO 2
+BCS613D_CO1,PEO 3,0,No significant relationship
+BCS613D_CO1,PEO 4,2,Medium semantic similarity between BCS613D_CO1 and PEO 4
+BCS613D_CO2,PEO 1,3,High semantic similarity between BCS613D_CO2 and PEO 1
+BCS613D_CO2,PEO 2,1,Low semantic similarity between BCS613D_CO2 and PEO 2
+BCS613D_CO2,PEO 3,0,No significant relationship
+BCS613D_CO2,PEO 4,2,Medium semantic similarity between BCS613D_CO2 and PEO 4
+BCS613D_CO3,PEO 1,1,Low semantic similarity between BCS613D_CO3 and PEO 1
+BCS613D_CO3,PEO 2,2,Medium semantic similarity between BCS613D_CO3 and PEO 2
+BCS613D_CO3,PEO 3,0,No significant relationship
+BCS613D_CO3,PEO 4,3,High semantic similarity between BCS613D_CO3 and PEO 4
+BCS613D_CO4,PEO 1,0,No significant relationship
+BCS613D_CO4,PEO 2,2,Medium semantic similarity between BCS613D_CO4 and PEO 2
+BCS613D_CO4,PEO 3,1,Low semantic similarity between BCS613D_CO4 and PEO 3
+BCS613D_CO4,PEO 4,3,High semantic similarity between BCS613D_CO4 and PEO 4
+BCS654A_CO1,PEO 1,3,High semantic similarity between BCS654A_CO1 and PEO 1
+BCS654A_CO1,PEO 2,1,Low semantic similarity between BCS654A_CO1 and PEO 2
+BCS654A_CO1,PEO 3,0,No significant relationship
+BCS654A_CO1,PEO 4,2,Medium semantic similarity between BCS654A_CO1 and PEO 4
+BCS654A_CO2,PEO 1,3,High semantic similarity between BCS654A_CO2 and PEO 1
+BCS654A_CO2,PEO 2,2,Medium semantic similarity between BCS654A_CO2 and PEO 2
+BCS654A_CO2,PEO 3,0,No significant relationship
+BCS654A_CO2,PEO 4,1,Low semantic similarity between BCS654A_CO2 and PEO 4
+BCS654A_CO3,PEO 1,3,High semantic similarity between BCS654A_CO3 and PEO 1
+BCS654A_CO3,PEO 2,1,Low semantic similarity between BCS654A_CO3 and PEO 2
+BCS654A_CO3,PEO 3,0,No significant relationship
+BCS654A_CO3,PEO 4,2,Medium semantic similarity between BCS654A_CO3 and PEO 4
+BCS654A_CO4,PEO 1,3,High semantic similarity between BCS654A_CO4 and PEO 1
+BCS654A_CO4,PEO 2,2,Medium semantic similarity between BCS654A_CO4 and PEO 2
+BCS654A_CO4,PEO 3,1,Low semantic similarity between BCS654A_CO4 and PEO 3
+BCS654A_CO4,PEO 4,0,No significant relationship
+BCS654B_CO1,PEO 1,1,Low semantic similarity between BCS654B_CO1 and PEO 1
+BCS654B_CO1,PEO 2,3,High semantic similarity between BCS654B_CO1 and PEO 2
+BCS654B_CO1,PEO 3,0,No significant relationship
+BCS654B_CO1,PEO 4,2,Medium semantic similarity between BCS654B_CO1 and PEO 4
+BCS654B_CO2,PEO 1,0,No significant relationship
+BCS654B_CO2,PEO 2,1,Low semantic similarity between BCS654B_CO2 and PEO 2
+BCS654B_CO2,PEO 3,2,Medium semantic similarity between BCS654B_CO2 and PEO 3
+BCS654B_CO2,PEO 4,3,High semantic similarity between BCS654B_CO2 and PEO 4
+BCS654B_CO3,PEO 1,1,Low semantic similarity between BCS654B_CO3 and PEO 1
+BCS654B_CO3,PEO 2,2,Medium semantic similarity between BCS654B_CO3 and PEO 2
+BCS654B_CO3,PEO 3,0,No significant relationship
+BCS654B_CO3,PEO 4,3,High semantic similarity between BCS654B_CO3 and PEO 4
+BIS654C_CO1,PEO 1,0,No significant relationship
+BIS654C_CO1,PEO 2,3,High semantic similarity between BIS654C_CO1 and PEO 2
+BIS654C_CO1,PEO 3,2,Medium semantic similarity between BIS654C_CO1 and PEO 3
+BIS654C_CO1,PEO 4,1,Low semantic similarity between BIS654C_CO1 and PEO 4
+BIS654C_CO2,PEO 1,0,No significant relationship
+BIS654C_CO2,PEO 2,2,Medium semantic similarity between BIS654C_CO2 and PEO 2
+BIS654C_CO2,PEO 3,1,Low semantic similarity between BIS654C_CO2 and PEO 3
+BIS654C_CO2,PEO 4,3,High semantic similarity between BIS654C_CO2 and PEO 4
+BIS654C_CO3,PEO 1,0,No significant relationship
+BIS654C_CO3,PEO 2,1,Low semantic similarity between BIS654C_CO3 and PEO 2
+BIS654C_CO3,PEO 3,2,Medium semantic similarity between BIS654C_CO3 and PEO 3
+BIS654C_CO3,PEO 4,3,High semantic similarity between BIS654C_CO3 and PEO 4
+BIS654C_CO4,PEO 1,1,Low semantic similarity between BIS654C_CO4 and PEO 1
+BIS654C_CO4,PEO 2,0,No significant relationship
+BIS654C_CO4,PEO 3,2,Medium semantic similarity between BIS654C_CO4 and PEO 3
+BIS654C_CO4,PEO 4,3,High semantic similarity between BIS654C_CO4 and PEO 4
+BIS654C_CO5,PEO 1,0,No significant relationship
+BIS654C_CO5,PEO 2,3,High semantic similarity between BIS654C_CO5 and PEO 2
+BIS654C_CO5,PEO 3,1,Low semantic similarity between BIS654C_CO5 and PEO 3
+BIS654C_CO5,PEO 4,2,Medium semantic similarity between BIS654C_CO5 and PEO 4
+BIS654C_CO6,PEO 1,0,No significant relationship
+BIS654C_CO6,PEO 2,3,High semantic similarity between BIS654C_CO6 and PEO 2
+BIS654C_CO6,PEO 3,2,Medium semantic similarity between BIS654C_CO6 and PEO 3
+BIS654C_CO6,PEO 4,1,Low semantic similarity between BIS654C_CO6 and PEO 4
+BAI654D_CO1,PEO 1,2,Medium semantic similarity between BAI654D_CO1 and PEO 1
+BAI654D_CO1,PEO 2,1,Low semantic similarity between BAI654D_CO1 and PEO 2
+BAI654D_CO1,PEO 3,0,No significant relationship
+BAI654D_CO1,PEO 4,3,High semantic similarity between BAI654D_CO1 and PEO 4
+BAI654D_CO2,PEO 1,3,High semantic similarity between BAI654D_CO2 and PEO 1
+BAI654D_CO2,PEO 2,0,No significant relationship
+BAI654D_CO2,PEO 3,2,Medium semantic similarity between BAI654D_CO2 and PEO 3
+BAI654D_CO2,PEO 4,1,Low semantic similarity between BAI654D_CO2 and PEO 4
+BAI654D_CO3,PEO 1,3,High semantic similarity between BAI654D_CO3 and PEO 1
+BAI654D_CO3,PEO 2,2,Medium semantic similarity between BAI654D_CO3 and PEO 2
+BAI654D_CO3,PEO 3,0,No significant relationship
+BAI654D_CO3,PEO 4,1,Low semantic similarity between BAI654D_CO3 and PEO 4
+BCSL606_CO1,PEO 1,3,High semantic similarity between BCSL606_CO1 and PEO 1
+BCSL606_CO1,PEO 2,2,Medium semantic similarity between BCSL606_CO1 and PEO 2
+BCSL606_CO1,PEO 3,0,No significant relationship
+BCSL606_CO1,PEO 4,1,Low semantic similarity between BCSL606_CO1 and PEO 4
+BCSL606_CO2,PEO 1,3,High semantic similarity between BCSL606_CO2 and PEO 1
+BCSL606_CO2,PEO 2,2,Medium semantic similarity between BCSL606_CO2 and PEO 2
+BCSL606_CO2,PEO 3,0,No significant relationship
+BCSL606_CO2,PEO 4,1,Low semantic similarity between BCSL606_CO2 and PEO 4
+BCSL606_CO3,PEO 1,3,High semantic similarity between BCSL606_CO3 and PEO 1
+BCSL606_CO3,PEO 2,1,Low semantic similarity between BCSL606_CO3 and PEO 2
+BCSL606_CO3,PEO 3,0,No significant relationship
+BCSL606_CO3,PEO 4,2,Medium semantic similarity between BCSL606_CO3 and PEO 4
+BIS657A_CO1,PEO 1,0,No significant relationship
+BIS657A_CO1,PEO 2,2,Medium semantic similarity between BIS657A_CO1 and PEO 2
+BIS657A_CO1,PEO 3,3,High semantic similarity between BIS657A_CO1 and PEO 3
+BIS657A_CO1,PEO 4,1,Low semantic similarity between BIS657A_CO1 and PEO 4
+BIS657A_CO2,PEO 1,3,High semantic similarity between BIS657A_CO2 and PEO 1
+BIS657A_CO2,PEO 2,2,Medium semantic similarity between BIS657A_CO2 and PEO 2
+BIS657A_CO2,PEO 3,0,No significant relationship
+BIS657A_CO2,PEO 4,1,Low semantic similarity between BIS657A_CO2 and PEO 4
+BIS657A_CO3,PEO 1,2,Medium semantic similarity between BIS657A_CO3 and PEO 1
+BIS657A_CO3,PEO 2,3,High semantic similarity between BIS657A_CO3 and PEO 2
+BIS657A_CO3,PEO 3,0,No significant relationship
+BIS657A_CO3,PEO 4,1,Low semantic similarity between BIS657A_CO3 and PEO 4
+BIS657A_CO4,PEO 1,2,Medium semantic similarity between BIS657A_CO4 and PEO 1
+BIS657A_CO4,PEO 2,3,High semantic similarity between BIS657A_CO4 and PEO 2
+BIS657A_CO4,PEO 3,0,No significant relationship
+BIS657A_CO4,PEO 4,1,Low semantic similarity between BIS657A_CO4 and PEO 4
+BAIL657C_CO1,PEO 1,2,Medium semantic similarity between BAIL657C_CO1 and PEO 1
+BAIL657C_CO1,PEO 2,3,High semantic similarity between BAIL657C_CO1 and PEO 2
+BAIL657C_CO1,PEO 3,0,No significant relationship
+BAIL657C_CO1,PEO 4,1,Low semantic similarity between BAIL657C_CO1 and PEO 4
+BAIL657C_CO2,PEO 1,2,Medium semantic similarity between BAIL657C_CO2 and PEO 1
+BAIL657C_CO2,PEO 2,3,High semantic similarity between BAIL657C_CO2 and PEO 2
+BAIL657C_CO2,PEO 3,0,No significant relationship
+BAIL657C_CO2,PEO 4,1,Low semantic similarity between BAIL657C_CO2 and PEO 4
+BAIL657C_CO3,PEO 1,0,No significant relationship
+BAIL657C_CO3,PEO 2,1,Low semantic similarity between BAIL657C_CO3 and PEO 2
+BAIL657C_CO3,PEO 3,2,Medium semantic similarity between BAIL657C_CO3 and PEO 3
+BAIL657C_CO3,PEO 4,3,High semantic similarity between BAIL657C_CO3 and PEO 4
+BAIL657C_CO4,PEO 1,1,Low semantic similarity between BAIL657C_CO4 and PEO 1
+BAIL657C_CO4,PEO 2,2,Medium semantic similarity between BAIL657C_CO4 and PEO 2
+BAIL657C_CO4,PEO 3,3,High semantic similarity between BAIL657C_CO4 and PEO 3
+BAIL657C_CO4,PEO 4,0,No significant relationship
+BCSL657D_CO1,PEO 1,0,No significant relationship
+BCSL657D_CO1,PEO 2,3,High semantic similarity between BCSL657D_CO1 and PEO 2
+BCSL657D_CO1,PEO 3,1,Low semantic similarity between BCSL657D_CO1 and PEO 3
+BCSL657D_CO1,PEO 4,2,Medium semantic similarity between BCSL657D_CO1 and PEO 4
+BCSL657D_CO2,PEO 1,0,No significant relationship
+BCSL657D_CO2,PEO 2,3,High semantic similarity between BCSL657D_CO2 and PEO 2
+BCSL657D_CO2,PEO 3,2,Medium semantic similarity between BCSL657D_CO2 and PEO 3
+BCSL657D_CO2,PEO 4,1,Low semantic similarity between BCSL657D_CO2 and PEO 4
+BCSL657D_CO3,PEO 1,1,Low semantic similarity between BCSL657D_CO3 and PEO 1
+BCSL657D_CO3,PEO 2,3,High semantic similarity between BCSL657D_CO3 and PEO 2
+BCSL657D_CO3,PEO 3,2,Medium semantic similarity between BCSL657D_CO3 and PEO 3
+BCSL657D_CO3,PEO 4,0,No significant relationship
+BCSL657D_CO4,PEO 1,0,No significant relationship
+BCSL657D_CO4,PEO 2,3,High semantic similarity between BCSL657D_CO4 and PEO 2
+BCSL657D_CO4,PEO 3,1,Low semantic similarity between BCSL657D_CO4 and PEO 3
+BCSL657D_CO4,PEO 4,2,Medium semantic similarity between BCSL657D_CO4 and PEO 4
+BCSL657D_CO5,PEO 1,0,No significant relationship
+BCSL657D_CO5,PEO 2,3,High semantic similarity between BCSL657D_CO5 and PEO 2
+BCSL657D_CO5,PEO 3,1,Low semantic similarity between BCSL657D_CO5 and PEO 3
+BCSL657D_CO5,PEO 4,2,Medium semantic similarity between BCSL657D_CO5 and PEO 4
+BCS701_CO1,PEO 1,0,No significant relationship
+BCS701_CO1,PEO 2,3,High semantic similarity between BCS701_CO1 and PEO 2
+BCS701_CO1,PEO 3,1,Low semantic similarity between BCS701_CO1 and PEO 3
+BCS701_CO1,PEO 4,2,Medium semantic similarity between BCS701_CO1 and PEO 4
+BCS701_CO2,PEO 1,0,No significant relationship
+BCS701_CO2,PEO 2,1,Low semantic similarity between BCS701_CO2 and PEO 2
+BCS701_CO2,PEO 3,2,Medium semantic similarity between BCS701_CO2 and PEO 3
+BCS701_CO2,PEO 4,3,High semantic similarity between BCS701_CO2 and PEO 4
+BCS701_CO3,PEO 1,0,No significant relationship
+BCS701_CO3,PEO 2,2,Medium semantic similarity between BCS701_CO3 and PEO 2
+BCS701_CO3,PEO 3,1,Low semantic similarity between BCS701_CO3 and PEO 3
+BCS701_CO3,PEO 4,3,High semantic similarity between BCS701_CO3 and PEO 4
+BCS701_CO4,PEO 1,0,No significant relationship
+BCS701_CO4,PEO 2,3,High semantic similarity between BCS701_CO4 and PEO 2
+BCS701_CO4,PEO 3,1,Low semantic similarity between BCS701_CO4 and PEO 3
+BCS701_CO4,PEO 4,2,Medium semantic similarity between BCS701_CO4 and PEO 4
+BCS701_CO5,PEO 1,0,No significant relationship
+BCS701_CO5,PEO 2,3,High semantic similarity between BCS701_CO5 and PEO 2
+BCS701_CO5,PEO 3,1,Low semantic similarity between BCS701_CO5 and PEO 3
+BCS701_CO5,PEO 4,2,Medium semantic similarity between BCS701_CO5 and PEO 4
+BCS701_CO6,PEO 1,0,No significant relationship
+BCS701_CO6,PEO 2,2,Medium semantic similarity between BCS701_CO6 and PEO 2
+BCS701_CO6,PEO 3,1,Low semantic similarity between BCS701_CO6 and PEO 3
+BCS701_CO6,PEO 4,3,High semantic similarity between BCS701_CO6 and PEO 4
+BCS702_CO1,PEO 1,3,High semantic similarity between BCS702_CO1 and PEO 1
+BCS702_CO1,PEO 2,2,Medium semantic similarity between BCS702_CO1 and PEO 2
+BCS702_CO1,PEO 3,0,No significant relationship
+BCS702_CO1,PEO 4,1,Low semantic similarity between BCS702_CO1 and PEO 4
+BCS702_CO2,PEO 1,3,High semantic similarity between BCS702_CO2 and PEO 1
+BCS702_CO2,PEO 2,2,Medium semantic similarity between BCS702_CO2 and PEO 2
+BCS702_CO2,PEO 3,1,Low semantic similarity between BCS702_CO2 and PEO 3
+BCS702_CO2,PEO 4,0,No significant relationship
+BCS702_CO3,PEO 1,3,High semantic similarity between BCS702_CO3 and PEO 1
+BCS702_CO3,PEO 2,2,Medium semantic similarity between BCS702_CO3 and PEO 2
+BCS702_CO3,PEO 3,0,No significant relationship
+BCS702_CO3,PEO 4,1,Low semantic similarity between BCS702_CO3 and PEO 4
+BCS702_CO4,PEO 1,3,High semantic similarity between BCS702_CO4 and PEO 1
+BCS702_CO4,PEO 2,2,Medium semantic similarity between BCS702_CO4 and PEO 2
+BCS702_CO4,PEO 3,0,No significant relationship
+BCS702_CO4,PEO 4,1,Low semantic similarity between BCS702_CO4 and PEO 4
+BCS702_CO5,PEO 1,3,High semantic similarity between BCS702_CO5 and PEO 1
+BCS702_CO5,PEO 2,2,Medium semantic similarity between BCS702_CO5 and PEO 2
+BCS702_CO5,PEO 3,0,No significant relationship
+BCS702_CO5,PEO 4,1,Low semantic similarity between BCS702_CO5 and PEO 4
+BCS703_CO1,PEO 1,2,Medium semantic similarity between BCS703_CO1 and PEO 1
+BCS703_CO1,PEO 2,1,Low semantic similarity between BCS703_CO1 and PEO 2
+BCS703_CO1,PEO 3,0,No significant relationship
+BCS703_CO1,PEO 4,3,High semantic similarity between BCS703_CO1 and PEO 4
+BCS703_CO2,PEO 1,3,High semantic similarity between BCS703_CO2 and PEO 1
+BCS703_CO2,PEO 2,1,Low semantic similarity between BCS703_CO2 and PEO 2
+BCS703_CO2,PEO 3,0,No significant relationship
+BCS703_CO2,PEO 4,2,Medium semantic similarity between BCS703_CO2 and PEO 4
+BCS703_CO3,PEO 1,2,Medium semantic similarity between BCS703_CO3 and PEO 1
+BCS703_CO3,PEO 2,1,Low semantic similarity between BCS703_CO3 and PEO 2
+BCS703_CO3,PEO 3,0,No significant relationship
+BCS703_CO3,PEO 4,3,High semantic similarity between BCS703_CO3 and PEO 4
+BCS703_CO4,PEO 1,1,Low semantic similarity between BCS703_CO4 and PEO 1
+BCS703_CO4,PEO 2,3,High semantic similarity between BCS703_CO4 and PEO 2
+BCS703_CO4,PEO 3,0,No significant relationship
+BCS703_CO4,PEO 4,2,Medium semantic similarity between BCS703_CO4 and PEO 4
+BCS703_CO5,PEO 1,1,Low semantic similarity between BCS703_CO5 and PEO 1
+BCS703_CO5,PEO 2,3,High semantic similarity between BCS703_CO5 and PEO 2
+BCS703_CO5,PEO 3,0,No significant relationship
+BCS703_CO5,PEO 4,2,Medium semantic similarity between BCS703_CO5 and PEO 4

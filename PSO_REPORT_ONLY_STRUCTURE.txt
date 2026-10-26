@@ -1,0 +1,36 @@
+AI CO-PO-PEO MAPPING SYSTEM — UPDATED STRUCTURE
+
+DASHBOARD
+1. Header / login / logout
+2. Subject selection and View Subject Report
+3. Program Outcomes (PO) definitions
+4. Program Educational Objectives (PEO) definitions
+5. Mapping overview: CO–PO total, CO–PEO total, AI model status
+6. CO–PO mapping strength chart
+7. CO–PEO mapping strength chart
+8. PSO definitions list from Dataset/PSO_Dataset.xlsx
+9. CO–PSO average mapping-strength chart
+10. AI mapping workflow and technology stack
+
+The dashboard intentionally does NOT show the CO–PSO matrix or CO–PSO justifications.
+
+SUBJECT REPORT
+1. Subject details
+2. Course outcomes and Bloom taxonomy
+3. CO–PO mapping matrix
+4. CO–PEO mapping matrix
+5. CO–PSO mapping matrix for the selected subject
+6. PSO definitions loaded from Dataset/PSO_Dataset.xlsx
+7. CO–PO, CO–PEO and CO–PSO mapping-strength charts
+8. AI/NLP mapping justifications, including CO–PSO justifications; filter by PSO
+9. Key insights and export controls
+
+MANUAL PSO DATA
+Edit Dataset/PSO_Dataset.xlsx. Required columns are PSO ID and Programme Specific Outcomes. The subject report regenerates/loads CO–PSO mapping from the CO dataset and PSO descriptions. Do not edit PSOs through the website.
+
+RUN
+1. Extract the ZIP to a new folder.
+2. Install requirements: python -m pip install -r requirements.txt
+3. Run: python app.py
+4. Open http://127.0.0.1:5000 and sign in.
+5. Select a subject and click View Subject Report to see detailed mapping and justifications.

@@ -1,0 +1,51 @@
+Subject Code,Subject Name,Semester,Credits,Schema,Department
+BCS301,Mathematics for Computer Science,3rd,4,2022,Computer Science and Engineering
+BCS302,Digital Design and Computer Organization,3rd,4,2022,Computer Science and Engineering
+BCS303,Operating Systems,3rd,4,2022,Computer Science and Engineering
+BCS304,Data Structure and Application,3rd,3,2022,Computer Science and Engineering
+BCSL305,Data Structures Laboratory,3rd,1,2022,Computer Science and Engineering
+BCS306A,Object Oriented Programming With Java,3rd,3,2022,Computer Science and Engineering
+BSCK307,Social Connect and Responsibility,3rd,1,2022,Computer Science and Engineering
+BCS358A,Data Analytics with Excel,3rd,1,2022,Computer Science and Engineering
+BCS358B,R Programming,3rd,1,2022,Computer Science and Engineering
+BCS358C,Project Management with Git,3rd,1,2022,Computer Science and Engineering
+BCS358D,Data Visualization with Python,3rd,1,2022,Computer Science and Engineering
+BCS401,Analysis and Design of Algorithms,4th,3,2022,Computer Science and Engineering
+BCS402,Microcontrollers,4th,4,2022,Computer Science and Engineering
+BCS403,Database Management System,4th,4,2022,Computer Science and Engineering
+BCSL404,Analysis and Design of Algorithms Lab,4th,1,2022,Computer Science and Engineering
+BCS405A,Discrete Mathematical Structures,4th,3,2022,Computer Science and Engineering
+BCS405B,Graph Theory,4th,3,2022,Computer Science and Engineering
+BCS405C,Optimization Technique,4th,3,2022,Computer Science and Engineering
+BCS405D,Linear Algebra,4th,3,2022,Computer Science and Engineering
+BCS456A,Green IT and Sustainability,4th,1,2022,Computer Science and Engineering
+BCS456B,Capacity Planning for IT,4th,1,2022,Computer Science and Engineering
+BCS456C,UI/UX,4th,1,2022,Computer Science and Engineering
+BCSL456D,Technical Writing using LaTex,4th,1,2022,Computer Science and Engineering
+BCS501,Software Engineering and Project Management,5th,3,2022,Computer Science and Engineering
+BCS502,Computer Networks,5th,4,2022,Computer Science and Engineering
+BCS503,Theory of Computation,5th,4,2022,Computer Science and Engineering
+BCSL504,Web Technology Lab,5th,1,2022,Computer Science and Engineering
+BCS515A,Computer Graphics,5th,3,2022,Computer Science and Engineering
+BCS515B,Artificial Intelligence,5th,3,2022,Computer Science and Engineering
+BCS515C,UNIX System Programming,5th,3,2022,Computer Science and Engineering
+BCS515D,Distributed System,5th,3,2022,Computer Science and Engineering
+BCS508,Environmental Studies and E-Waste Management,5th,2,2022,Computer Science and Engineering
+BCS601,Cloud Computing,6th,4,2022,Computer Science and Engineering
+BCS602,Machine Learning,6th,4,2022,Computer Science and Engineering
+BCS613A,BlockChain Technology,6th,3,2022,Computer Science and Engineering
+BCS613B,Computer Vision,6th,3,2022,Computer Science and Engineering
+BCS613C,Computer Design,6th,3,2022,Computer Science and Engineering
+BCS613D,Advanced Java,6th,3,2022,Computer Science and Engineering
+BCS654A,Introduction to Data Structures,6th,3,2022,Computer Science and Engineering
+BCS654B,Fundamentals of Operating System,6th,3,2022,Computer Science and Engineering
+BCSL606,Machine Learning Lab,6th,1,2022,Computer Science and Engineering
+BCSL657D,Devops,6th,1,2022,Computer Science and Engineering
+BCS701,Internet of Thing,7th,4,2022,Computer Science and Engineering
+BCS702,Parallel Computing,7th,4,2022,Computer Science and Engineering
+BCS703,Cryptography and Network Security,7th,4,2022,Computer Science and Engineering
+BIS654C,Mobile Application Development,6th,3,2022,Computer Science and Engineering
+BAI657A,TOSCA-Automated Software Testing,6th,1,2022,Computer Science and Engineering
+BAI657D,Introduction to Artifical Intelligence,6th,3,2022,Computer Science and Engineering
+BAI657C,Generative AI,6th,1,2022,Computer Science and Engineering
+BCS306B,Object Oriented Programming With C++,3rd,3,2022,Computer Science and Engineering

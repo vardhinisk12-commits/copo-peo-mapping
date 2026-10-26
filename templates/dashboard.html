@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head><script>document.documentElement.setAttribute('data-theme','dark')</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard | ATME AI CO-PO-PEO Mapping</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script defer src="{{ url_for('static',filename='js/script.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-light.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-dark.css') }}">
+</head>
+<body>
+<header class="navbar"><div class="logo"><img class="logo-img" src="{{ url_for('static', filename='images/ATME.jpeg') }}" alt="ATME College of Engineering">
+<div class="logo-text"><h2>CO–PO–PEO Mapping</h2><p>ATME College of Engineering</p></div></div>
+<div class="nav-right"><a href="/dashboard"><i class="fa fa-house"></i> Dashboard</a>
+<a href="/departments"><i class="fa fa-building-columns"></i> Department: {{ department_name|default('') }} (change / upload)</a>
+<a href="/logout"><i class="fa fa-right-from-bracket"></i> Logout</a></div></header>
+<aside class="sidebar"><ul>
+<li><a class="active" href="/dashboard"><i class="fa fa-chart-pie"></i><span>Dashboard</span></a></li>
+<li><a href="#subject"><i class="fa fa-book"></i><span>Subjects</span></a></li>
+<li><a href="#coverage"><i class="fa fa-gauge-high"></i><span>Coverage</span></a></li>
+<li><a href="#analytics"><i class="fa fa-chart-column"></i><span>Analytics</span></a></li>
+<li><a href="#pies"><i class="fa fa-chart-pie"></i><span>Distribution</span></a></li></ul></aside>
+<main class="main-content">
+<div class="ai-banner" data-constellation><img class="banner-photo" src="{{ url_for('static', filename='images/atme_campus.jpg') }}" alt="ATME College of Engineering campus"><span class="orb o1"></span><span class="orb o2"></span><small class="live">ATME College of Engineering, Mysuru</small>
+<h1>Department of {{ department_name|default('Computer Science and Engineering') }}</h1>
+<p>Course outcome mapping with Programme Outcomes, Educational Objectives and Specific Outcomes.</p>
+<div class="banner-actions"><a class="pri" href="#subject"><i class="fa fa-file-lines"></i> View subject report</a><a class="sec" href="/departments"><i class="fa fa-cloud-arrow-up"></i> Upload department data</a></div></div>
+<div class="cards">
+<div class="card blue"><i class="fa fa-book"></i><h3>Subjects</h3><h2>{{ subject_count }}</h2></div>
+<div class="card green"><i class="fa fa-bullseye"></i><h3>Course Outcomes</h3><h2>{{ co_count }}</h2></div>
+<div class="card orange"><i class="fa fa-trophy"></i><h3>Program Outcomes</h3><h2>{{ po_count }}</h2></div>
+<div class="card purple"><i class="fa fa-graduation-cap"></i><h3>Educational Objectives</h3><h2>{{ peo_count|default(0) }}</h2></div></div>
+
+<section class="box" id="subject"><h2><i class="fa fa-book-open"></i> Select a subject</h2>
+<form action="/subject_report" method="POST"><select name="subject" required>
+{% for s in subjects %}<option value="{{ s[0] }}">{{ s[0] }} — {{ s[1] }}</option>{% endfor %}</select>
+<button type="submit"><i class="fa fa-file-lines"></i> View Subject Report</button></form></section>
+
+<section class="box" id="po-list"><h2><i class="fa fa-award"></i> Program Outcomes (PO)</h2><div class="po-peo-list">
+{% if po_records %}{% for po in po_records %}<div class="po-item"><b>{{ po.id }}</b><span>{% if po.title %}<strong>{{ po.title }}:</strong> {% endif %}{{ po.description }}</span></div>{% endfor %}
+{% else %}<div class="po-item"><span>PO definitions are not available for this department.</span></div>{% endif %}</div></section>
+
+<section class="box" id="peo-list"><h2><i class="fa fa-graduation-cap"></i> Program Educational Objectives (PEO)</h2><div class="po-peo-list">
+{% if peo_records %}{% for peo in peo_records %}<div class="po-item"><b>{{ peo.id }}</b><span>{% if peo.title %}<strong>{{ peo.title }}:</strong> {% endif %}{{ peo.description }}</span></div>{% endfor %}
+{% else %}<div class="po-item"><span>PEO definitions are not available for this department.</span></div>{% endif %}</div></section>
+
+<section class="box" id="pso-list"><h2><i class="fa fa-crosshairs"></i> Program Specific Outcomes (PSO)</h2><div class="po-peo-list">
+{% if pso_records %}{% for pso in pso_records %}<div class="po-item"><b>{{ pso.id }}</b><span>{{ pso.description }}</span></div>{% endfor %}
+{% else %}<div class="po-item"><span>PSO definitions are not available. Please check Dataset/PSO_Dataset.xlsx.</span></div>{% endif %}</div></section>
+
+<section class="box" id="coverage"><h2><i class="fa fa-gauge-high"></i> Mapping coverage</h2>
+<div class="ring-wrap"><div class="ring" id="covRing"><b id="covPct">0%</b></div>
+<div class="ring-legend">
+<div><label>CO–PO</label><div class="bar-track"><span id="bPo"></span></div><em id="ePo">0</em></div>
+<div><label>CO–PEO</label><div class="bar-track amber"><span id="bPeo"></span></div><em id="ePeo">0</em></div>
+<div><label>CO–PSO</label><div class="bar-track navy"><span id="bPso"></span></div><em id="ePso">0</em></div>
+<small style="color:var(--muted)">Average mapping strength out of 3. The ring shows the overall average across all three mappings.</small></div></div></section>
+
+<section class="box" id="analytics"><h2><i class="fa fa-chart-simple"></i> Mapping overview</h2><div class="analytics-cards">
+<div class="analytics-card"><i class="fa fa-link"></i><h3>Total CO–PO mappings</h3><h1>{{ total_po_mapping }}</h1></div>
+<div class="analytics-card"><i class="fa fa-bullseye"></i><h3>Total CO–PEO mappings</h3><h1>{{ total_peo_mapping }}</h1></div>
+<div class="analytics-card"><i class="fa fa-brain"></i><h3>AI model status</h3><h1>Active</h1></div></div></section>
+
+<section class="box"><h2><i class="fa fa-chart-column"></i> CO–PO mapping strength (bar chart)</h2><div style="height:330px"><canvas id="coPoChart"></canvas></div></section>
+<section class="box"><h2><i class="fa fa-chart-column"></i> CO–PEO mapping strength (bar chart)</h2><div style="height:330px"><canvas id="coPeoChart"></canvas></div></section>
+<section class="box" id="co-pso-strength"><h2><i class="fa fa-chart-column"></i> CO–PSO mapping strength (bar chart)</h2>
+<p>Average CO–PSO mapping strength across the course-outcome dataset (0–3 scale).</p><div style="height:330px"><canvas id="coPsoChart"></canvas></div></section>
+
+<section class="box" id="pies"><h2><i class="fa fa-chart-pie"></i> Distribution (pie charts)</h2>
+<div class="pie-grid"><div class="pie-cell"><h3>Bloom&rsquo;s taxonomy levels</h3><div style="height:300px"><canvas id="bloomPie"></canvas></div></div>
+<div class="pie-cell"><h3>Mapping totals</h3><div style="height:300px"><canvas id="mapPie"></canvas></div></div>
+<div class="pie-cell"><h3>Average strength share</h3><div style="height:300px"><canvas id="avgPie"></canvas></div></div></div></section>
+
+<section class="box"><h2><i class="fa fa-thumbtack"></i> Mapping strength scale</h2><div class="scale">
+<div><span class="high">3</span> Strong</div><div><span class="medium">2</span> Moderate</div><div><span class="low">1</span> Low</div><div><span class="none">0</span> None</div></div></section>
+
+<div class="atme-footer" role="contentinfo">
+<div class="af-list">
+<div class="af-row"><span class="af-ico"><i class="fa-solid fa-location-dot"></i></span><div><strong>Location:</strong><p>ATME College of Engineering, 13th KM, Mysore – Kanakapura – Bangalore Road, Mysore – 570 028, Karnataka</p></div></div>
+</div>
+<div class="af-bottom"><p>© 2026 ATME College of Engineering. Proudly owned by ATME.</p>
+<p>AICTE Approved · VTU Affiliated · NAAC A+ · NBA · NABL · QS I-Gauge Gold</p></div>
+</div></main>
+<script>
+(function(){
+var dark=document.documentElement.getAttribute('data-theme')!=='light';
+var TXT=dark?'#D3E8E5':'#587A78',GRID=dark?'rgba(255,255,255,.16)':'#E2EEED';
+var PAL=['#238987','#F2A93B','#1A6B69','#5BBDB8','#8CD2CE','#C98412'];
+function ok(){if(typeof Chart==='undefined'){document.querySelectorAll('canvas').forEach(function(c){if(c.id!=='x')c.parentElement.innerHTML='<p style="color:#FF8FA3">Charts need internet access to load the chart library.</p>';});return false;}
+ Chart.defaults.color=TXT;Chart.defaults.font.family='"Instrument Sans","Segoe UI",sans-serif';return true;}
+var A=ok();
+function grad(color){return function(c){var a=c.chart.chartArea;if(!a)return color;var g=c.chart.ctx.createLinearGradient(0,a.bottom,0,a.top);g.addColorStop(0,color+'33');g.addColorStop(1,color);return g;};}
+function bar(id,labels,values,label,color){var el=document.getElementById(id);if(!el||!A)return;
+ new Chart(el,{type:'bar',data:{labels:labels,datasets:[{label:label,data:values,backgroundColor:grad(color),borderColor:color,borderWidth:1,borderRadius:10,borderSkipped:false,maxBarThickness:42}]},
+ options:{responsive:true,maintainAspectRatio:false,animation:{duration:1100,easing:'easeOutQuart'},scales:{y:{beginAtZero:true,max:3,ticks:{stepSize:0.5},grid:{color:GRID}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}});}
+function pie(id,labels,values,cut){var el=document.getElementById(id);if(!el||!A)return;
+ var sum=(values||[]).reduce(function(a,b){return a+(+b||0)},0);
+ if(!values||!values.length||!sum){el.parentElement.innerHTML='<p style="color:'+TXT+'">No data available.</p>';return;}
+ new Chart(el,{type:'pie',data:{labels:labels,datasets:[{data:values,backgroundColor:PAL,borderColor:dark?'#1F5855':'#fff',borderWidth:3,hoverOffset:12}]},
+ options:{responsive:true,maintainAspectRatio:false,animation:{duration:1100},plugins:{legend:{position:'bottom',labels:{usePointStyle:true,padding:16}}}}});}
+bar('coPoChart',{{ graph_labels|default([])|tojson }},{{ graph_values|default([])|tojson }},'CO–PO Strength','#2FB3AE');
+bar('coPeoChart',{{ peo_graph_labels|default([])|tojson }},{{ peo_graph_values|default([])|tojson }},'CO–PEO Strength','#F2A93B');
+bar('coPsoChart',{{ pso_graph_labels|default([])|tojson }},{{ pso_graph_values|default([])|tojson }},'CO–PSO Strength','#1F6F6D');
+var avg=function(a){a=a||[];return a.length?a.reduce(function(x,y){return x+(+y||0)},0)/a.length:0;};
+var po=avg({{ graph_values|default([])|tojson }}),peo=avg({{ peo_graph_values|default([])|tojson }}),pso=avg({{ pso_graph_values|default([])|tojson }});
+pie('bloomPie',{{ bloom_labels|default([])|tojson }},{{ bloom_values|default([])|tojson }});
+pie('mapPie',['CO–PO','CO–PEO'],[{{ total_po_mapping|default(0)|int }},{{ total_peo_mapping|default(0)|int }}]);
+pie('avgPie',['CO–PO','CO–PEO','CO–PSO'],[+po.toFixed(2),+peo.toFixed(2),+pso.toFixed(2)]);
+var parts=[po,peo,pso].filter(function(v){return v>0}),all=parts.length?parts.reduce(function(a,b){return a+b},0)/parts.length:0;
+function set(id,v){var b=document.getElementById('b'+id),e=document.getElementById('e'+id);if(b)setTimeout(function(){b.style.width=Math.min(v/3*100,100)+'%'},250);if(e)e.textContent=v.toFixed(2);}
+set('Po',po);set('Peo',peo);set('Pso',pso);
+var pct=Math.round(all/3*100),r=document.getElementById('covRing');
+setTimeout(function(){r.style.setProperty('--p',pct);},250);document.getElementById('covPct').textContent=pct+'%';
+})();
+</script><script src="{{ url_for('static',filename='js/creative.js') }}"></script>
+</body></html>

@@ -1,0 +1,413 @@
+Subject Code,CO ID,PSO ID,Mapping Level,Strength,Similarity Score,Justification
+BCS301,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS301,CO1,PSO2,3,High,0.024,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.024).
+BCS301,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS301,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS301,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS301,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS302,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS302,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS302,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS302,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS302,CO3,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS302,CO3,PSO2,3,High,0.0579,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.058).
+BCS302,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS302,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS303,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS303,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS303,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS303,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS303,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS303,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS304,CO1,PSO1,2,Moderate,0.0327,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.033)."
+BCS304,CO1,PSO2,3,High,0.0361,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.036).
+BCS304,CO2,PSO1,3,High,0.0189,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.019).
+BCS304,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS304,CO3,PSO1,3,High,0.0713,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.071).
+BCS304,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS304,CO4,PSO1,2,Moderate,0.0253,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.025)."
+BCS304,CO4,PSO2,3,High,0.0279,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.028).
+BCS304,CO5,PSO1,3,High,0.0193,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.019).
+BCS304,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCSL305,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL305,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCSL305,CO2,PSO1,2,Moderate,0.0251,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.025)."
+BCSL305,CO2,PSO2,3,High,0.0277,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.028).
+BCSL305,CO3,PSO1,2,Moderate,0.0261,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.026)."
+BCSL305,CO3,PSO2,3,High,0.0288,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.029).
+BCS306A,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS306A,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS306A,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS306A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS306A,CO3,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS306A,CO3,PSO2,3,High,0.0364,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.036).
+BCS306B,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS306B,CO1,PSO2,3,High,0.0262,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.026).
+BCS306B,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS306B,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS306B,CO3,PSO1,3,High,0.024,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.024).
+BCS306B,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS306B,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS306B,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BSCK307,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BSCK307,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BSCK307,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BSCK307,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BSCK307,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BSCK307,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BSCK307,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BSCK307,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BSCK307,CO5,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BSCK307,CO5,PSO2,3,High,0.0278,PSO2 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.028).
+BSCK307,CO6,PSO1,3,High,0.0248,PSO1 is the strongest semantic match for CO6; the CO statement is most closely related to the stated PSO (similarity 0.025).
+BSCK307,CO6,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO6, so it receives a moderate mapping level (similarity 0.000)."
+BCS358A,CO1,PSO1,2,Moderate,0.0395,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.040)."
+BCS358A,CO1,PSO2,3,High,0.0449,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.045).
+BCS358A,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS358A,CO3,PSO1,3,High,0.0308,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.031).
+BCS358A,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS358A,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358A,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS358A,CO5,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358A,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS358B,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358B,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS358B,CO2,PSO1,3,High,0.0578,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.058).
+BCS358B,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS358B,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358B,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS358B,CO4,PSO1,3,High,0.045,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.045).
+BCS358B,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS358B,CO5,PSO1,3,High,0.144,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.144).
+BCS358B,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS358C,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358C,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS358C,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358C,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS358C,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358C,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS358C,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358C,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS358D,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS358D,CO1,PSO2,3,High,0.024,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.024).
+BCS358D,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358D,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS358D,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358D,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS358D,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358D,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS358D,CO5,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS358D,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS401,CO1,PSO1,3,High,0.0309,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.031).
+BCS401,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS401,CO2,PSO1,3,High,0.0313,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.031).
+BCS401,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS401,CO3,PSO1,3,High,0.022,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.022).
+BCS401,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS401,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS401,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS402,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS402,CO1,PSO2,3,High,0.0397,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.040).
+BCS402,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS402,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS402,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS402,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS402,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS402,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS402,CO5,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS402,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS403,CO1,PSO1,3,High,0.0363,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.036).
+BCS403,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS403,CO2,PSO1,3,High,0.0401,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.040).
+BCS403,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS403,CO3,PSO1,3,High,0.1854,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.185).
+BCS403,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS403,CO4,PSO1,3,High,0.0456,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.046).
+BCS403,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS403,CO5,PSO1,3,High,0.09,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.090).
+BCS403,CO5,PSO2,2,Moderate,0.0286,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.029)."
+BCS403,CO6,PSO1,3,High,0.0415,PSO1 is the strongest semantic match for CO6; the CO statement is most closely related to the stated PSO (similarity 0.041).
+BCS403,CO6,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO6, so it receives a moderate mapping level (similarity 0.000)."
+BCSL404,CO1,PSO1,3,High,0.0547,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.055).
+BCSL404,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCSL404,CO2,PSO1,3,High,0.0775,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.078).
+BCSL404,CO2,PSO2,2,Moderate,0.037,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.037)."
+BCSL404,CO3,PSO1,3,High,0.0229,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.023).
+BCSL404,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS405A,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS405A,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS405A,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS405A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS405A,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS405A,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS405A,CO4,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS405A,CO4,PSO2,3,High,0.0251,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.025).
+BCS405B,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS405B,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS405B,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS405B,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS405B,CO3,PSO1,2,Moderate,0.028,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.028)."
+BCS405B,CO3,PSO2,3,High,0.0685,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.068).
+BCS405C,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS405C,CO1,PSO2,3,High,0.0349,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.035).
+BCS405C,CO2,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS405C,CO2,PSO2,3,High,0.0314,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.031).
+BCS405C,CO3,PSO1,3,High,0.0378,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.038).
+BCS405C,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS405D,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS405D,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS405D,CO2,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS405D,CO2,PSO2,3,High,0.0318,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.032).
+BCS405D,CO3,PSO1,3,High,0.0378,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.038).
+BCS405D,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS456A,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS456A,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS456A,CO2,PSO1,3,High,0.1207,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.121).
+BCS456A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS456A,CO3,PSO1,3,High,0.0528,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.053).
+BCS456A,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS456B,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS456B,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS456B,CO2,PSO1,3,High,0.0278,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.028).
+BCS456B,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS456B,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS456B,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS456B,CO4,PSO1,3,High,0.0378,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.038).
+BCS456B,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS456C,CO1,PSO1,3,High,0.0762,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.076).
+BCS456C,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS456C,CO2,PSO1,3,High,0.0392,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.039).
+BCS456C,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS456C,CO3,PSO1,3,High,0.0791,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.079).
+BCS456C,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCSL456D,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL456D,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCSL456D,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL456D,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCSL456D,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL456D,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCSL456D,CO4,PSO1,3,High,0.0623,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.062).
+BCSL456D,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS501,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS501,CO1,PSO2,3,High,0.0335,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.033).
+BCS501,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS501,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS501,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS501,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS501,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS501,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS502,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS502,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS502,CO2,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS502,CO2,PSO2,3,High,0.0644,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.064).
+BCS502,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS502,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS502,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS502,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS503,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS503,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS503,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS503,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS503,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS503,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS503,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS503,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS503,CO5,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS503,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCSL504,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL504,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCSL504,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL504,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCSL504,CO3,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCSL504,CO3,PSO2,3,High,0.0335,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.033).
+BCSL504,CO4,PSO1,3,High,0.0602,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.060).
+BCSL504,CO4,PSO2,2,Moderate,0.0323,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.032)."
+BCSL504,CO5,PSO1,3,High,0.1207,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.121).
+BCSL504,CO5,PSO2,2,Moderate,0.0337,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.034)."
+BCS515A,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515A,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS515A,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS515A,CO3,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS515A,CO3,PSO2,3,High,0.0458,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.046).
+BCS515A,CO4,PSO1,3,High,0.0725,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.073).
+BCS515A,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS515A,CO5,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515A,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS515A,CO6,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO6; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515A,CO6,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO6, so it receives a moderate mapping level (similarity 0.000)."
+BCS515B,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS515B,CO1,PSO2,3,High,0.0358,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.036).
+BCS515B,CO2,PSO1,3,High,0.0432,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.043).
+BCS515B,CO2,PSO2,2,Moderate,0.026,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.026)."
+BCS515B,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515B,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS515C,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515C,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS515C,CO2,PSO1,3,High,0.0555,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.056).
+BCS515C,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS515C,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515C,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS515C,CO4,PSO1,3,High,0.0494,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.049).
+BCS515C,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS515D,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515D,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS515D,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS515D,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS515D,CO3,PSO1,3,High,0.0401,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.040).
+BCS515D,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS515D,CO4,PSO1,3,High,0.0267,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.027).
+BCS515D,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS508,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS508,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS508,CO2,PSO1,3,High,0.0654,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.065).
+BCS508,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS508,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS508,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS601,CO1,PSO1,3,High,0.1254,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.125).
+BCS601,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS601,CO2,PSO1,3,High,0.1407,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.141).
+BCS601,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS601,CO3,PSO1,3,High,0.1628,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.163).
+BCS601,CO3,PSO2,2,Moderate,0.023,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.023)."
+BCS601,CO4,PSO1,3,High,0.0578,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.058).
+BCS601,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS602,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS602,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS602,CO2,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS602,CO2,PSO2,3,High,0.0236,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.024).
+BCS602,CO3,PSO1,2,Moderate,0.022,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.022)."
+BCS602,CO3,PSO2,3,High,0.0424,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.042).
+BCS602,CO4,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS602,CO4,PSO2,3,High,0.021,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.021).
+BCS602,CO5,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS602,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS613A,CO1,PSO1,3,High,0.0569,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.057).
+BCS613A,CO1,PSO2,2,Moderate,0.0332,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.033)."
+BCS613A,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS613A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS613A,CO3,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS613A,CO3,PSO2,3,High,0.08,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.080).
+BCS613A,CO4,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS613A,CO4,PSO2,3,High,0.0366,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.037).
+BCS613B,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS613B,CO1,PSO2,3,High,0.0433,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.043).
+BCS613B,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS613B,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS613B,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS613B,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS613B,CO4,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS613B,CO4,PSO2,3,High,0.0331,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.033).
+BCS613C,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS613C,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS613C,CO2,PSO1,2,Moderate,0.0379,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.038)."
+BCS613C,CO2,PSO2,3,High,0.043,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.043).
+BCS613C,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS613C,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS613C,CO4,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS613C,CO4,PSO2,3,High,0.0259,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.026).
+BCS613D,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS613D,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS613D,CO2,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS613D,CO2,PSO2,3,High,0.0267,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.027).
+BCS613D,CO3,PSO1,3,High,0.0902,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.090).
+BCS613D,CO3,PSO2,2,Moderate,0.0252,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.025)."
+BCS613D,CO4,PSO1,3,High,0.1089,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.109).
+BCS613D,CO4,PSO2,2,Moderate,0.0374,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.037)."
+BCS654A,CO1,PSO1,3,High,0.0243,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.024).
+BCS654A,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS654A,CO2,PSO1,3,High,0.0282,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.028).
+BCS654A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS654A,CO3,PSO1,3,High,0.034,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.034).
+BCS654A,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS654A,CO4,PSO1,3,High,0.0225,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.022).
+BCS654A,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS654B,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS654B,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS654B,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS654B,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS654B,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS654B,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BIS654C,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BIS654C,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BIS654C,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BIS654C,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BIS654C,CO3,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BIS654C,CO3,PSO2,3,High,0.0235,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.024).
+BIS654C,CO4,PSO1,2,Moderate,0.0223,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.022)."
+BIS654C,CO4,PSO2,3,High,0.0246,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.025).
+BIS654C,CO5,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BIS654C,CO5,PSO2,3,High,0.0368,PSO2 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.037).
+BIS654C,CO6,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO6; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BIS654C,CO6,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO6, so it receives a moderate mapping level (similarity 0.000)."
+BAI654D,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BAI654D,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BAI654D,CO2,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BAI654D,CO2,PSO2,3,High,0.0473,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.047).
+BAI654D,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BAI654D,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCSL606,CO1,PSO1,3,High,0.0341,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.034).
+BCSL606,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCSL606,CO2,PSO1,2,Moderate,0.0222,"PSO1 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.022)."
+BCSL606,CO2,PSO2,3,High,0.0347,PSO2 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.035).
+BCSL606,CO3,PSO1,2,Moderate,0.0299,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.030)."
+BCSL606,CO3,PSO2,3,High,0.0319,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.032).
+BIS657A,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BIS657A,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BIS657A,CO2,PSO1,3,High,0.0536,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.054).
+BIS657A,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BIS657A,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BIS657A,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BIS657A,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BIS657A,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BAIL657C,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BAIL657C,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BAIL657C,CO2,PSO1,3,High,0.0369,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.037).
+BAIL657C,CO2,PSO2,2,Moderate,0.0279,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.028)."
+BAIL657C,CO3,PSO1,2,Moderate,0.0327,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.033)."
+BAIL657C,CO3,PSO2,3,High,0.0635,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.063).
+BAIL657C,CO4,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BAIL657C,CO4,PSO2,3,High,0.048,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.048).
+BCSL657D,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL657D,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCSL657D,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL657D,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCSL657D,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL657D,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCSL657D,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCSL657D,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCSL657D,CO5,PSO1,2,Moderate,0.0269,"PSO1 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.027)."
+BCSL657D,CO5,PSO2,3,High,0.034,PSO2 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.034).
+BCS701,CO1,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS701,CO1,PSO2,3,High,0.126,PSO2 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.126).
+BCS701,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS701,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS701,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS701,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS701,CO4,PSO1,3,High,0.0696,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.070).
+BCS701,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS701,CO5,PSO1,2,Moderate,0.0427,"PSO1 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.043)."
+BCS701,CO5,PSO2,3,High,0.0965,PSO2 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.097).
+BCS701,CO6,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO6; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS701,CO6,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO6, so it receives a moderate mapping level (similarity 0.000)."
+BCS702,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS702,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS702,CO2,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS702,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS702,CO3,PSO1,2,Moderate,0.0326,"PSO1 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.033)."
+BCS702,CO3,PSO2,3,High,0.037,PSO2 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.037).
+BCS702,CO4,PSO1,2,Moderate,0.0298,"PSO1 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.030)."
+BCS702,CO4,PSO2,3,High,0.0339,PSO2 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.034).
+BCS702,CO5,PSO1,3,High,0.0625,PSO1 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.062).
+BCS702,CO5,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS703,CO1,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO1; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS703,CO1,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO1, so it receives a moderate mapping level (similarity 0.000)."
+BCS703,CO2,PSO1,3,High,0.0401,PSO1 is the strongest semantic match for CO2; the CO statement is most closely related to the stated PSO (similarity 0.040).
+BCS703,CO2,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO2, so it receives a moderate mapping level (similarity 0.000)."
+BCS703,CO3,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO3; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS703,CO3,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO3, so it receives a moderate mapping level (similarity 0.000)."
+BCS703,CO4,PSO1,3,High,0.0,PSO1 is the strongest semantic match for CO4; the CO statement is most closely related to the stated PSO (similarity 0.000).
+BCS703,CO4,PSO2,2,Moderate,0.0,"PSO2 has a secondary semantic relationship with CO4, so it receives a moderate mapping level (similarity 0.000)."
+BCS703,CO5,PSO1,2,Moderate,0.0,"PSO1 has a secondary semantic relationship with CO5, so it receives a moderate mapping level (similarity 0.000)."
+BCS703,CO5,PSO2,3,High,0.1356,PSO2 is the strongest semantic match for CO5; the CO statement is most closely related to the stated PSO (similarity 0.136).

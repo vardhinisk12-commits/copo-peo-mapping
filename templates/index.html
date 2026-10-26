@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI CO-PO Mapping</title>
+</head>
+
+<body>
+
+<h1>AI-Based CO–PO–PEO Mapping System</h1>
+<form action="/subject_report" method="POST">
+
+<label>Select Subject</label>
+
+<select name="subject">
+
+{% for subject in subjects %}
+<option value="{{subject}}">
+{{subject}}
+</option>
+{% endfor %}
+
+</select>
+
+<br><br>
+
+<button type="submit">
+View Report
+</button>
+
+</form>
+
+<a href="/upload">
+<button>
+Upload Dataset
+</button>
+</a>
+
+</body>
+</html>

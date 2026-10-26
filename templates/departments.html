@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head><script>document.documentElement.setAttribute('data-theme','dark')</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Choose a department | ATME AI CO-PO-PEO Mapping</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-light.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-dark.css') }}">
+</head>
+<body>
+<div class="dept-page">
+<div class="dept-top"><div><img src="{{ url_for('static', filename='images/ATME.jpeg') }}" alt="ATME">
+<h1>CO–PO–PEO Mapping<br><small>ATME College of Engineering · Choose a department</small></h1><a class="out" href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div></div>
+<div class="steps-bar"><span><b>1</b> Choose department</span><span><b>2</b> Type your data</span><span><b>3</b> Generate mappings</span></div>
+{% if error %}<div class="msg-err">{% for part in error.split(' || ') %}{{ part }}<br>{% endfor %}</div>{% endif %}
+
+<div class="card2"><h2><span class="num"><i class="fa-solid fa-building-columns"></i></span> Select an existing department</h2><p class="lead">Open a department that is already in the system.</p>
+{% if departments %}
+<form method="POST" action="/departments">
+{% for d in departments %}<div class="dept"><input type="radio" name="department" id="d_{{ d.slug }}" value="{{ d.slug }}" {% if (current and current == d.slug) or (not current and loop.first) %}checked{% endif %} required>
+<label for="d_{{ d.slug }}"><strong>{{ d.name }}</strong>{% if d.default %} <small>(built-in dataset)</small>{% endif %}</label></div>{% endfor %}
+<button class="go" type="submit" style="margin-top:8px"><i class="fa-solid fa-arrow-right"></i> Open dashboard</button></form>
+{% else %}<p>No department data found. Add a department below.</p>{% endif %}</div>
+
+<div class="card2 wiz" id="wiz">
+<h2><span class="num"><i class="fa-solid fa-cloud-arrow-up"></i></span> Add a new department</h2>
+<p class="lead">Fill in one step at a time. Press <kbd>Enter</kbd> to continue.</p>
+<div class="wz-steps" id="wzSteps"><span><b>1</b>Department</span><span><b>2</b>Subjects</span><span><b>3</b>PO</span><span><b>4</b>PEO</span><span><b>5</b>PSO</span><span><b>6</b>Review</span></div>
+<div class="wz-error" id="wzError" hidden></div>
+<form method="POST" action="/departments/upload" id="upForm" enctype="multipart/form-data" novalidate>
+<input type="hidden" name="name" id="h_name"><input type="hidden" name="text_subjects" id="h_subjects"><input type="hidden" name="text_co" id="h_co">
+<input type="hidden" name="text_po" id="h_po"><input type="hidden" name="text_peo" id="h_peo"><input type="hidden" name="text_pso" id="h_pso">
+<input type="hidden" name="mode_subjects" value="text"><input type="hidden" name="mode_co" value="text"><input type="hidden" name="mode_po" value="text"><input type="hidden" name="mode_peo" value="text"><input type="hidden" name="mode_pso" value="text">
+
+<div class="wz-pane active" data-step="0">
+<div class="q-card"><div class="q-ico"><i class="fa-solid fa-building"></i></div><h3>What is the department name?</h3>
+<input type="text" id="dn" class="q-input" placeholder="e.g. Electronics and Communication Engineering" autocomplete="off"></div>
+</div>
+
+<div class="wz-pane" data-step="1">
+<div class="q-card"><div class="q-ico"><i class="fa-solid fa-book"></i></div><h3>Subjects</h3>
+<p class="q-hint">One subject per line: <i>code | name | semester | credits | scheme | year</i>. Only code and name are needed, for example <i>BCS301 | Mathematics for Computer Science</i></p>
+<textarea id="t_subjects" class="q-area" rows="6" placeholder="BCS301 | Mathematics for Computer Science | 3rd | 4 | 2022 | 2nd Year&#10;BCS302 | Digital Design and Computer Organization"></textarea><span class="cnt" data-for="t_subjects">0 lines</span></div>
+<div class="q-card" style="margin-top:14px"><div class="q-ico"><i class="fa-solid fa-bullseye"></i></div><h3>Course Outcomes (CO)</h3>
+<p class="q-hint">Write <i>Subject Code: BCS301</i>, then one outcome per line as <i>CO1: ...</i>. Repeat for each subject.</p>
+<textarea id="t_co" class="q-area" rows="10" placeholder="Subject Code: BCS301&#10;CO1: Explain the basic concepts of probability&#10;CO2: Apply the rules of ...&#10;Subject Code: BCS302&#10;CO1: ..."></textarea><span class="cnt" data-for="t_co">0 lines</span></div>
+</div>
+
+<div class="wz-pane" data-step="2"><div class="q-card"><div class="q-ico"><i class="fa-solid fa-award"></i></div><h3>Programme Outcomes (PO)</h3><p class="q-hint">One per line, for example <i>PO1: Engineering knowledge: Apply the knowledge of mathematics...</i></p>
+<textarea id="t_po" class="q-area" rows="9" placeholder="PO1: Engineering knowledge: ...&#10;PO2: Problem analysis: ..."></textarea><span class="cnt" data-for="t_po">0 lines</span><p class="q-hint" style="margin-top:14px">Or upload the PO file instead of typing:</p><label class="drop upl" data-file="po"><i class="fa-solid fa-cloud-arrow-up"></i><b>PO file</b><small>Click or drop a file (.xlsx, .xls, .csv, .pdf)</small><input type="file" name="po" accept=".xlsx,.xls,.csv,.pdf"></label></div></div>
+<div class="wz-pane" data-step="3"><div class="q-card"><div class="q-ico"><i class="fa-solid fa-graduation-cap"></i></div><h3>Programme Educational Objectives (PEO)</h3><p class="q-hint">One per line, for example <i>PEO1: Empower students with a strong basis in...</i></p>
+<textarea id="t_peo" class="q-area" rows="7" placeholder="PEO1: ...&#10;PEO2: ..."></textarea><span class="cnt" data-for="t_peo">0 lines</span><p class="q-hint" style="margin-top:14px">Or upload the PEO file instead of typing:</p><label class="drop upl" data-file="peo"><i class="fa-solid fa-cloud-arrow-up"></i><b>PEO file</b><small>Click or drop a file (.xlsx, .xls, .csv, .pdf)</small><input type="file" name="peo" accept=".xlsx,.xls,.csv,.pdf"></label></div></div>
+<div class="wz-pane" data-step="4"><div class="q-card"><div class="q-ico"><i class="fa-solid fa-crosshairs"></i></div><h3>Programme Specific Outcomes (PSO)</h3><p class="q-hint">One per line, for example <i>PSO1: Ability to apply skills in the field of...</i></p>
+<textarea id="t_pso" class="q-area" rows="7" placeholder="PSO1: ...&#10;PSO2: ..."></textarea><span class="cnt" data-for="t_pso">0 lines</span><p class="q-hint" style="margin-top:14px">Or upload the PSO file instead of typing:</p><label class="drop upl" data-file="pso"><i class="fa-solid fa-cloud-arrow-up"></i><b>PSO file</b><small>Click or drop a file (.xlsx, .xls, .csv, .pdf)</small><input type="file" name="pso" accept=".xlsx,.xls,.csv,.pdf"></label></div></div>
+
+<div class="wz-pane" data-step="5"><div class="q-card review"><div class="q-ico"><i class="fa-solid fa-list-check"></i></div><h3>Review and generate</h3>
+<div id="reviewBox"></div>
+<label class="check"><input type="checkbox" name="replace" value="1"> Replace existing data if this department already exists</label>
+<p class="q-hint">Generating the mappings can take a minute. Please keep this page open.</p></div></div>
+
+<div class="wz-nav"><button type="button" class="ghost" id="wzBack"><i class="fa-solid fa-arrow-left"></i> Back</button>
+<button type="button" class="go" id="wzNext">Next <i class="fa-solid fa-arrow-right"></i></button>
+<button type="submit" class="go" id="wzSubmit" hidden><i class="fa-solid fa-wand-magic-sparkles"></i> Generate mappings</button></div>
+</form></div></div>
+<div id="busy"><div class="box"><div class="spin"></div><b>Generating mappings...</b><br><small id="busyMsg" style="color:var(--muted)">Reading your data and building the mappings. This can take a minute. Please keep this page open.</small></div></div>
+<script>
+(function(){
+var $=function(id){return document.getElementById(id)};
+var step=0,TOTAL=6;
+var panes=[].slice.call(document.querySelectorAll('.wz-pane')),pills=[].slice.call(document.querySelectorAll('#wzSteps span'));
+function err(m){var e=$('wzError');if(m){e.textContent=m;e.hidden=false;}else e.hidden=true;}
+function hasFile(n){var i=document.querySelector('input[type=file][name="'+n+'"]');return !!(i&&i.files.length);}
+function lines(t){return t.split('\n').filter(function(l){return l.trim()});}
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+/* ---------- main stepper ---------- */
+function show(n){
+ step=n;panes.forEach(function(p,i){p.classList.toggle('active',i===n)});
+ pills.forEach(function(p,i){p.className=i<n?'done':i===n?'on':''});
+ $('wzBack').style.visibility=n?'visible':'hidden';$('wzNext').hidden=n===TOTAL-1;$('wzSubmit').hidden=n!==TOTAL-1;
+ if(n===TOTAL-1)review();err('');
+ var w=$('wiz');w.scrollIntoView({behavior:'smooth',block:'start'});
+ var f=panes[n].querySelector('input[type=text],textarea');if(f&&true)setTimeout(function(){f.focus({preventScroll:true})},200);
+}
+function valid(){
+ if(step===0&&!$('dn').value.trim()){err('Please enter the department name.');return false;}
+ if(step===1){if(!lines($('t_subjects').value).length){err('Type at least one subject (code | name).');return false;}
+  if(!lines($('t_co').value).length){err('Type the course outcomes (Subject Code: ... then CO1: ...).');return false;}}
+ if(step===2&&!lines($('t_po').value).length&&!hasFile('po')){err('Type at least one Programme Outcome.');return false;}
+ if(step===3&&!lines($('t_peo').value).length&&!hasFile('peo')){err('Type at least one Programme Educational Objective.');return false;}
+ if(step===4&&!lines($('t_pso').value).length&&!hasFile('pso')){err('Type at least one Programme Specific Outcome.');return false;}
+ return true;
+}
+$('wzNext').onclick=function(){if(valid())show(step+1);};
+$('wzBack').onclick=function(){if(step)show(step-1);};
+document.getElementById('dn').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();if(valid())show(1);}});
+[].forEach.call(document.querySelectorAll('.q-area[id^=t_]'),function(a){a.addEventListener('input',function(){var n=lines(a.value).length;document.querySelector('.cnt[data-for="'+a.id+'"]').textContent=n+(n===1?' line':' lines');});});
+function review(){
+ var cos=lines($('t_co').value).filter(function(l){return /^\s*CO\s*[-_ ]?\d+/i.test(l)}).length;
+ $('reviewBox').innerHTML='<div class="rv-grid"><div><span>Department</span><b>'+esc($('dn').value.trim())+'</b></div><div><span>Subjects</span><b>'+lines($('t_subjects').value).length+'</b></div><div><span>Course outcomes</span><b>'+cos+'</b></div><div><span>PO</span><b>'+lines($('t_po').value).length+'</b></div><div><span>PEO</span><b>'+lines($('t_peo').value).length+'</b></div><div><span>PSO</span><b>'+lines($('t_pso').value).length+'</b></div></div>';
+}
+document.getElementById('upForm').addEventListener('submit',function(e){
+ if(step!==TOTAL-1){e.preventDefault();return;}
+ $('h_name').value=$('dn').value.trim();
+ $('h_subjects').value=$('t_subjects').value;
+ $('h_co').value=$('t_co').value;
+ $('h_po').value=$('t_po').value;$('h_peo').value=$('t_peo').value;$('h_pso').value=$('t_pso').value;
+ $('busy').style.display='flex';$('wzSubmit').disabled=true;
+});
+[].forEach.call(document.querySelectorAll('.upl'),function(d){var i=d.querySelector('input'),s=d.querySelector('small');
+ i.addEventListener('change',function(){if(i.files.length){d.classList.add('has');s.textContent=i.files[0].name;d.querySelector('i').className='fa-solid fa-circle-check';}});});
+show(0);window.scrollTo(0,0);
+})();
+</script><script src="{{ url_for('static',filename='js/script.js') }}"></script><script src="{{ url_for('static',filename='js/creative.js') }}"></script>
+</body></html>

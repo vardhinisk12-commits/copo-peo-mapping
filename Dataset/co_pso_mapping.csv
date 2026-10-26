@@ -1,0 +1,207 @@
+Subject Code,CO ID,Course Outcome,PSO1,PSO2
+BCS301,CO1,"To introduce the concept of random variables, probability distributions, specific discrete and continuous distributions with practical application in Computer Science Engineering and social life situations.  ",2,3
+BCS301,CO2,To Provide the principles of statistical inferences and the basics of hypothesis testing with emphasis on some commonly encountered hypotheses,3,2
+BCS301,CO3,To Determine whether an input has a statistically significant effect on the system's response through ANOVA testing.  ,3,2
+BCS302,CO1,To demonstrate the functionalities of binary logic system ,3,2
+BCS302,CO2,To explain the working of combinational and sequential logic system,3,2
+BCS302,CO3,To realize the basic structure of computer system ,2,3
+BCS302,CO4,To illustrate the working of I/O operations and processing unit,3,2
+BCS303,CO1,To Demonstrate the need for OS and different types of OS ,3,2
+BCS303,CO2,To discuss suitable techniques for management of different resources,3,2
+BCS303,CO3,"To demonstrate different APIs/Commands related  to  processor, memory, storage and file system management",3,2
+BCS304,CO1,To explain fundamentals of data structures and their applications.,2,3
+BCS304,CO2,"To illustrate representation of Different data structures such as Stack, Queues, Linked Lists, Trees and Graphs.",3,2
+BCS304,CO3,To Design and Develop Solutions to problems using Linear Data Structures,3,2
+BCS304,CO4,To discuss applications of Nonlinear Data Structures in problem solving.,2,3
+BCS304,CO5,To introduce advanced Data structure concepts such as Hashing and Optimal Binary Search Trees,3,2
+BCSL305,CO1,Dynamic memory management,3,2
+BCSL305,CO2,"Linear data structures and their applications such as stacks, queues and lists",2,3
+BCSL305,CO3,Non-Linear data structures and their applications such as trees and graphs,2,3
+BCS306A,CO1,To learn primitive constructs JAVA programming language.,3,2
+BCS306A,CO2,To understand Object Oriented Programming Features of JAVA.,3,2
+BCS306A,CO3,"To gain knowledge on: packages, multithreaded programing and exceptions",2,3
+BCS306B,CO1,To understand object-oriented programming using C++and Gain knowledge about the capability to store information together in an object.,2,3
+BCS306B,CO2,To illustrate the capability of a class to rely upon another class and functions.,3,2
+BCS306B,CO3,To Create and process data in files using file I/O functions,3,2
+BCS306B,CO4,To understand the generic programming features of C++ including Exception handling,3,2
+BSCK307,CO1,Provide a formal platform for students to communicate and connect to the surrounding.,3,2
+BSCK307,CO2,create a responsible connection with the society.,3,2
+BSCK307,CO3,Understand the community in general in which they work.,3,2
+BSCK307,CO4,Identify the needs and problems of the community and involve them in problem –solving.,3,2
+BSCK307,CO5,Develop among themselves a sense of social & civic responsibility & utilize their knowledge in finding pr,2,3
+BSCK307,CO6,Develop competence required for group-living and sharing of responsibilities & gain skills in mobilizing community participation to acquire leadership qualities and democratic attitudes.,3,2
+BCS358A,CO1,To Apply analysis techniques to datasets in Excel,2,3
+BCS358A,CO2,Learn how to use Pivot Tables and Pivot Charts to streamline your workflow in Excel,3,2
+BCS358A,CO3,Understand and Identify the principles of data analysis,3,2
+BCS358A,CO4,Become adept at using Excel functions and techniques for analysis,3,2
+BCS358A,CO5,Build presentation ready dashboards in Excel,3,2
+BCS358B,CO1,To explore and understand how R and R Studio interactive environment.,3,2
+BCS358B,CO2,"To understand the different data Structures, data types in R.",3,2
+BCS358B,CO3,To learn and practice programming techniques using R programming.,3,2
+BCS358B,CO4,To import data into R from various data sources and generate visualizations.,3,2
+BCS358B,CO5,To draw insights from datasets using data analytics techniques.,3,2
+BCS358C,CO1,To familiar with basic command of Git,3,2
+BCS358C,CO2,To create and manage branches,3,2
+BCS358C,CO3,To understand how to collaborate and work with Remote Repositories,3,2
+BCS358C,CO4,To familiar with virion controlling commands,3,2
+BCS358D,CO1,Demonstrate the use of IDLE or PyCharm IDE to create Python Applications,2,3
+BCS358D,CO2,Using Python programming language to develop programs for solving real-world problems,3,2
+BCS358D,CO3,Implementation of Matplotlib for drawing different Plots,3,2
+BCS358D,CO4,"Demonstrate working with Seaborn, Bokeh.",3,2
+BCS358D,CO5,"Working with Plotly for 3D, Time Series and Maps.",3,2
+BCS401,CO1,To learn the methods for analyzing algorithms and evaluating their performance.,3,2
+BCS401,CO2,To demonstrate the efficiency of algorithms using asymptotic notations.,3,2
+BCS401,CO3,"To solve problems using various algorithm design methods, including brute force, greedy, divide and conquer, decrease and conquer, transform and conquer, dynamic programming, backtracking, and branch and bound.",3,2
+BCS401,CO4,To learn the concepts of P and NP complexity classes.,3,2
+BCS402,CO1,Understand the fundamentals of ARM-based systems and basic architecture of CISC and RISC,2,3
+BCS402,CO2,"Familiarize with ARM programming modules along with registers, CPSR and Flags.",3,2
+BCS402,CO3,Develop ALP using various instructions to program the ARM controller.,3,2
+BCS402,CO4,Understand the Exceptions and Interrupt handling mechanism in Microcontrollers.,3,2
+BCS402,CO5,Discuss the ARM Firmware packages and Cache memory polices.,3,2
+BCS403,CO1,"To Provide a strong foundation in database concepts, technology, and practice.",3,2
+BCS403,CO2,To Practice SQL programming through a variety of database problems.,3,2
+BCS403,CO3,To Understand the relational database design principles.,3,2
+BCS403,CO4,To Demonstrate the use of concurrency and transactions in database.,3,2
+BCS403,CO5,To Design and build database applications for real world problems.,3,2
+BCS403,CO6,To become familiar with database storage structures and access techniques.,3,2
+BCSL404,CO1,To design and implement various algorithms in C/C++ programming using suitable development tools to address different computational challenges.,3,2
+BCSL404,CO2,To apply diverse design strategies for effective problem-solving.,3,2
+BCSL404,CO3,To Measure and compare the performance of different algorithms to determine their efficiency and suitability for specific tasks,3,2
+BCS405A,CO1,To help students to understand discrete and continuous mathematical structures.,3,2
+BCS405A,CO2,To impart basics of relations and functions.,3,2
+BCS405A,CO3,To facilitate students in applying principles of Recurrence Relations to find the generating functions and solve the Recurrence relations.,3,2
+BCS405A,CO4,To have the knowledge of groups and their properties to understand the importance of algebraic properties relative to various number systems.,2,3
+BCS405B,CO1,"Understand the basic concepts of graphs and their properties, and operations of graphs.",3,2
+BCS405B,CO2,"Hamiltonian and Euler graphs, trees and matrix representation of the graph.",3,2
+BCS405B,CO3,"Apply the concepts of a planar graph, matching and colouring in computer science engineering.",2,3
+BCS405C,CO1,Appreciate the importance of linear algebra in computer science and allied engineering science.,2,3
+BCS405C,CO2,Gain the knowledge of linear algebra tools and concepts to implememt them in their core domain.,2,3
+BCS405C,CO3,Improve their mathematical thinking and acquire skills required for sustained lifelong learning.,3,2
+BCS405D,CO1,To equip the students with standard concepts and tools in Linear algebra which will find them useful in their disciplines.,3,2
+BCS405D,CO2,Gain the knowledge of linear algebra tools and concepts to implement them in their core domain.,2,3
+BCS405D,CO3,Improve their mathematical thinking and acquire skills required for sustained lifelong learning.,3,2
+BCS456A,CO1,Understand challenges for Green ICT and the environmental impact.,3,2
+BCS456A,CO2,Learn different aspects of ICT metrics and Sustainable Cloud Computing.,3,2
+BCS456A,CO3,Explore effects of software design on the sustainability.,3,2
+BCS456B,CO1,"Understand requirement and measurements for capacity planning, measurement and monitoring.",3,2
+BCS456B,CO2,Measurement of data for prediction towards the planning process.,3,2
+BCS456B,CO3,"Understand concepts related to deployment, installation, configuration, and management",3,2
+BCS456B,CO4,Role of virtualization and cloud services in capacity planning,3,2
+BCS456C,CO1,"Understand user experience design requirements, with design goals, metrics and targets.",3,2
+BCS456C,CO2,"Explore different prototyping methods, UX design principles with case examples.",3,2
+BCS456C,CO3,Understand the role of design thinking concepts and mental models in UX design.,3,2
+BCSL456D,CO1,To introduce the basic syntax and semantics of the LaTeX scripting language,3,2
+BCSL456D,CO2,To understand the presentation of tables and figures in the document,3,2
+BCSL456D,CO3,To illustrate the LaTeX syntax to represent the theorems and mathematical equations,3,2
+BCSL456D,CO4,"To make use of the libraries (Tikz, algorithm) to design the diagram and algorithms in the document",3,2
+BCS501,CO1,Outline software engineering principles and activities involved in building large software programs. Identify ethical and professional issues and explain why they are of concern to Software Engineers,2,3
+BCS501,CO2,"Describe the process of requirement gathering, requirement classification, requirement specification and requirements validation.",3,2
+BCS501,CO3,Recognize the importance of Project Management with its methods and methodologies.,3,2
+BCS501,CO4,Identify software quality parameters and quantify software using measurements and metrics. List software quality standards and outline the practices involved.,3,2
+BCS502,CO1,"Study the TCP/IP protocol suite, switching criteria and Medium Access Control protocols for reliable and noisy channels.",3,2
+BCS502,CO2,Learn network layer services and IP versions.,2,3
+BCS502,CO3,Discuss transport layer services and understand UDP and TCP protocols.,3,2
+BCS502,CO4,Demonstrate the working of different concepts of networking layers and protocols.,3,2
+BCS503,CO1,Introduce core concepts in Automata and Theory of Computation.,3,2
+BCS503,CO2,Identify different Formal Language Classes and their Relationships.,3,2
+BCS503,CO3,Learn concepts of Grammars and Recognizers for different formal languages.,3,2
+BCS503,CO4,Prove or disprove theorems in automata theory using their properties.,3,2
+BCS503,CO5,Determine the decidability and intractability of Computational problems.,3,2
+BCSL504,CO1,Learn HTML 5 elements and their use.,3,2
+BCSL504,CO2,Use of CSS for enhanced user interface presentation.,3,2
+BCSL504,CO3,"Gain knowledge of JavaScript, AJAX and jQuery for dynamic presentation.",2,3
+BCSL504,CO4,Use of PHP to build Web applications.,3,2
+BCSL504,CO5,Design and develop Websites and Web applications.,3,2
+BCS515A,CO1,Understand the basic principles of Graphical Systems.,3,2
+BCS515A,CO2,"Understand hardware, software and OpenGL Graphics Primitives.",3,2
+BCS515A,CO3,Illustrate interactive computer graphic using the OpenGL.,2,3
+BCS515A,CO4,Design and implementation of algorithms for 2D graphics Primitives and attributes.,3,2
+BCS515A,CO5,"Demonstrate Geometric transformations, viewing on both 2D and 3D objects.",3,2
+BCS515A,CO6,"Infer the representation of lines, surfaces, Color and Illumination models",3,2
+BCS515B,CO1,"Learn the basic principles and theories underlying artificial intelligence, including machine learning, neural networks, natural language processing, and robotics",2,3
+BCS515B,CO2,"Apply AI techniques to solve real-world problems, including search algorithms, optimization, and decision-making processes.",3,2
+BCS515B,CO3,"Understand the ethical, legal, and societal implications of AI, including topics such as bias, fairness, accountability, and the impact of AI on the workforce and privacy.",3,2
+BCS515C,CO1,"To help the students to understand effective use of Unix concepts, commands and terminology. Identify, access, and evaluate UNIX file system",3,2
+BCS515C,CO2,Explain the fundamental design of the unix operating system,3,2
+BCS515C,CO3,Familiarize with the systems calls provided in the unix environment,3,2
+BCS515C,CO4,Design and build an application/service over the unix operating system,3,2
+BCS515D,CO1,Understand the goals and challenges of distributed systems,3,2
+BCS515D,CO2,"Describe the architecture of RPC/RMI, distributed file systems and name services",3,2
+BCS515D,CO3,"Learn clock synchronization algorithms to monitor and order the events, mutual exclusion, election and consensus algorithms.",3,2
+BCS515D,CO4,Study the fundamental concepts and algorithms related to distributed transactions and replication,3,2
+BCS508,CO1,Identify the major challenges of environmental issues,3,2
+BCS508,CO2,"Develop skills, critical thinking and demonstrate socio-economic skills for Environmental protection",3,2
+BCS508,CO3,Analyze the impact of issues w. r. t. waste management,3,2
+BCS601,CO1,Introduce the rationale behind the cloud computing revolution and the business drivers,3,2
+BCS601,CO2,"Understand various models, types and challenges of cloud computing",3,2
+BCS601,CO3,"Understand the design of cloud native applications, the necessary tools and the design tradeoffs.",3,2
+BCS601,CO4,"Realize the importance of Cloud Virtualization, Abstraction`s, Enabling Technologies and cloud security",3,2
+BCS602,CO1,To introduce the fundamental concepts and techniques of machine learning.,3,2
+BCS602,CO2,To understanding of various types of machine learning and the challenges faced in realworld applications,2,3
+BCS602,CO3,"To familiarize the machine learning algorithms such as regression, decision trees, Bayesian models, clustering, and neural networks.",2,3
+BCS602,CO4,To explore advanced concept like reinforcement learning and provide practical insight into its applications.,2,3
+BCS602,CO5,To enable students to model and evaluate machine learning solutions for different types of problems.,3,2
+BCS613A,CO1,To Understand Blockchain terminologies with its applications. design,3,2
+BCS613A,CO2,To learn working principles of Blockchain and methodologies used in Bitcoin,3,2
+BCS613A,CO3,"To gain knowledge on Ethereum Network, Wallets, Nodes, Smart contract & DApps",2,3
+BCS613A,CO4,To learn blockchain Based Application Architecture using Hyperledger and the Smart Contract Lifecycle,2,3
+BCS613B,CO1,To understand the fundamentals of computer vision and digital image processing,2,3
+BCS613B,CO2,To introduce the processes involved image enhancement and restoration.,3,2
+BCS613B,CO3,To facilitate the students to gain understanding color image processing and morphology,3,2
+BCS613B,CO4,To impart the knowledge of image segmentation and object recognition techniques.,2,3
+BCS613C,CO1,Understand the working of language processors,3,2
+BCS613C,CO2,Apply different phases of designing a compiler,2,3
+BCS613C,CO3,Illustrate lexical analysis,3,2
+BCS613C,CO4,Explain the need of real time operating system for embedded system applications.,2,3
+BCS613D,CO1,Understanding the fundamentals of collection framework,3,2
+BCS613D,CO2,Demonstrate the fundamental concepts of String operations and Swing applications,2,3
+BCS613D,CO3,Design and develop web applications using Java servlets and JSP,3,2
+BCS613D,CO4,Apply database interaction through Java database Connectivity,3,2
+BCS654A,CO1,Introduce primitive and non-primitive data structures,3,2
+BCS654A,CO2,Understand the various types of data structure along their operations,3,2
+BCS654A,CO3,Study various searching and sorting algorithms,3,2
+BCS654A,CO4,Assess appropriate data structures during program development / problem solving,3,2
+BCS654B,CO1,To demonstrate the need and different types of OS,3,2
+BCS654B,CO2,To discuss suitable techniques for management of different resources,3,2
+BCS654B,CO3,"To analyse different memory, storage, and file system management strategies",3,2
+BIS654C,CO1,"Create, test and debug Android application by setting up Android development environment.",3,2
+BIS654C,CO2,"Implement adaptive, responsive user interfaces that work across a wide range of devices.",3,2
+BIS654C,CO3,Infer long running tasks and background work in Android applications,2,3
+BIS654C,CO4,"Demonstrate methods in storing, sharing and retrieving data in Android applications",2,3
+BIS654C,CO5,Analyze performance of android applications,2,3
+BIS654C,CO6,Describe the steps involved in publishing Android application to share with the world.,3,2
+BAI654D,CO1,To understand the primitives of AI,3,2
+BAI654D,CO2,To familiarize Knowledge Representation Issues,2,3
+BAI654D,CO3,"To understand fundamentals of Statistical Reasoning, Natural Language Processing.",3,2
+BCSL606,CO1,"To become familiar with data and visualize univariate, bivariate, and multivariate data using statistical techniques and dimensionality reduction.",3,2
+BCSL606,CO2,"To understand various machine learning algorithms such as similarity-based learning, regression, decision trees, and clustering.",2,3
+BCSL606,CO3,"To familiarize with learning theories, probability-based models and developing the skills required for decision-making in dynamic environments.",2,3
+BIS657A,CO1,"To introduce the features, components, and benefits of the Tosca platform",3,2
+BIS657A,CO2,"To understand the Test case design, Test execution and Test data management",3,2
+BIS657A,CO3,To learn the concepts of Test automation,3,2
+BIS657A,CO4,To understand the Test scenario development,3,2
+BAIL657C,CO1,Understand the principles and concepts behind generative AI models,3,2
+BAIL657C,CO2,Explain the knowledge gained to implement generative models using Prompt design frameworks.,3,2
+BAIL657C,CO3,Apply various Generative AI applications for increasing productivity.,2,3
+BAIL657C,CO4,Develop Large Language Model-based Apps.,2,3
+BCSL657D,CO1,"To introduce DevOps terminology, definition & concepts",3,2
+BCSL657D,CO2,"To understand the different Version control tools like Git, Mercurial",3,2
+BCSL657D,CO3,To understand the concepts of Continuous Integration/ Continuous Testing/ Continuous Deployment),3,2
+BCSL657D,CO4,To understand Configuration management using Ansible,3,2
+BCSL657D,CO5,Illustrate the benefits and drive the adoption of cloud-based Devops tools to solve real world problems,2,3
+BCS701,CO1,Understand about the fundamentals of Internet of Things and its building blocks along with their characteristics.,2,3
+BCS701,CO2,Understand the recent application domains of IoT in everyday life,3,2
+BCS701,CO3,Understand the protocols and standards designed for IoT and the current research on i,3,2
+BCS701,CO4,Understand the other associated technologies like cloud and fog computing in the domain of IoT.,3,2
+BCS701,CO5,Improve their knowledge about the various cutting-edge technologies in the field IoT and machine learning applications,2,3
+BCS701,CO6,Gain insights about the current trends of machine learning and AI techniques used in IoT to orient towards the present industrial scenario.,3,2
+BCS702,CO1,Explore the need for parallel programming,3,2
+BCS702,CO2,Explain how to parallelize on MIMD systems,3,2
+BCS702,CO3,To demonstrate how to apply MPI library and parallelize the suitable programs,2,3
+BCS702,CO4,To demonstrate how to apply OpenMP pragma and directives to parallelize the suitable programs,2,3
+BCS702,CO5,To demonstrate how to design CUDA program,3,2
+BCS703,CO1,"Understand the basics of Cryptography concepts, Security and its principle",3,2
+BCS703,CO2,To analyse different Cryptographic Algorithms,3,2
+BCS703,CO3,To illustrate public and private key cryptography,3,2
+BCS703,CO4,To understand the key distribution scenario and certification,3,2
+BCS703,CO5,To understand approaches and techniques to build protection mechanism in order to secure computer networks,2,3

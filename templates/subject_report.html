@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script>document.documentElement.setAttribute('data-theme','dark')</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ subject_name|default('Subject Report') }} ({{ subject_code|default('') }}) | CO&ndash;PO&ndash;PEO Analytics</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+
+/* ============================================================
+   RESET / TOKENS
+============================================================ */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root{
+  --primary:#238987;
+  --primary-dark:#1A6B69;
+  --primary-light:#5FB8B6;
+  --secondary:#F2A93B;
+  --accent:#1F4A48;
+
+  --success:#1E8E5A;
+  --success-bg:#ecfdf5;
+  --warning:#d97706;
+  --warning-bg:#fffbeb;
+  --danger:#dc2626;
+  --danger-bg:#fef2f2;
+  --neutral:#64748b;
+  --neutral-bg:#f1f5f9;
+
+  --dark:#12302F;
+  --text:#2E4A48;
+  --muted:#64748b;
+  --faint:#94a3b8;
+
+  --white:#ffffff;
+  --light:#f8fafc;
+  --lighter:#f1f5f9;
+  --border:#e2e8f0;
+
+  --shadow-sm:0 1px 3px rgba(15,23,42,.06);
+  --shadow:0 10px 28px rgba(15,23,42,.08);
+  --shadow-lg:0 20px 45px rgba(35,137,135,.14);
+
+  --radius-sm:10px;
+  --radius:16px;
+  --radius-lg:22px;
+}
+
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family:"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background:
+    radial-gradient(circle at 10% 0%, #E4F3F2 0%, transparent 45%),
+    radial-gradient(circle at 90% 10%, #DDF1F0 0%, transparent 40%),
+    var(--light);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{ text-decoration:none; color:inherit; }
+button{ font-family:inherit; cursor:pointer; }
+::selection{ background:var(--primary-light); color:#fff; }
+
+.container{
+  max-width:1280px;
+  margin:0 auto;
+  padding:28px 24px 80px;
+}
+
+section{ margin-bottom:36px; }
+
+.section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:18px;
+}
+
+.section-title{
+  font-size:1.35rem;
+  font-weight:800;
+  color:var(--dark);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.section-title .dot{
+  width:9px; height:9px; border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  display:inline-block;
+}
+
+.section-sub{
+  color:var(--muted);
+  font-size:.92rem;
+  margin-top:4px;
+}
+
+.card{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);
+}
+
+/* ============================================================
+   TOP BAR
+============================================================ */
+.topbar{
+  position:sticky; top:0; z-index:50;
+  background:rgba(255,255,255,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+
+.topbar-inner{
+  max-width:1280px; margin:0 auto;
+  padding:14px 24px;
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+}
+
+.brand{ display:flex; align-items:center; gap:12px; min-width:0; }
+
+.brand-logo{
+  width:46px; height:46px;
+  border-radius:12px;
+  object-fit:cover;
+  box-shadow:var(--shadow-sm);
+  border:1px solid var(--border);
+  flex-shrink:0;
+}
+
+.brand-logo-fallback{
+  width:46px; height:46px; border-radius:12px;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  color:#fff; font-weight:800; font-size:1rem;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+
+.brand-text{ min-width:0; }
+.brand-college{ font-weight:800; color:var(--dark); font-size:.98rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.brand-project{ font-size:.78rem; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+.nav-actions{ display:flex; gap:10px; flex-shrink:0; }
+
+.nav-btn{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:10px 16px;
+  border-radius:10px;
+  font-weight:700;
+  font-size:.86rem;
+  border:1px solid var(--border);
+  background:var(--white);
+  color:var(--text);
+  transition:.15s;
+}
+.nav-btn:hover{ transform:translateY(-1px); box-shadow:var(--shadow-sm); border-color:var(--primary-light); }
+
+.nav-btn.primary{
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  border-color:transparent;
+  color:#fff;
+}
+
+/* ============================================================
+   HERO
+============================================================ */
+.hero{
+  margin-top:26px;
+  border-radius:var(--radius-lg);
+  padding:38px 34px;
+  background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 55%, var(--accent) 100%);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow-lg);
+}
+
+.hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(circle at 90% -10%, rgba(255,255,255,.18), transparent 45%),
+    radial-gradient(circle at 0% 120%, rgba(255,255,255,.12), transparent 40%);
+}
+
+.hero-inner{ position:relative; z-index:1; }
+
+.hero-eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.3);
+  padding:6px 14px; border-radius:999px;
+  font-size:.78rem; font-weight:700; letter-spacing:.03em;
+  margin-bottom:16px;
+}
+
+.hero-title{ font-size:1.9rem; font-weight:800; line-height:1.25; margin-bottom:8px; }
+.hero-desc{ font-size:.96rem; opacity:.92; max-width:640px; margin-bottom:22px; }
+
+.hero-meta{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:14px;
+}
+
+.hero-meta-card{
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:var(--radius-sm);
+  padding:14px 16px;
+  backdrop-filter:blur(4px);
+}
+
+.hero-meta-label{ font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; opacity:.8; margin-bottom:4px; }
+.hero-meta-value{ font-size:1.05rem; font-weight:800; word-break:break-word; }
+
+/* ============================================================
+   KPI GRID
+============================================================ */
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:16px;
+  margin-top:-30px;
+  position:relative;
+  z-index:2;
+}
+
+.kpi-card{
+  background:var(--white);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+  transition:.2s;
+}
+.kpi-card:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lg); }
+
+.kpi-icon{
+  width:42px; height:42px; border-radius:11px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.15rem; margin-bottom:12px;
+}
+
+.kpi-value{ font-size:1.7rem; font-weight:800; color:var(--dark); }
+.kpi-label{ font-size:.8rem; color:var(--muted); font-weight:600; margin-top:2px; }
+
+.kpi-icon.blue{ background:#E4F3F2; color:var(--primary); }
+.kpi-icon.purple{ background:#E6F4F3; color:var(--accent); }
+.kpi-icon.cyan{ background:#DDF1F0; color:var(--secondary); }
+.kpi-icon.green{ background:var(--success-bg); color:var(--success); }
+.kpi-icon.amber{ background:var(--warning-bg); color:var(--warning); }
+
+.status-chip{
+  display:inline-flex; align-items:center; gap:6px;
+  font-size:.78rem; font-weight:700;
+  padding:5px 10px; border-radius:999px;
+}
+.status-chip.on{ background:var(--success-bg); color:var(--success); }
+
+/* ============================================================
+   CO CARDS
+============================================================ */
+.co-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:16px;
+}
+
+.co-card{
+  padding:20px;
+  border-radius:var(--radius);
+  position:relative;
+  overflow:hidden;
+}
+.co-card::before{
+  content:"";
+  position:absolute; left:0; top:0; bottom:0; width:4px;
+  background:linear-gradient(180deg,var(--primary),var(--accent));
+}
+
+.co-card-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; gap:8px; }
+
+.co-id-badge{
+  font-weight:800; font-size:.85rem;
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff; padding:5px 12px; border-radius:8px;
+}
+
+.bloom-badge{
+  font-size:.72rem; font-weight:800; letter-spacing:.02em;
+  padding:5px 10px; border-radius:999px;
+  border:1px solid transparent;
+}
+.bloom-K1{ background:#DDF1F0; color:#1A6B69; }
+.bloom-K2{ background:#ecfdf5; color:#047857; }
+.bloom-K3{ background:#fefce8; color:#a16207; }
+.bloom-K4{ background:#fff7ed; color:#c2410c; }
+.bloom-K5{ background:#FDF0DA; color:#C98412; }
+.bloom-K6{ background:#EAF5F4; color:#1F4A48; }
+.bloom-Unknown{ background:var(--neutral-bg); color:var(--neutral); }
+
+.co-statement{ font-size:.92rem; color:var(--text); margin-bottom:10px; }
+
+.co-explain{
+  font-size:.82rem; color:var(--muted);
+  background:var(--lighter);
+  border-radius:10px;
+  padding:10px 12px;
+  border-left:3px solid var(--primary-light);
+}
+
+/* ============================================================
+   MATRIX TABLES
+============================================================ */
+.matrix-wrap{
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  background:var(--white);
+  overflow:auto;
+  max-height:560px;
+  box-shadow:var(--shadow-sm);
+}
+
+table.matrix{ border-collapse:collapse; width:100%; min-width:560px; font-size:.86rem; }
+
+table.matrix th, table.matrix td{
+  padding:10px 12px;
+  text-align:center;
+  border-bottom:1px solid var(--border);
+  border-right:1px solid var(--border);
+  white-space:nowrap;
+}
+
+table.matrix thead th{
+  position:sticky; top:0; z-index:3;
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff; font-weight:700; font-size:.8rem;
+}
+
+table.matrix tbody th, table.matrix td.co-cell{
+  position:sticky; left:0; z-index:2;
+  background:var(--lighter);
+  font-weight:800; color:var(--primary-dark);
+  text-align:left;
+}
+
+table.matrix tbody tr:hover td{ background:#E4F3F2; }
+table.matrix tbody tr:hover td.co-cell{ background:#CBE8E6; }
+
+.cell-val{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:30px; height:26px; border-radius:7px;
+  font-weight:800; font-size:.78rem;
+}
+.cell-0{ background:var(--neutral-bg); color:var(--faint); }
+.cell-1{ background:var(--warning-bg); color:var(--warning); }
+.cell-2{ background:#DDF1F0; color:#1A6B69; }
+.cell-3{ background:var(--success-bg); color:var(--success); }
+
+.legend{
+  display:flex; flex-wrap:wrap; gap:14px;
+  margin-top:14px; font-size:.82rem; color:var(--muted);
+}
+.legend-item{ display:flex; align-items:center; gap:6px; }
+
+/* ============================================================
+   CHARTS
+============================================================ */
+.chart-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  gap:18px;
+}
+.chart-card{ padding:20px; border-radius:var(--radius); }
+.chart-title{ font-weight:700; color:var(--dark); font-size:.95rem; margin-bottom:14px; }
+.chart-box{ position:relative; height:260px; }
+
+/* ============================================================
+   AI JUSTIFICATION
+============================================================ */
+.ai-toolbar{
+  display:flex; flex-wrap:wrap; gap:10px;
+  margin-bottom:16px;
+}
+
+.ai-search{
+  flex:1; min-width:220px;
+  padding:11px 16px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  font-size:.9rem;
+  background:var(--white);
+}
+.ai-search:focus{ outline:none; border-color:var(--primary-light); box-shadow:0 0 0 3px rgba(35,137,135,.12); }
+
+.ai-filter{
+  padding:11px 14px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:var(--white);
+  font-size:.85rem;
+  font-weight:600;
+  color:var(--text);
+}
+
+.ai-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:16px;
+}
+
+.ai-card{
+  padding:18px;
+  border-radius:var(--radius);
+  display:flex; flex-direction:column; gap:10px;
+}
+
+.ai-flow{
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+}
+
+.flow-chip{
+  font-weight:800; font-size:.8rem;
+  padding:5px 11px; border-radius:8px;
+}
+.flow-co{ background:#E4F3F2; color:var(--primary-dark); }
+.flow-arrow{ color:var(--faint); font-weight:700; }
+.flow-target-PO{ background:#DDF1F0; color:#1A6B69; }
+.flow-target-PEO{ background:#EAF5F4; color:#1F4A48; }
+
+.strength-tag{
+  margin-left:auto;
+  font-size:.72rem; font-weight:800;
+  padding:4px 10px; border-radius:999px;
+}
+.strength-High{ background:var(--success-bg); color:var(--success); }
+.strength-Moderate{ background:#DDF1F0; color:#1A6B69; }
+.strength-Low{ background:var(--warning-bg); color:var(--warning); }
+.strength-None{ background:var(--neutral-bg); color:var(--neutral); }
+
+.ai-co-statement{ font-size:.8rem; color:var(--muted); font-style:italic; }
+
+.ai-justification{
+  font-size:.87rem; color:var(--text);
+  background:var(--lighter);
+  border-radius:10px; padding:12px 14px;
+  border-left:3px solid var(--primary);
+}
+
+.ai-card-actions{ display:flex; gap:8px; margin-top:2px; }
+
+.mini-btn{
+  font-size:.75rem; font-weight:700;
+  padding:6px 12px; border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--white);
+  color:var(--text);
+  transition:.15s;
+}
+.mini-btn:hover{ border-color:var(--primary-light); color:var(--primary-dark); }
+.mini-btn.copied{ background:var(--success-bg); color:var(--success); border-color:transparent; }
+
+/* ============================================================
+   INSIGHTS
+============================================================ */
+.insight-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:16px;
+}
+.insight-card{
+  padding:18px;
+  border-radius:var(--radius);
+  display:flex; align-items:flex-start; gap:12px;
+}
+.insight-icon{
+  width:38px; height:38px; border-radius:10px;
+  background:#E4F3F2; color:var(--primary);
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0; font-size:1rem;
+}
+.insight-label{ font-size:.76rem; color:var(--muted); font-weight:700; text-transform:uppercase; letter-spacing:.03em; }
+.insight-value{ font-size:1.15rem; font-weight:800; color:var(--dark); margin-top:2px; word-break:break-word; }
+
+/* ============================================================
+   EXPORT
+============================================================ */
+.export-row{ display:flex; flex-wrap:wrap; gap:14px; }
+.export-btn{
+  display:flex; align-items:center; gap:12px;
+  padding:16px 20px; border-radius:var(--radius);
+  min-width:220px; flex:1;
+  transition:.15s;
+}
+.export-btn:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
+.export-icon{ width:42px; height:42px; border-radius:11px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; }
+.export-icon.pdf{ background:var(--danger-bg); color:var(--danger); }
+.export-icon.word{ background:#DDF1F0; color:#1A6B69; }
+.export-icon.excel{ background:var(--success-bg); color:var(--success); }
+.export-name{ font-weight:800; color:var(--dark); font-size:.92rem; }
+.export-hint{ font-size:.76rem; color:var(--muted); }
+
+/* ============================================================
+   EMPTY STATE
+============================================================ */
+.empty-state{
+  text-align:center;
+  padding:44px 20px;
+  color:var(--muted);
+}
+.empty-state .icon{ font-size:2rem; margin-bottom:10px; }
+.empty-state .msg{ font-weight:700; color:var(--text); }
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.report-footer{
+  text-align:center;
+  padding:24px 0 4px;
+  color:var(--faint);
+  font-size:.8rem;
+  border-top:1px solid var(--border);
+  margin-top:30px;
+}
+
+/* ============================================================
+   PRINT
+============================================================ */
+@media print{
+  .topbar, .ai-toolbar, .ai-card-actions, .nav-actions, .no-print{ display:none !important; }
+  body{ background:#fff !important; }
+  .hero{ box-shadow:none; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .matrix-wrap{ max-height:none; overflow:visible; }
+  table.matrix thead th{ position:static; }
+  table.matrix tbody th, table.matrix td.co-cell{ position:static; }
+  .kpi-card, .card, .co-card, .ai-card, .chart-card, .insight-card{ break-inside:avoid; box-shadow:none !important; }
+  section{ margin-bottom:20px; }
+}
+
+@media (max-width:640px){
+  .hero{ padding:26px 20px; }
+  .hero-title{ font-size:1.4rem; }
+  .container{ padding:20px 14px 60px; }
+  .brand-college{ font-size:.86rem; }
+}
+
+
+/* ===== ATME theme overrides ===== */
+body{font-family:'Instrument Sans','Segoe UI',Arial,sans-serif;background:#F1F7F6}
+.section-title,.hero-title,.brand-college{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;letter-spacing:-.3px}
+.topbar{background:#12302F;border-bottom:3px solid #238987;backdrop-filter:none}
+.brand-logo{width:auto;height:44px;background:#fff;padding:3px 8px;object-fit:contain;border:0;border-radius:8px}
+.brand-college{color:#fff}.brand-project{color:#9FC4C0}
+.nav-btn{background:transparent;color:#CFE0E4;border-color:rgba(255,255,255,.28)}
+.nav-btn:hover{background:rgba(255,255,255,.1);color:#fff;border-color:#fff;transform:none;box-shadow:none}
+.nav-btn.primary{background:#238987;border-color:#238987;color:#fff}.nav-btn.primary:hover{background:#1A6B69}
+.hero{background:#12302F;box-shadow:0 14px 34px rgba(18,48,47,.2)}
+.hero::before{background:none;width:360px;height:360px;inset:auto;right:-90px;top:-120px;border-radius:50%;border:56px solid rgba(35,137,135,.5)}
+.hero-eyebrow{color:#F2A93B;background:rgba(242,169,59,.12);border-color:rgba(242,169,59,.4)}
+.hero-meta-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.section-title .dot{background:#238987}
+@media print{.hero{background:#12302F!important}}
+
+/* ============================================================
+   v4 VISUAL REFRESH - subject report
+============================================================ */
+@keyframes srRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes srFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+body{font-family:"Instrument Sans","Segoe UI",Roboto,Arial,sans-serif}
+.section-title,.hero-title,.kpi-value{font-family:"Bricolage Grotesque","Segoe UI",sans-serif}
+section{animation:srRise .55s ease both}
+.topbar{background:rgba(255,255,255,.82);backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 4px 20px rgba(18,48,47,.06)}
+.brand-logo{object-fit:contain;background:#fff;padding:3px}
+.nav-btn.primary{box-shadow:0 8px 18px rgba(35,137,135,.28)}
+.hero{padding:46px 40px 64px;border-radius:28px;background:linear-gradient(135deg,#238987 0%,#1A6B69 50%,#12302F 100%)}
+.hero::after{content:"";position:absolute;right:-70px;top:-90px;width:320px;height:320px;border-radius:50%;border:48px solid rgba(255,255,255,.09);animation:srFloat 9s ease-in-out infinite}
+.hero-title{font-size:2.3rem;letter-spacing:-.6px;background:linear-gradient(90deg,#fff,#C9F2F0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-eyebrow{background:rgba(242,169,59,.22);border-color:rgba(242,169,59,.55);color:#FFE2AE}
+.hero-meta-card{transition:.2s}.hero-meta-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.22)}
+.kpi-card{border-radius:20px;position:relative;overflow:hidden;animation:srRise .6s ease both}
+.kpi-card::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--secondary))}
+.kpi-card:nth-child(2){animation-delay:.06s}.kpi-card:nth-child(3){animation-delay:.12s}.kpi-card:nth-child(4){animation-delay:.18s}.kpi-card:nth-child(5){animation-delay:.24s}
+.kpi-card:hover{transform:translateY(-6px)}
+.kpi-value{font-size:2rem;letter-spacing:-1px}
+.section-title{font-size:1.5rem;letter-spacing:-.4px}
+.section-title .dot{width:14px;height:14px;box-shadow:0 0 0 5px rgba(35,137,135,.15)}
+.card{border-radius:20px;box-shadow:0 6px 22px rgba(18,48,47,.06)}
+.co-card{transition:.25s}.co-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#BFE3E1}
+.co-card::before{width:6px}
+.co-id-badge{box-shadow:0 6px 14px rgba(35,137,135,.28)}
+.co-explain{background:linear-gradient(90deg,#EEF8F7,#F7FBFA)}
+.matrix-wrap{border-radius:20px;box-shadow:0 6px 22px rgba(18,48,47,.06)}
+.matrix-wrap table th{background:linear-gradient(135deg,#238987,#1A6B69)!important;color:#fff!important}
+.matrix-wrap table tbody tr{transition:background .15s}.matrix-wrap table tbody tr:hover{background:#EEF8F7}
+.chart-box{border-radius:16px}
+.ai-search,.ai-filter{border-radius:14px!important;transition:.15s}
+.ai-search:focus,.ai-filter:focus{border-color:var(--primary)!important;box-shadow:0 0 0 4px rgba(35,137,135,.15)!important;outline:0}
+.ai-grid>*{transition:.22s}.ai-grid>*:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.nav-btn{border-radius:12px}
+@media(max-width:700px){.hero{padding:30px 22px 54px}.hero-title{font-size:1.55rem}.nav-actions .nav-btn:not(.primary){padding:10px}.brand-project{display:none}}
+@media print{section,.kpi-card{animation:none!important}.hero-title{color:#fff!important;background:none!important;-webkit-text-fill-color:#fff}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+/* ---------- v5 premium layer ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}.reveal.in{opacity:1;transform:none}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);animation:rip .6s ease-out;pointer-events:none}
+@keyframes rip{to{transform:scale(2.4);opacity:0}}
+.to-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:0;background:linear-gradient(135deg,#238987,#1F4A48);color:#fff;font-size:20px;box-shadow:0 10px 24px rgba(35,137,135,.4);opacity:0;pointer-events:none;transform:translateY(12px);transition:.25s;z-index:60}
+.to-top.show{opacity:1;pointer-events:auto;transform:none}
+.pill-nav{position:sticky;top:75px;z-index:40;margin:14px auto 0;max-width:1280px;padding:0 24px}
+.pill-inner{display:flex;gap:6px;overflow-x:auto;padding:7px;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:999px;box-shadow:0 8px 24px rgba(18,48,47,.08);scrollbar-width:none}
+.pill-inner::-webkit-scrollbar{display:none}
+.pill-nav a{white-space:nowrap;padding:8px 16px;border-radius:999px;font-size:.84rem;font-weight:700;color:var(--muted);transition:.2s}
+.pill-nav a:hover{background:#E4F3F2;color:var(--primary-dark)}
+.pill-nav a.spy{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;box-shadow:0 6px 14px rgba(35,137,135,.3)}
+section{scroll-margin-top:150px}
+.hero{background:linear-gradient(120deg,#1A6B69,#238987 45%,#1F4A48)}
+.hero .hero-inner:after{content:"";position:absolute;right:30px;bottom:-30px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(242,169,59,.6),transparent 70%);animation:srFloat 8s ease-in-out infinite}
+.kpi-value{background:linear-gradient(120deg,var(--dark),var(--primary));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kpi-icon{width:48px;height:48px;border-radius:14px;font-size:1.3rem}
+table.matrix td{padding:8px 6px}
+.cell-val{width:36px;height:36px;border-radius:12px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;transition:.15s}
+.cell-3{background:linear-gradient(135deg,#1E8E5A,#16A34A)!important;color:#fff!important;box-shadow:0 6px 12px rgba(30,142,90,.35)}
+.cell-2{background:linear-gradient(135deg,#238987,#2EA3A0)!important;color:#fff!important;box-shadow:0 6px 12px rgba(35,137,135,.3)}
+.cell-1{background:linear-gradient(135deg,#F2A93B,#F5BF65)!important;color:#5A3A05!important;box-shadow:0 6px 12px rgba(242,169,59,.35)}
+.cell-0{background:#F1F5F9!important;color:#B9D0CD!important}
+table.matrix td:hover .cell-val{transform:scale(1.18)}
+.bloom-badge{box-shadow:0 3px 8px rgba(18,48,47,.08)}
+.section-head{padding-bottom:12px;border-bottom:2px solid #E2EEED;position:relative}
+.section-head:after{content:"";position:absolute;left:0;bottom:-2px;width:90px;height:2px;background:linear-gradient(90deg,var(--primary),var(--secondary))}
+.export-btn{transition:.25s}.export-btn:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+@media(max-width:700px){.pill-nav{top:68px;padding:0 10px}}
+@media print{.pill-nav,.to-top{display:none!important}.reveal{opacity:1!important;transform:none!important}}
+
+/* ---------- v6 fixes + polish ---------- */
+.topbar{background:linear-gradient(90deg,#0D2827,#12302F 55%,#1A5B59)!important;border-bottom:3px solid transparent!important;border-image:linear-gradient(90deg,#238987,#F2A93B) 1!important;backdrop-filter:none!important;box-shadow:0 8px 26px rgba(18,48,47,.28)!important}
+.brand-logo{border-radius:10px!important;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.nav-btn{background:rgba(255,255,255,.06)!important;color:#CFE0E4!important;border-color:rgba(255,255,255,.25)!important}
+.nav-btn:hover{background:rgba(255,255,255,.16)!important;color:#fff!important;transform:translateY(-1px)!important}
+.nav-btn.primary{background:linear-gradient(135deg,#238987,#2EA3A0)!important;border-color:transparent!important;color:#fff!important;box-shadow:0 8px 18px rgba(35,137,135,.4)!important}
+.pill-nav{top:80px}
+.hero{margin-top:22px;background:linear-gradient(120deg,#1A6B69,#238987 45%,#1F4A48)!important}
+.hero::before{border:56px solid rgba(255,255,255,.08)!important}
+.hero-eyebrow{background:rgba(242,169,59,.2)!important;color:#FFE2AE!important}
+.hero-meta-card{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.22)!important}
+.kpi-grid{margin-top:-84px}
+</style>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-light.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-dark.css') }}">
+</head>
+
+<body>
+
+<!-- ================================================================
+     1. HEADER
+================================================================= -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      {% set logo_path = 'images/ATME.jpeg' %}
+      <img class="brand-logo" src="{{ url_for('static', filename=logo_path) }}"
+           alt="ATME College of Engineering logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="brand-logo-fallback" style="display:none;">ATME</div>
+      <div class="brand-text">
+        <div class="brand-college">ATME College of Engineering</div>
+        <div class="brand-project">CO&ndash;PO&ndash;PEO&ndash;PSO Mapping Report</div>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <a href="{{ url_for('dashboard') }}" class="nav-btn">&larr; Dashboard</a>
+      <button class="nav-btn primary" onclick="window.print()">&#128424; Print Report</button>
+    </div>
+  </div>
+</header>
+
+<nav class="pill-nav no-print" aria-label="Report sections"><div class="pill-inner">
+<a href="#course-outcomes">Course Outcomes</a><a href="#co-po-matrix">CO&ndash;PO</a><a href="#co-peo-matrix">CO&ndash;PEO</a><a href="#co-pso-matrix">CO&ndash;PSO</a><a href="#constellation-sec">Graph</a><a href="#charts">Charts</a><a href="#ai-justification">Justification</a><a href="#insights">Insights</a><a href="#export">Export</a>
+</div></nav>
+
+<main class="container">
+
+  <!-- ============================================================
+       2. HERO
+  ============================================================= -->
+  <section class="hero" data-constellation>
+    <img class="banner-photo" src="{{ url_for('static', filename='images/atme_campus.jpg') }}" alt="ATME College of Engineering campus">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">&#128218; Subject Analytics Report</div>
+      <div class="hero-title">
+        {{ subject_code|default('&mdash;') }} &middot; {{ subject_name|default('Subject name unavailable') }}
+      </div>
+      <div class="hero-desc">Course outcome mapping with Programme Outcomes, Programme Educational Objectives and Programme Specific Outcomes.</div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">Department</div>
+          <div class="hero-meta-value">{{ department|default('N/A') }}</div>
+        </div>
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">Semester</div>
+          <div class="hero-meta-value">{{ semester|default('N/A') }}</div>
+        </div>
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">Credits</div>
+          <div class="hero-meta-value">{{ credits|default('N/A') }}</div>
+        </div>
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">VTU Scheme</div>
+          <div class="hero-meta-value">{{ scheme|default('N/A') }}</div>
+        </div>
+        {% if year %}<div class="hero-meta-card"><div class="hero-meta-label">Year</div><div class="hero-meta-value">{{ year }}</div></div>{% endif %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. KPI CARDS
+  ============================================================= -->
+  {% set positive_mappings = ai_reason_rows|selectattr('Mapping Value','gt',0)|list %}
+  <section class="kpi-grid">
+    <div class="kpi-card card">
+      <div class="kpi-icon blue">&#128218;</div>
+      <div class="kpi-value">{{ co_count|default(0) }}</div>
+      <div class="kpi-label">Course Outcomes</div>
+    </div>
+    <div class="kpi-card card">
+      <div class="kpi-icon purple">&#127919;</div>
+      <div class="kpi-value">{{ po_count|default(0) }}</div>
+      <div class="kpi-label">Program Outcomes</div>
+    </div>
+    <div class="kpi-card card">
+      <div class="kpi-icon cyan">&#127942;</div>
+      <div class="kpi-value">{{ peo_count|default(0) }}</div>
+      <div class="kpi-label">Program Educational Objectives</div>
+    </div>
+    <div class="kpi-card card">
+      <div class="kpi-icon green">&#10004;</div>
+      <div class="kpi-value">{{ positive_mappings|length }}</div>
+      <div class="kpi-label">Positive Mappings</div>
+    </div>
+</section>
+
+  <!-- ============================================================
+       4. COURSE OUTCOMES
+  ============================================================= -->
+  {% set bloom_names = {'K1':'Remember','K2':'Understand','K3':'Apply','K4':'Analyze','K5':'Evaluate','K6':'Create'} %}
+  <section id="course-outcomes">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> Course Outcomes</div>
+        <div class="section-sub">Bloom&rsquo;s Taxonomy classification for every CO defined for this subject</div>
+      </div>
+    </div>
+
+    {% if co_rows %}
+    <div class="co-grid">
+      {% for row in co_rows %}
+      <div class="co-card card">
+        <div class="co-card-head">
+          <span class="co-id-badge">{{ row['CO ID'] }}</span>
+          {% set bl = row['Bloom Level'] %}
+          <span class="bloom-badge bloom-{{ bl if bl in bloom_names else 'Unknown' }}">
+            {{ bl }} &middot; {{ bloom_names.get(bl, 'Unclassified') }}
+          </span>
+        </div>
+        <div class="co-statement">{{ row['CO Statement'] }}</div>
+        {% if row['Bloom Reason'] %}
+        <div class="co-explain">{{ row['Bloom Reason'] }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="card empty-state">
+      <div class="icon">&#128203;</div>
+      <div class="msg">No Course Outcome data available for this subject.</div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ============================================================
+       5. CO-PO MAPPING MATRIX
+  ============================================================= -->
+  <section id="co-po-matrix">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> CO&ndash;PO Mapping Matrix</div>
+        <div class="section-sub">Relationship strength between each Course Outcome and Program Outcome</div>
+      </div>
+    </div>
+
+    {% if co_po_matrix and co_po_labels %}
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th style="text-align:left;">CO</th>
+            {% for label in co_po_labels %}
+            <th>{{ label }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in co_po_matrix %}
+          <tr>
+            <td class="co-cell">{{ row[0] }}</td>
+            {% for val in row[1:] %}
+            <td>
+              {% if val >= 3 %}<span class="cell-val cell-3" title="High">3</span>
+              {% elif val == 2 %}<span class="cell-val cell-2" title="Moderate">2</span>
+              {% elif val == 1 %}<span class="cell-val cell-1" title="Low">1</span>
+              {% else %}<span class="cell-val cell-0" title="No relation">&mdash;</span>
+              {% endif %}
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><span class="cell-val cell-0">&mdash;</span> No relation (0)</div>
+      <div class="legend-item"><span class="cell-val cell-1">1</span> Low</div>
+      <div class="legend-item"><span class="cell-val cell-2">2</span> Moderate</div>
+      <div class="legend-item"><span class="cell-val cell-3">3</span> High</div>
+    </div>
+    {% else %}
+    <div class="card empty-state">
+      <div class="icon">&#128202;</div>
+      <div class="msg">No CO&ndash;PO mapping data available for this subject.</div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ============================================================
+       6. CO-PEO MAPPING MATRIX
+  ============================================================= -->
+  <section id="co-peo-matrix">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> CO&ndash;PEO Mapping Matrix</div>
+        <div class="section-sub">Relationship strength between each Course Outcome and Program Educational Objective</div>
+      </div>
+    </div>
+
+    {% if co_peo_matrix and co_peo_labels %}
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th style="text-align:left;">CO</th>
+            {% for label in co_peo_labels %}
+            <th>{{ label }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in co_peo_matrix %}
+          <tr>
+            <td class="co-cell">{{ row[0] }}</td>
+            {% for val in row[1:] %}
+            <td>
+              {% if val >= 3 %}<span class="cell-val cell-3" title="High">3</span>
+              {% elif val == 2 %}<span class="cell-val cell-2" title="Moderate">2</span>
+              {% elif val == 1 %}<span class="cell-val cell-1" title="Low">1</span>
+              {% else %}<span class="cell-val cell-0" title="No relation">&mdash;</span>
+              {% endif %}
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><span class="cell-val cell-0">&mdash;</span> No relation (0)</div>
+      <div class="legend-item"><span class="cell-val cell-1">1</span> Low</div>
+      <div class="legend-item"><span class="cell-val cell-2">2</span> Moderate</div>
+      <div class="legend-item"><span class="cell-val cell-3">3</span> High</div>
+    </div>
+    {% else %}
+    <div class="card empty-state">
+      <div class="icon">&#128202;</div>
+      <div class="msg">No CO&ndash;PEO mapping data available for this subject.</div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ============================================================
+       7. CO-PSO MAPPING MATRIX
+  ============================================================= -->
+  <section id="co-pso-matrix">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> CO&ndash;PSO Mapping Matrix</div>
+        <div class="section-sub">Relationship strength between each Course Outcome and manually maintained Programme Specific Outcome</div>
+      </div>
+    </div>
+    {% if co_pso_matrix and pso_labels %}
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead><tr><th style="text-align:left;">CO</th>{% for label in pso_labels %}<th>{{ label }}</th>{% endfor %}</tr></thead>
+        <tbody>{% for row in co_pso_matrix %}<tr><td class="co-cell">{{ row[0] }}</td>{% for val in row[1:] %}<td>{% if val >= 3 %}<span class="cell-val cell-3" title="High">3</span>{% elif val == 2 %}<span class="cell-val cell-2" title="Moderate">2</span>{% elif val == 1 %}<span class="cell-val cell-1" title="Low">1</span>{% else %}<span class="cell-val cell-0" title="No relation">&mdash;</span>{% endif %}</td>{% endfor %}</tr>{% endfor %}</tbody>
+      </table>
+    </div>
+    <div class="legend"><div class="legend-item"><span class="cell-val cell-0">&mdash;</span> No relation (0)</div><div class="legend-item"><span class="cell-val cell-1">1</span> Low</div><div class="legend-item"><span class="cell-val cell-2">2</span> Moderate</div><div class="legend-item"><span class="cell-val cell-3">3</span> High</div></div>
+    {% else %}<div class="card empty-state"><div class="icon">&#128202;</div><div class="msg">No CO&ndash;PSO mapping data available for this subject. Check Dataset/PSO_Dataset.xlsx.</div></div>{% endif %}
+  </section>
+
+  <!-- ============================================================
+       8. CHARTS
+  ============================================================= -->
+  <section id="constellation-sec">
+    <div class="section-head"><div><div class="section-title"><span class="dot"></span> Mapping Constellation</div><div class="section-sub">Interactive graph of every CO linked to its outcomes &mdash; hover a node to isolate its connections</div></div></div>
+    <div class="cg" id="constellation"><div class="cg-head"><p class="cg-hint">&#10024; Hover any CO or outcome node</p><div class="cg-tabs"></div></div>
+    <div class="cg-stage"></div>
+    <div class="cg-legend"><span style="--c:#1E8E5A">Strong (3)</span><span style="--c:#238987">Moderate (2)</span><span style="--c:#F2A93B">Low (1)</span></div></div>
+  </section>
+
+  <section id="charts">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> Analytics Charts</div>
+        <div class="section-sub">Visual summary generated live from the mapping dataset</div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card card">
+        <div class="chart-title">CO&ndash;PO Average Mapping Strength</div>
+        {% if co_po_labels %}
+        <div class="chart-box"><canvas id="chartCoPo"></canvas></div>
+        {% else %}
+        <div class="empty-state"><div class="msg">No CO&ndash;PO data to chart.</div></div>
+        {% endif %}
+      </div>
+
+      <div class="chart-card card">
+        <div class="chart-title">CO&ndash;PEO Average Mapping Strength</div>
+        {% if co_peo_labels %}
+        <div class="chart-box"><canvas id="chartCoPeo"></canvas></div>
+        {% else %}
+        <div class="empty-state"><div class="msg">No CO&ndash;PEO data to chart.</div></div>
+        {% endif %}
+      </div>
+
+      <div class="chart-card card">
+        <div class="chart-title">CO&ndash;PSO Average Mapping Strength</div>
+        {% if pso_graph_labels %}<div class="chart-box"><canvas id="chartCoPso"></canvas></div>
+        {% else %}<div class="empty-state"><div class="msg">No CO&ndash;PSO data to chart.</div></div>{% endif %}
+      </div>
+
+      <div class="chart-card card">
+        <div class="chart-title">Bloom&rsquo;s Taxonomy Distribution</div>
+        {% if bloom_labels %}
+        <div class="chart-box"><canvas id="chartBloom"></canvas></div>
+        {% else %}
+        <div class="empty-state"><div class="msg">No Bloom data to chart.</div></div>
+        {% endif %}
+      </div>
+
+      <div class="chart-card card">
+        <div class="chart-title">Overall Mapping Strength Distribution</div>
+        {% if ai_reason_rows %}
+        <div class="chart-box"><canvas id="chartStrength"></canvas></div>
+        {% else %}
+        <div class="empty-state"><div class="msg">No mapping data to chart.</div></div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8 & 9. MAPPING JUSTIFICATION + 10. SEARCH/FILTER
+  ============================================================= -->
+  <section id="ai-justification">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> Mapping Justification</div>
+        <div class="section-sub">Reasoning behind every CO&ndash;PO, CO&ndash;PEO and CO&ndash;PSO mapping</div>
+      </div>
+    </div>
+
+    {% if positive_mappings %}
+    <div class="ai-toolbar no-print">
+      <input type="text" id="aiSearch" class="ai-search"
+             placeholder="Search by CO ID, PO/PEO ID, or keyword&hellip;">
+      <select id="aiLevelFilter" class="ai-filter">
+        <option value="">All Levels</option>
+        <option value="High">High</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Low">Low</option>
+      </select>
+      <select id="aiTypeFilter" class="ai-filter">
+        <option value="">All Targets</option>
+        <option value="PO">PO Only</option>
+        <option value="PEO">PEO Only</option>
+        <option value="PSO">PSO Only</option>
+      </select>
+    </div>
+
+    <div class="ai-grid" id="aiGrid">
+      {% for item in positive_mappings %}
+      <div class="ai-card card"
+           data-co="{{ item['CO ID']|lower }}"
+           data-target="{{ item['Target ID']|lower }}"
+           data-type="{{ item['Target Type'] }}"
+           data-level="{{ item['Strength'] }}"
+           data-text="{{ (item['CO Statement'] ~ ' ' ~ item['Justification'])|lower }}">
+        <div class="ai-flow">
+          <span class="flow-chip flow-co">{{ item['CO ID'] }}</span>
+          <span class="flow-arrow">&rarr;</span>
+          <span class="flow-chip flow-target-{{ item['Target Type'] }}">
+            {{ item['Target Type'] }} {{ item['Target ID'] }}
+          </span>
+          <span class="strength-tag strength-{{ item['Strength'] }}">
+            {{ item['Strength'] }} ({{ item['Mapping Value'] }}/3)
+          </span>
+        </div>
+        {% if item['CO Statement'] %}
+        <div class="ai-co-statement">&ldquo;{{ item['CO Statement'] }}&rdquo;</div>
+        {% endif %}
+        <div class="ai-justification">{{ item['Justification'] }}</div>
+        <div class="ai-card-actions no-print">
+          <button class="mini-btn copy-btn" type="button">&#128203; Copy Justification</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="empty-state" id="aiNoResults" style="display:none;">
+      <div class="icon">&#128269;</div>
+      <div class="msg">No justifications match your search.</div>
+    </div>
+    {% else %}
+    <div class="card empty-state">
+      <div class="icon">&#129504;</div>
+      <div class="msg">No justification data available for this subject.</div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ============================================================
+       11. INSIGHTS
+  ============================================================= -->
+  <section id="insights">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> Key Insights</div>
+        <div class="section-sub">Automatically derived from the current mapping dataset</div>
+      </div>
+    </div>
+
+    {% if co_po_labels or co_peo_labels or pso_graph_labels or bloom_labels or ai_reason_rows %}
+    <div class="insight-grid">
+
+      {% if co_po_labels and co_po_values %}
+      {% set ns_po = namespace(best_val=-1, best_label='') %}
+      {% for i in range(co_po_labels|length) %}
+        {% if co_po_values[i] > ns_po.best_val %}
+          {% set ns_po.best_val = co_po_values[i] %}
+          {% set ns_po.best_label = co_po_labels[i] %}
+        {% endif %}
+      {% endfor %}
+      <div class="insight-card card">
+        <div class="insight-icon">&#127942;</div>
+        <div>
+          <div class="insight-label">Strongest PO</div>
+          <div class="insight-value">{{ ns_po.best_label }} ({{ ns_po.best_val }} avg)</div>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if co_peo_labels and co_peo_values %}
+      {% set ns_peo = namespace(best_val=-1, best_label='') %}
+      {% for i in range(co_peo_labels|length) %}
+        {% if co_peo_values[i] > ns_peo.best_val %}
+          {% set ns_peo.best_val = co_peo_values[i] %}
+          {% set ns_peo.best_label = co_peo_labels[i] %}
+        {% endif %}
+      {% endfor %}
+      <div class="insight-card card">
+        <div class="insight-icon">&#127919;</div>
+        <div>
+          <div class="insight-label">Strongest PEO</div>
+          <div class="insight-value">{{ ns_peo.best_label }} ({{ ns_peo.best_val }} avg)</div>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if bloom_labels and bloom_values %}
+      {% set ns_bloom = namespace(best_val=-1, best_label='') %}
+      {% for i in range(bloom_labels|length) %}
+        {% if bloom_values[i] > ns_bloom.best_val %}
+          {% set ns_bloom.best_val = bloom_values[i] %}
+          {% set ns_bloom.best_label = bloom_labels[i] %}
+        {% endif %}
+      {% endfor %}
+      <div class="insight-card card">
+        <div class="insight-icon">&#129504;</div>
+        <div>
+          <div class="insight-label">Dominant Bloom Level</div>
+          <div class="insight-value">
+            {{ ns_bloom.best_label }} &middot; {{ bloom_names.get(ns_bloom.best_label, '') }}
+            ({{ ns_bloom.best_val }} CO{{ 's' if ns_bloom.best_val != 1 else '' }})
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if ai_reason_rows %}
+      <div class="insight-card card">
+        <div class="insight-icon">&#10004;</div>
+        <div>
+          <div class="insight-label">Total Positive Mappings</div>
+          <div class="insight-value">{{ positive_mappings|length }} of {{ ai_reason_rows|length }}</div>
+        </div>
+      </div>
+
+      <div class="insight-card card">
+        <div class="insight-icon">&#128200;</div>
+        <div>
+          <div class="insight-label">Mapping Strength Split</div>
+          <div class="insight-value" style="font-size:.92rem;">
+            High: {{ ai_reason_rows|selectattr('Strength','equalto','High')|list|length }}
+            &middot; Moderate: {{ ai_reason_rows|selectattr('Strength','equalto','Moderate')|list|length }}
+            &middot; Low: {{ ai_reason_rows|selectattr('Strength','equalto','Low')|list|length }}
+          </div>
+        </div>
+      </div>
+
+      {% if positive_mappings %}
+      {% set ns_co = namespace(best_co='', best_sum=-1) %}
+      {% for co_id, group in positive_mappings|groupby('CO ID') %}
+        {% set total = group|sum(attribute='Mapping Value') %}
+        {% if total > ns_co.best_sum %}
+          {% set ns_co.best_sum = total %}
+          {% set ns_co.best_co = co_id %}
+        {% endif %}
+      {% endfor %}
+      <div class="insight-card card">
+        <div class="insight-icon">&#11088;</div>
+        <div>
+          <div class="insight-label">CO with Strongest Overall Mapping</div>
+          <div class="insight-value">{{ ns_co.best_co }} (score {{ ns_co.best_sum }})</div>
+        </div>
+      </div>
+      {% endif %}
+      {% endif %}
+
+    </div>
+    {% else %}
+    <div class="card empty-state">
+      <div class="icon">&#128161;</div>
+      <div class="msg">Not enough data available to generate insights for this subject.</div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ============================================================
+       15. EXPORT
+  ============================================================= -->
+  <section id="export" class="no-print">
+    <div class="section-head">
+      <div>
+        <div class="section-title"><span class="dot"></span> Export Report</div>
+        <div class="section-sub">Download this subject report for faculty / evaluator submission</div>
+      </div>
+    </div>
+
+    <div class="export-row">
+      <a class="export-btn card" href="{{ url_for('download_pdf', subject=subject_code) }}">
+        <div class="export-icon pdf">&#128196;</div>
+        <div>
+          <div class="export-name">Download PDF</div>
+          <div class="export-hint">Printable evaluation copy</div>
+        </div>
+      </a>
+      <a class="export-btn card" href="{{ url_for('download_word', subject=subject_code) }}">
+        <div class="export-icon word">&#128221;</div>
+        <div>
+          <div class="export-name">Download Word (DOCX)</div>
+          <div class="export-hint">Editable report document</div>
+        </div>
+      </a>
+      <a class="export-btn card" href="{{ url_for('download_excel', subject=subject_code) }}">
+        <div class="export-icon excel">&#128202;</div>
+        <div>
+          <div class="export-name">Download Excel</div>
+          <div class="export-hint">Raw mapping dataset</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="report-footer">
+    ATME College of Engineering, Mysuru &middot; CO&ndash;PO&ndash;PEO&ndash;PSO Mapping
+    &middot; Report generated for {{ subject_code|default('') }}
+  </div>
+
+</main>
+
+<script>
+(function(){
+
+  // ---------- Chart color helpers ----------
+  Chart.defaults.font.family = "'Segoe UI', Roboto, Arial, sans-serif";
+  Chart.defaults.color = "#64748b";
+
+  var gridColor = "rgba(148,163,184,0.18)";
+
+  {% if co_po_labels %}
+  new Chart(document.getElementById('chartCoPo'), {
+    type: 'bar',
+    data: {
+      labels: {{ co_po_labels|tojson }},
+      datasets: [{
+        label: 'Average Mapping',
+        data: {{ co_po_values|tojson }},
+        backgroundColor: function(c){var a=c.chart.chartArea;if(!a)return '#2FB3AE';var g=c.chart.ctx.createLinearGradient(0,a.bottom,0,a.top);g.addColorStop(0,'#19D3C555');g.addColorStop(1,'#2FB3AE');return g;},
+        borderRadius: 10,
+        maxBarThickness: 28
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, max: 3, grid: { color: gridColor } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+  {% endif %}
+
+  {% if co_peo_labels %}
+  new Chart(document.getElementById('chartCoPeo'), {
+    type: 'bar',
+    data: {
+      labels: {{ co_peo_labels|tojson }},
+      datasets: [{
+        label: 'Average Mapping',
+        data: {{ co_peo_values|tojson }},
+        backgroundColor: '#F2A93B',
+        borderRadius: 10,
+        maxBarThickness: 28
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, max: 3, grid: { color: gridColor } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+  {% endif %}
+
+  {% if pso_graph_labels %}
+  new Chart(document.getElementById('chartCoPso'), {
+    type: 'bar',
+    data: { labels: {{ pso_graph_labels|tojson }}, datasets: [{ label: 'Average Mapping', data: {{ pso_graph_values|tojson }}, backgroundColor: '#1F6F6D', borderRadius: 10, maxBarThickness: 28 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, max: 3, grid: { color: gridColor } }, x: { grid: { display: false } } } }
+  });
+  {% endif %}
+
+  {% if bloom_labels %}
+  new Chart(document.getElementById('chartBloom'), {
+    type: 'pie',
+    data: {
+      labels: {{ bloom_labels|tojson }},
+      datasets: [{
+        data: {{ bloom_values|tojson }},
+        backgroundColor: ['#238987','#5BBDB8','#F2A93B','#E08A3C','#C98412','#1A6B69','#94a3b8'],
+        borderWidth: 0, spacing: 3, hoverOffset: 14
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14 } } }
+    }
+  });
+  {% endif %}
+
+  {% if ai_reason_rows %}
+  new Chart(document.getElementById('chartStrength'), {
+    type: 'pie',
+    data: {
+      labels: ['High','Moderate','Low','None'],
+      datasets: [{
+        data: [
+          {{ ai_reason_rows|selectattr('Strength','equalto','High')|list|length }},
+          {{ ai_reason_rows|selectattr('Strength','equalto','Moderate')|list|length }},
+          {{ ai_reason_rows|selectattr('Strength','equalto','Low')|list|length }},
+          {{ ai_reason_rows|selectattr('Strength','equalto','None')|list|length }}
+        ],
+        backgroundColor: ['#4ADE80','#5BBDB8','#F2A93B','#64748B'],
+        borderWidth: 0, spacing: 3, hoverOffset: 14
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14 } } }
+    }
+  });
+  {% endif %}
+
+  // ---------- AI justification search / filter ----------
+  var searchBox = document.getElementById('aiSearch');
+  var levelFilter = document.getElementById('aiLevelFilter');
+  var typeFilter = document.getElementById('aiTypeFilter');
+  var grid = document.getElementById('aiGrid');
+  var noResults = document.getElementById('aiNoResults');
+
+  function applyFilters(){
+    if(!grid) return;
+    var q = (searchBox && searchBox.value || '').trim().toLowerCase();
+    var lvl = levelFilter ? levelFilter.value : '';
+    var typ = typeFilter ? typeFilter.value : '';
+    var visible = 0;
+
+    Array.prototype.forEach.call(grid.children, function(card){
+      var co = card.getAttribute('data-co') || '';
+      var target = card.getAttribute('data-target') || '';
+      var text = card.getAttribute('data-text') || '';
+      var level = card.getAttribute('data-level') || '';
+      var type = card.getAttribute('data-type') || '';
+
+      var matchesQuery = !q ||
+        co.indexOf(q) !== -1 ||
+        target.indexOf(q) !== -1 ||
+        text.indexOf(q) !== -1;
+
+      var matchesLevel = !lvl || level === lvl;
+      var matchesType = !typ || type === typ;
+
+      var show = matchesQuery && matchesLevel && matchesType;
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+
+    if(noResults){
+      noResults.style.display = visible === 0 ? '' : 'none';
+    }
+  }
+
+  if(searchBox) searchBox.addEventListener('input', applyFilters);
+  if(levelFilter) levelFilter.addEventListener('change', applyFilters);
+  if(typeFilter) typeFilter.addEventListener('change', applyFilters);
+
+  // ---------- Copy justification ----------
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.copy-btn');
+    if(!btn) return;
+    var card = btn.closest('.ai-card');
+    if(!card) return;
+    var justification = card.querySelector('.ai-justification');
+    var textToCopy = justification ? justification.textContent.trim() : '';
+
+    function done(){
+      var original = btn.innerHTML;
+      btn.innerHTML = '&#10003; Copied';
+      btn.classList.add('copied');
+      setTimeout(function(){
+        btn.innerHTML = original;
+        btn.classList.remove('copied');
+      }, 1500);
+    }
+
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(textToCopy).then(done).catch(function(){
+        fallbackCopy(textToCopy, done);
+      });
+    } else {
+      fallbackCopy(textToCopy, done);
+    }
+  });
+
+  function fallbackCopy(text, cb){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch(err) {}
+    document.body.removeChild(ta);
+    if(cb) cb();
+  }
+
+})();
+</script>
+
+<script src="{{ url_for('static',filename='js/script.js') }}"></script>
+<script src="{{ url_for('static',filename='js/creative.js') }}"></script>
+</body>
+</html>

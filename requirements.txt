@@ -1,0 +1,15 @@
+# Lightweight set for Render FREE plan (512 MB RAM).
+# Mapping uses TF-IDF cosine similarity (automatic fallback). For Sentence-BERT see requirements-sbert.txt
+Flask>=3.1,<4
+Flask-SQLAlchemy>=3.1,<4
+pandas>=2.2,<4
+openpyxl>=3.1,<4
+Pillow>=10
+reportlab>=4.2,<5
+python-docx>=1.1,<2
+scikit-learn>=1.5,<2
+pypdf>=5.0,<7
+xlrd>=2.0.1
+gunicorn>=22
+psycopg[binary]>=3.1
+psycopg2-binary>=2.9

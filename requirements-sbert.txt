@@ -1,0 +1,5 @@
+# Full set with Sentence-BERT (needs a paid Render plan with >= 2 GB RAM).
+--extra-index-url https://download.pytorch.org/whl/cpu
+-r requirements.txt
+torch
+sentence-transformers>=5,<6

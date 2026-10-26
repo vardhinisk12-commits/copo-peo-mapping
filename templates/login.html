@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><script>document.documentElement.setAttribute('data-theme','dark')</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Login | ATME AI CO-PO-PEO Mapping</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-light.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/creative-dark.css') }}">
+</head>
+<body class="auth-page"><div class="auth-shell">
+<section class="auth-brand" data-constellation>
+<span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+<img class="logo" src="{{ url_for('static',filename='images/ATME.jpeg') }}" alt="ATME College of Engineering">
+<h1>CO–PO–PEO<br>mapping for ATME</h1><p>Map course outcomes to programme outcomes, educational objectives and specific outcomes for every subject.</p>
+<div class="feature-list"><div><span class="ft-map"><i class="fa-solid fa-check"></i></span>Automatic CO–PO–PEO–PSO mapping</div><div><span class="ft-justify"><i class="fa-solid fa-check"></i></span>Written justification for every mapping</div><div><span class="ft-bloom"><i class="fa-solid fa-check"></i></span>Bloom's level for every course outcome</div><div><span class="ft-report"><i class="fa-solid fa-check"></i></span>PDF, Word and Excel reports</div></div><div class="stat-row"><div><b>CO–PO</b><span>Programme outcomes</span></div><div><b>CO–PEO</b><span>Objectives</span></div><div><b>CO–PSO</b><span>Specific outcomes</span></div></div></section>
+<section class="auth-card"><span class="badge-secure">Secure faculty login</span><h2>Welcome back 👋</h2><p class="auth-subtitle">Sign in to open your department dashboard.</p>
+{% if success %}<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> {{ success }}</div>{% endif %}
+{% if error %}<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> {{ error }}</div>{% endif %}
+<form action="/" method="POST">
+<div class="form-group"><label for="u">Username</label><div class="input-icon"><i class="fa-solid fa-user"></i><input class="form-control" id="u" type="text" name="username" value="{{ registered_username|default('') }}" placeholder="Enter your username" autocomplete="username" required></div></div>
+<div class="form-group"><label for="p">Password</label><div class="pw-wrap input-icon"><i class="fa-solid fa-lock"></i><input class="form-control" id="p" type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required><button type="button" onclick="tp(this)">Show</button></div></div>
+<button class="primary-btn" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Log in</button></form>
+<p class="auth-link">New here? <a href="/register">Create an account</a></p></section></div><script>function tp(b){var i=b.previousElementSibling;var s=i.type==='password';i.type=s?'text':'password';b.textContent=s?'Hide':'Show';}</script><script src="{{ url_for('static',filename='js/creative.js') }}"></script>
+</body></html>

@@ -1,0 +1,26 @@
+AI-Based Automatic CO-PO-PEO Mapping System
+
+1. Extract the ZIP file.
+2. Open PowerShell/Terminal in the folder containing app.py.
+3. Create/activate a Python environment if desired.
+4. Install dependencies:
+
+   python -m pip install -r requirements.txt
+
+5. Start the application:
+
+   python app.py
+
+6. Open in your browser:
+
+   http://127.0.0.1:5000
+
+PDF/Word/Excel reports are generated from the Download buttons in the web application.
+
+The project uses:
+- Flask + Flask-SQLAlchemy
+- Pandas + OpenPyXL
+- ReportLab
+- python-docx
+- Sentence-BERT (all-MiniLM-L6-v2)
+- scikit-learn
